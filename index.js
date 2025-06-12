@@ -1,16 +1,22 @@
 import { scrapeHamrobazaar } from './hamrobazar.js';
+import fs from 'fs';
 
 (async () => {
   const query = 'fan';
   const products = await scrapeHamrobazaar(query);
-
-  products.forEach((item, index) => {
-    console.log(`\nProduct ${index + 1}`);
-    console.log(`Title: ${item.title}`);
-    console.log(`Price: ${item.price}`);
-    console.log(`Description: ${item.description}`);
-    console.log(`Image: ${item.img}`);
-    console.log(`Link: ${item.href}`);
+  const lines = products.map((item, index) => {
+    return (
+      `\nSite: ${item.site}\n` +
+      `Product ${index + 1}\n` +
+      `Title: ${item.title}\n` +
+      `Price: ${item.price}\n` +
+      `Description: ${item.description}\n` +
+      `Image: ${item.img}\n` +
+      `Link: ${item.href}\n`
+    );
   });
+
+  const output = lines.join('\n');
+  fs.writeFileSync('parse.html', output, 'utf-8');
 })();
 

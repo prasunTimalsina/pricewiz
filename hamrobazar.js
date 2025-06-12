@@ -11,7 +11,7 @@ export async function scrapeHamrobazaar(query) {
 
   await page.waitForSelector('[data-test-id="virtuoso-item-list"]', { timeout: 30000 });
 
-  const seenIndexes = new Set();
+  const seenHrefs = new Set(); 
   const collectedItems = [];
   const maxItems = 10;
 
@@ -19,7 +19,7 @@ export async function scrapeHamrobazaar(query) {
   let idleCounter = 0;
   const maxIdle = 5;
 
-  while (idleCounter < maxIdle && seenIndexes.size < maxItems) {
+  while (idleCounter < maxIdle && collectedItems.length < maxItems) {
     const newItems = await page.evaluate(() => {
       const container = document.querySelector('[data-test-id="virtuoso-item-list"]');
       if (!container) return [];
@@ -56,11 +56,11 @@ export async function scrapeHamrobazaar(query) {
 
     let addedNew = false;
     for (const item of newItems) {
-      if (!seenIndexes.has(item.index)) {
-        seenIndexes.add(item.index);
+      if (item.href && !seenHrefs.has(item.href)) {
+        seenHrefs.add(item.href);
         collectedItems.push(item);
         addedNew = true;
-        if (seenIndexes.size >= maxItems) break;
+        if (collectedItems.length >= maxItems) break;
       }
     }
 
@@ -70,10 +70,7 @@ export async function scrapeHamrobazaar(query) {
       idleCounter = 0;
     }
 
-    await page.evaluate(() => {
-      window.scrollBy(0, window.innerHeight);
-    });
-
+    await page.evaluate(() => window.scrollBy(0, window.innerHeight));
     await new Promise(res => setTimeout(res, 1000));
 
     const currentHeight = await page.evaluate(() => document.body.scrollHeight);
