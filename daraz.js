@@ -1,4 +1,3 @@
-
 import puppeteer from 'puppeteer';
 
 export async function scrapeDaraz(query) {
@@ -12,8 +11,40 @@ export async function scrapeDaraz(query) {
 
   await page.waitForSelector('._17mcb', { timeout: 30000 });
 
-   const html = await page.content();
-  console.log(html);
+  const products = await page.evaluate(() => {
+    const container = document.querySelector('._17mcb');
+    if (!container) return [];
+
+    const items = container.querySelectorAll('.Bm3ON');
+    const data = [];
+
+    items.forEach(item => {
+      try {
+        const imageContainer = item.querySelector('.Ms6aG .qmXQo .ICdUp ._95X4G a');
+        const href = imageContainer?.href || null;
+        const img = imageContainer?.querySelector('img')?.src || null;
+
+        const infoContainer = item.querySelector('.Ms6aG .qmXQo .buTCk');
+        const title = infoContainer?.querySelector('.buTCk a')?.innerText || null;
+        const price = infoContainer?.querySelector('.aBrP0 .ooOxS')?.innerText || null;
+
+        if (href && img && title && price) {
+          data.push({
+            site: 'Daraz',
+            href,
+            img,
+            title,
+            price,
+          });
+        }
+      } catch (err) {
+      }
+    });
+
+    return data;
+  });
 
   await browser.close();
+  return products;
 }
+
