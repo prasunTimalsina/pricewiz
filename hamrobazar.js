@@ -2,24 +2,18 @@ import puppeteer from 'puppeteer';
 
 export async function scrapeHamrobazaar(query) {
    const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     args: ['--start-maximized', '--window-size=1920,1080'], 
     defaultViewport: null, 
   });
-
   const page = await browser.newPage();
-
   await page.setViewport({ width: 1920, height: 1080 }); 
-
-
 
   await page.goto(`https://hamrobazaar.com/search/product?q=${query}`, {
     waitUntil: 'networkidle2',
     timeout: 100000,
   });
-
   await page.waitForSelector('[data-test-id="virtuoso-item-list"]', { timeout: 30000 });
-
   const seenHrefs = new Set(); 
   const collectedItems = [];
   const maxItems = 40;

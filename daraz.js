@@ -6,9 +6,7 @@ export async function scrapeDaraz(query) {
     args: ['--start-maximized', '--window-size=1920,1080'], 
     defaultViewport: null, 
   });
-
   const page = await browser.newPage();
-
   await page.setViewport({ width: 1920, height: 1080 }); 
 
   await page.goto(
