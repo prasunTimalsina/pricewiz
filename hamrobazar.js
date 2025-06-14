@@ -1,8 +1,17 @@
 import puppeteer from 'puppeteer';
 
 export async function scrapeHamrobazaar(query) {
-  const browser = await puppeteer.launch({ headless: true });
+   const browser = await puppeteer.launch({
+    headless: false,
+    args: ['--start-maximized', '--window-size=1920,1080'], 
+    defaultViewport: null, 
+  });
+
   const page = await browser.newPage();
+
+  await page.setViewport({ width: 1920, height: 1080 }); 
+
+
 
   await page.goto(`https://hamrobazaar.com/search/product?q=${query}`, {
     waitUntil: 'networkidle2',
@@ -13,7 +22,7 @@ export async function scrapeHamrobazaar(query) {
 
   const seenHrefs = new Set(); 
   const collectedItems = [];
-  const maxItems = 10;
+  const maxItems = 40;
 
   let lastHeight = 0;
   let idleCounter = 0;
