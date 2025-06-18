@@ -3,7 +3,7 @@ import { scrapeDaraz } from './daraz.js';
 import fs from 'fs';
 
 (async () => {
-  const query = 'fan';
+  const query = 'chocolate musk attar';
   console.time('Total time');
 
   const hamroPromise = (async () => {
