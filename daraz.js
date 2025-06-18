@@ -1,16 +1,18 @@
 import puppeteer from 'puppeteer';
 
-export async function scrapeDaraz(query) {
+export async function scrapeDaraz(Durl) {
    const browser = await puppeteer.launch({
     headless: true,
     args: ['--start-maximized', '--window-size=1920,1080'], 
     defaultViewport: null, 
   });
+
   const page = await browser.newPage();
+
   await page.setViewport({ width: 1920, height: 1080 }); 
 
   await page.goto(
-    `https://www.daraz.com.np/catalog/?spm=a2a0e.tm80335409.search.d_go&q=${query}`,
+    `${Durl}`,
     {
       waitUntil: 'networkidle2',
       timeout: 100000,

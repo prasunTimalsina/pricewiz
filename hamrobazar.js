@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 
-export async function scrapeHamrobazaar(query) {
+export async function scrapeHamrobazaar(Hurl) {
    const browser = await puppeteer.launch({
     headless: true,
     args: ['--start-maximized', '--window-size=1920,1080'], 
@@ -9,7 +9,7 @@ export async function scrapeHamrobazaar(query) {
   const page = await browser.newPage();
   await page.setViewport({ width: 1920, height: 1080 }); 
 
-  await page.goto(`https://hamrobazaar.com/search/product?q=${query}`, {
+  await page.goto(`${Hurl}`, {
     waitUntil: 'networkidle2',
     timeout: 100000,
   });
