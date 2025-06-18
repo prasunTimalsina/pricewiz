@@ -5,7 +5,8 @@ import fs from 'fs';
 (async () => {
   const query = 'fan';
   console.time('Total time');
-  const Durl = `https://www.daraz.com.np/catalog/?spm=a2a0e.tm80335409.search.d_go&q=${query}`;
+  //const Durl = `https://www.daraz.com.np/catalog/?spm=a2a0e.tm80335409.search.d_go&q=${query}`;
+  const Durl = `https://www.daraz.com.np/catalog/?q=fan&price=100-1000`;
   const Hurl = `https://hamrobazaar.com/search/product?q=${query}`;
 
 
