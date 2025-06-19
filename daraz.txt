@@ -249,6 +249,22 @@ Link: https://www.daraz.com.np/products/portable-mini-clip-fan-compact-clip-fan-
 
 Site: Daraz
 Product 32
+Title: Mini Neck Fan Portable Bladeless Hanging Neck Rechargeable Air Cooler 3 Speed Mini Summer Sports Fan Outdoor
+Price: Rs. 450
+Image: https://img.drz.lazcdn.com/static/np/p/c8152b96b0aee9dbfe70f9c2f2a46f40.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/mini-neck-fan-portable-bladeless-hanging-neck-rechargeable-air-cooler-3-speed-mini-summer-sports-fan-outdoor-i297804167.html
+
+
+Site: Daraz
+Product 33
+Title: Cute Sanrio Cinnamoroll My Melody Lighting Handheld Mini Fan Cartoon Kuromi Dormitory Office Desktop Portable Mini Electric Fan
+Price: Rs. 261
+Image: https://img.drz.lazcdn.com/static/np/p/76d472290de272713ef1f08e7b8f5c38.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/cute-sanrio-cinnamoroll-my-melody-lighting-handheld-mini-fan-cartoon-kuromi-dormitory-office-desktop-portable-mini-electric-fan-i352827129.html
+
+
+Site: Daraz
+Product 34
 Title: Cooler Table Fan With Ice Water Compartment Cooling with Five Atomizer and Timer
 Price: Rs. 999
 Image: https://img.drz.lazcdn.com/static/np/p/c1f1ef06b18fa57624ea7d2c6e831f87.jpg_200x200q80.avif
@@ -256,7 +272,7 @@ Link: https://www.daraz.com.np/products/cooler-table-fan-with-ice-water-compartm
 
 
 Site: Daraz
-Product 33
+Product 35
 Title: Portable Folding Rechargeable Standing Pedestal Fan, 3 Speeds, for Home, Camping, Outdoor and Office
 Price: Rs. 649
 Image: https://img.drz.lazcdn.com/static/np/p/9bd6b6826ccc65f87c35206ece824214.jpg_200x200q80.avif
@@ -264,7 +280,7 @@ Link: https://www.daraz.com.np/products/portable-folding-rechargeable-standing-p
 
 
 Site: Daraz
-Product 34
+Product 36
 Title: Rechargeable Mini Handheld Fan Yesplus YS-1614 Genuine And Premium Quality
 Price: Rs. 650
 Image: https://img.drz.lazcdn.com/g/kf/S3d98fbde1dfc452aa85db0aa902756eb9.jpg_200x200q80.avif
@@ -272,7 +288,7 @@ Link: https://www.daraz.com.np/products/rechargeable-mini-handheld-fan-yesplus-y
 
 
 Site: Daraz
-Product 35
+Product 37
 Title: Mini Clip Electric Table Fan -180 mm
 Price: Rs. 850
 Image: https://img.drz.lazcdn.com/static/np/p/30c1ae9ba82b0ec88ad476cad2e3189c.jpg_200x200q80.avif
@@ -280,7 +296,7 @@ Link: https://www.daraz.com.np/products/mini-clip-electric-table-fan-180-mm-i128
 
 
 Site: Daraz
-Product 36
+Product 38
 Title: Wireless Neck Fan - 3-Speed Bladeless Portable Rechargeable Folding Fan
 Price: Rs. 450
 Image: https://img.drz.lazcdn.com/static/np/p/7827e146ae1d3710d9e2a2ecf1d8e04b.jpg_200x200q80.avif
@@ -288,7 +304,7 @@ Link: https://www.daraz.com.np/products/wireless-neck-fan-3-speed-bladeless-port
 
 
 Site: Daraz
-Product 37
+Product 39
 Title: Mini Portable 4 Blades Ceiling Fan
 Price: Rs. 899
 Image: https://img.drz.lazcdn.com/static/np/p/48375feb2a3932d9baf71cf2725de2e8.jpg_200x200q80.avif
@@ -296,24 +312,8 @@ Link: https://www.daraz.com.np/products/mini-portable-4-blades-ceiling-fan-i1184
 
 
 Site: Daraz
-Product 38
+Product 40
 Title: Mini Rechargeable Fan Portable For Traveling Handy
 Price: Rs. 290
 Image: https://img.drz.lazcdn.com/g/kf/S0a37c3b2a9904ccd956f98b864529dbfq.jpg_200x200q80.avif
 Link: https://www.daraz.com.np/products/mini-rechargeable-fan-portable-for-traveling-handy-i131286445.html
-
-
-Site: Daraz
-Product 39
-Title: Cute little Portable Handy Rechargeable Mini Fan
-Price: Rs. 275
-Image: https://img.drz.lazcdn.com/g/kf/S368eb19553c1412a88f44f9f9064204fw.jpg_200x200q80.avif
-Link: https://www.daraz.com.np/products/cute-little-portable-handy-rechargeable-mini-fan-i292885136.html
-
-
-Site: Daraz
-Product 40
-Title: 4 In 1 Mini Air Cooler Fan plus Humidifier - Air Conditioner With Water And Ice Compartment And Color LED Lights
-Price: Rs. 999
-Image: https://img.drz.lazcdn.com/static/np/p/066a0d3fe1f4b2cb8b67dc0428f5b1e2.jpg_200x200q80.avif
-Link: https://www.daraz.com.np/products/4-in-1-mini-air-cooler-fan-plus-humidifier-air-conditioner-with-water-and-ice-compartment-and-color-led-lights-i131284312.html
