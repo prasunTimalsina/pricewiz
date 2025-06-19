@@ -98,20 +98,16 @@ export async function scrapeHamrobazaarPrice(Hurl, lowPrice, highPrice) {
     timeout: 100000,
   });
 
-  // Wait for filter form to appear
   await page.waitForSelector('.filter--form.show', { timeout: 30000 });
 
-  // Fill in price range
   await page.type('input[placeholder="Min"]', String(lowPrice), { delay: 100 });
   await page.type('input[placeholder="Max"]', String(highPrice), { delay: 100 });
 
-  // Click filter button
-  await Promise.all([
-    page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 60000 }),
-    page.click('.form-item.form-item--filterBtn .btn'),
-  ]);
+  await page.evaluate(() => {
+  const btn = document.querySelector('.form-item.form-item--filterBtn .btn');
+  if (btn) btn.click();
+  });
 
-  // Wait for filtered results to load
   await page.waitForSelector('[data-test-id="virtuoso-item-list"]', { timeout: 30000 });
 
   const seenHrefs = new Set();
