@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/prasunTimalsina/Scrapify#readme",
   "dependencies": {
+    "import": "^0.0.6",
     "puppeteer": "^24.10.0"
   }
 }
