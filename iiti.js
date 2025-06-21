@@ -1,6 +1,5 @@
 import puppeteer from 'puppeteer';
 
-
 export async function scrapeIiti(Iurl) {
    const browser = await puppeteer.launch({
     headless: true,
@@ -26,4 +25,5 @@ export async function scrapeIiti(Iurl) {
 }
 
 function parse() {
+
 }
