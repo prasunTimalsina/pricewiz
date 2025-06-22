@@ -9,6 +9,8 @@
 //
 //  const lowPrice = 100
 //  const highPrice = 1000
+//
+//  const Iurl = `https://itti.com.np/search/result?q=${query}&category_type=search`;
 //  const Durl = `https://www.daraz.com.np/catalog/?q=fan&price=${lowPrice}-${highPrice}`;
 //  const Hurl = `https://hamrobazaar.com/search/product?q=${query}`;
 //
@@ -38,7 +40,7 @@
 //  console.timeEnd('Total time');
 //})();
 
-import { scrapeIiti } from './iiti.js';
+import { scrapeIiti } from './itti.js';
 
 (async () => {
   const query = 'fan';
@@ -52,8 +54,6 @@ import { scrapeIiti } from './iiti.js';
   const hamroPromise = (async () => {
     console.time('IITI Time');
     const products = await scrapeIiti(Iurl);
-    console.log(products)
-    console.timeEnd('Hamrobazaar time');
   })();
 
   await Promise.all([scrapeIiti]);
