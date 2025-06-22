@@ -37,5 +37,26 @@
 //
 //  console.timeEnd('Total time');
 //})();
-//
-//
+
+import { scrapeIiti } from './iiti.js';
+
+(async () => {
+  const query = 'fan';
+  console.time('Total time');
+
+  const lowPrice = 100
+  const highPrice = 1000
+  const Iurl = `https://itti.com.np/search/result?q=${query}&category_type=search`;
+
+
+  const hamroPromise = (async () => {
+    console.time('IITI Time');
+    const products = await scrapeIiti(Iurl);
+    console.log(products)
+    console.timeEnd('Hamrobazaar time');
+  })();
+
+  await Promise.all([scrapeIiti]);
+
+  console.timeEnd('Total time');
+})();
