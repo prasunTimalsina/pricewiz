@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer';
 
 export async function scrapeHamrobazaar(Hurl) {
    const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     args: ['--start-maximized', '--window-size=1920,1080'], 
     defaultViewport: false, 
   });

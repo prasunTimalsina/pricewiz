@@ -1,143 +1,143 @@
 
 Site: IITI
 Product 1
-Title: Huntkey GX122 New Moon - 4-Pin 120mm Colorful PC Fan, 1200 RPM Cooler
-Price: रु 800
-Image: https://admin.itti.com.np/storage/product/huntkey-gx122-new-moon-colorful-pc-price-nepal/thumb/d181530d-548d-4c8c-adbb-0998493c51ca.jpeg
-Link: https://itti.com.np/product/huntkey-gx122-new-moon-colorful-pc-fan-price-nepal
+Title: UGREEN Extended Gaming Mouse Pad with Stitched Edges, Large Mouse Pad with Premium-Textured Cloth, Non-Slip Rubber Base, Waterproof Keyboard Pad, Desk Mat for Gamer, Office and Home-Black
+Price: रु 600
+Image: https://admin.itti.com.np/storage/product/ugreen-mousepad-black-price-nepal/thumb/dc2391dd-15da-447b-a86f-e245506051d0.jpeg
+Link: https://itti.com.np/product/ugreen-mousepad-black-price-nepal
 
 
 Site: IITI
 Product 2
-Title: Cooler Master i50 CPU Fan - Socket LGA 115x- Entry Model Cooling Fan
-Price: रु 1,062
-Image: https://admin.itti.com.np/storage/product/cooler-master-i50-cpu-fan-socket-lga-115x-entry-model-cooling-fan/thumb/d5d046d8-9a73-4ea6-aab5-66c0546ea1dd.png
-Link: https://itti.com.np/product/cooler-master-i50-cpu-fan-socket-lga-115x-entry-model-cooling-fan
+Title: Havit HV-KB378 Nepali Keyboard
+Price: रु 660
+Image: https://admin.itti.com.np/storage/product/havit-keyboard-nepali-hv-kb378/thumb/ceb8e69f-90b2-4111-850b-066eab74625b.jpeg
+Link: https://itti.com.np/product/havit-hv-kb378-nepali-keyboard-price-nepal
 
 
 Site: IITI
 Product 3
-Title: HUNTKEY COOLER FAN FROZEN 200SE
-Price: रु 1,300
-Image: https://admin.itti.com.np/storage/product/huntkey-cooler-fan-frozen-200se/thumb/87dff08f-8a41-43fd-a9bf-8af6f6ff8952.webp
-Link: https://itti.com.np/product/huntkey-cooler-fan-frozen-200se
+Title: Havit HV-KB378 USB Exquisite Wired Keyboard
+Price: रु 660
+Image: https://admin.itti.com.np/storage/product/havit-keyboard-hv-kb378-price-nepal/thumb/6600b6e2-64f1-4afb-997a-f6df899b2e14.jpeg
+Link: https://itti.com.np/product/havit-hv-kb378-keyboard-price-nepal
 
 
 Site: IITI
 Product 4
-Title: Cooler Master A50 CPU RH-A50-26FK-R1 AMD A4 Socket Cooling Fan
-Price: रु 1,560
-Image: https://admin.itti.com.np/storage/product/cooler-master-a50-cpu-rh-a50-26fk-r1-amd-a4-socket-cooling-fan/thumb/aba0adf2-7d30-4f3a-8783-e9997df69e8f.png
-Link: https://itti.com.np/product/cooler-master-a50-cpu-rh-a50-26fk-r1-amd-a4-socket-cooling-fan
+Title: Rapoo K10 Numeric Keyboard - 23-Keys Compact Wired Numeric Keypad USB Number Pad for PC Laptop
+Price: रु 690
+Image: https://admin.itti.com.np/storage/product/rapoo-k10-numeric-keyboard-price-nepal/thumb/24071c92-cf06-465a-8eff-3798556e9459.png
+Link: https://itti.com.np/product/rapoo-k10-numeric-keyboard-price-nepal
 
 
 Site: IITI
 Product 5
-Title: Cooler Master Hyper T20 CPU Cooler (i3 and i5 Only) Cooling Fan
-Price: रु 2,187
-Image: https://admin.itti.com.np/storage/product/cooler-master-hyper-t20-cpu-cooler-i3-and-i5-only/thumb/f9dfb0a5-89f3-4d84-8d93-cac7480f30a4.jpeg
-Link: https://itti.com.np/product/cooler-master-hyper-t20-cpu-cooler-i3-and-i5-only-cooling-fan
+Title: Havit HV-NK01 USB Mini Numeric Keyboard
+Price: रु 720
+Image: https://admin.itti.com.np/storage/product/havit-mini-numeric-keypad-hv-nk01-price-nepal/thumb/e27f5276-3291-4049-9db1-c46deba7abda.gif
+Link: https://itti.com.np/product/havit-hv-nk01-mini-numeric-keypad-price-nepal
 
 
 Site: IITI
 Product 6
-Title: HUNTKEY COOLER FAN FROZEN 400SE
-Price: रु 3,200
-Image: https://admin.itti.com.np/storage/product/huntkey-cooler-fan-frozen-400se/thumb/81c4a5fa-6b7e-4250-a242-4714081be7e7.webp
-Link: https://itti.com.np/product/huntkey-cooler-fan-frozen-400se
+Title: HAVIT KB275 Wired Keyboard
+Price: रु 750
+Image: https://admin.itti.com.np/storage/product/havit-wired-keyboard-kb275-price-nepal/thumb/34267e33-95df-46f5-b57d-b946d148d740.gif
+Link: https://itti.com.np/product/havit-kb275-wired-keyboard-price-nepal
 
 
 Site: IITI
 Product 7
-Title: Huntkey Frozen 400 Cooler Fan - Colorful CPU Cooler, 120mm Fan, 1800 RPM, 4 Copper Heat Pipes
-Price: रु 3,500
-Image: https://admin.itti.com.np/storage/product/huntkey-cooler-fan-frozen-400-price-nepal/thumb/14ea21ad-10d3-4abb-93a1-f06933bf7bfe.jpeg
-Link: https://itti.com.np/product/huntkey-frozen-400-cooler-fan-price-nepal
+Title: HAVIT KB250 USB Wired Keyboard
+Price: रु 850
+Image: https://admin.itti.com.np/storage/product/havit-usb-keyboard-kb250-price-nepal/thumb/f66d9ebc-33fa-4ca0-b22c-aa179ef94590.webp
+Link: https://itti.com.np/product/havit-kb250-usb-wired-keyboard-price-nepal
 
 
 Site: IITI
 Product 8
-Title: Cooler Master Hyper H410R Red LED Air CPU Cooling Fan
-Price: रु 3,600
-Image: https://admin.itti.com.np/storage/product/cooler-master-hyper-h410r-red-led-air-cpu-cooling-fan/thumb/1d7d01eb-f999-42bf-bdeb-d47748ad578c.jpeg
-Link: https://itti.com.np/product/cooler-master-hyper-h410r-red-led-air-cpu-cooling-fan
+Title: Rapoo NK1800 Spill Resistance Wired USB Keyboard
+Price: रु 1,133
+Image: https://admin.itti.com.np/storage/product/rapoo-nk1800-wired-usb-keyboard-price-nepal/thumb/9edbd20b-f887-4107-b951-e242bdd28800.png
+Link: https://itti.com.np/product/rapoo-nk1800-spill-resistant-keyboard-keyboard-price-nepal
 
 
 Site: IITI
 Product 9
-Title: Cooler Master Hyper H410R RGB 92mm CPU Cooling Fan
-Price: रु 5,000
-Image: https://admin.itti.com.np/storage/product/cooler-master-hyper-h410r-rgb-92mm-cpu-cooling-fan/thumb/9c84eba0-0760-405a-92e2-f8878c00199e.jpeg
-Link: https://itti.com.np/product/cooler-master-hyper-h410r-rgb-92mm-cpu-cooling-fan
+Title: UGREEN Wired Mouse and Keyboard Combo
+Price: रु 1,250
+Image: https://admin.itti.com.np/storage/product/ugreen-wired-mouse-and-keyboard-combo-price-nepal/thumb/b2d00133-ca8b-478c-82f8-76142e231fc6.webp
+Link: https://itti.com.np/product/ugreen-wired-mouse-and-keyboard-combo-price-nepal
 
 
 Site: IITI
 Product 10
-Title: Cooler Master HYPER 212 LED Turbo Black Cover Red Led Air CPU Cooling Fan
-Price: रु 6,800
-Image: https://admin.itti.com.np/storage/product/cooler-master-hyper-212-led-turbo-black-cover-red-led-air-cpu-cooling-fan/thumb/ad09b128-6739-47fd-b789-9a43d276df02.jpeg
-Link: https://itti.com.np/product/cooler-master-hyper-212-led-turbo-black-cover-red-led-air-cpu-cooling-fan
+Title: RAPOO X120 Pro US-Black Wired Keyboard / Mouse Combo
+Price: रु 1,560
+Image: https://admin.itti.com.np/storage/product/rapoo-x120-pro-us-black-wired-price-nepal/thumb/ba4eb8c8-097d-4bd4-8a43-f8250e878086.jpeg
+Link: https://itti.com.np/product/rapoo-x120-pro-wired-combo-price-nepal
 
 
 Site: IITI
 Product 11
-Title: Thermaltake UX 210 ARGB Lighting CPU Cooling Fan
-Price: रु 7,000
-Image: https://admin.itti.com.np/storage/product/thermaltake-ux-210-argb-lighting-cpu-cooling-fan/thumb/e4f79ad3-7b34-4cf1-a41e-b62fb753a22a.jpeg
-Link: https://itti.com.np/product/thermaltake-ux-210-argb-lighting-cpu-cooling-fan
+Title: Rapoo NX1600 Wired Optical Mouse and Keyboard Combo Set
+Price: रु 1,733
+Image: https://admin.itti.com.np/storage/product/rapoo-nx1600-combo-price-nepal/thumb/9d6701c8-873e-4324-9e99-496645a7a4aa.jpeg
+Link: https://itti.com.np/product/rapoo-nx1600-keyboard-mouse-combo-price-nepal
 
 
 Site: IITI
 Product 12
-Title: Huntkey GS400C Gaming Casing With 3PCS RGB Fan Free
-Price: रु 7,400
-Image: https://admin.itti.com.np/storage/product/huntkey-casing-gs400c-with-3pcs-rgb-price-nepal/thumb/6f12b3b4-93dc-469f-a16c-ca589fa5bbe0.gif
-Link: https://itti.com.np/product/huntkey-casing-gs400c-with-3pcs-rgb-price-nepal
+Title: Rapoo NX2000 Wired Mouse & Keyboard Combo set
+Price: रु 1,925
+Image: https://admin.itti.com.np/storage/product/rapoo-nx2000-combo-price-nepal/thumb/2630c7a0-de7a-47ac-accb-2408b1034cd1.png
+Link: https://itti.com.np/product/rapoo-nx2000-keyboard-and-mouse-combo-set-price-nepal
 
 
 Site: IITI
 Product 13
-Title: Huntkey BU560 Casing With 3PCS RGB Fan Free
-Price: रु 7,400
-Image: https://admin.itti.com.np/storage/product/huntkey-casing-bu-560-price-nepal/thumb/f32fd81d-5a74-4d33-ba6f-91651eafac0c.jpeg
-Link: https://itti.com.np/product/huntkey-bu560-casing-price-nepal
+Title: RAPOO X1800S US-Black Wireless Multimedia Keyboard / Mouse Combo
+Price: रु 2,600
+Image: https://admin.itti.com.np/storage/product/rapoo-x1800s-wireless-combo-price-nepal/thumb/4976d4d4-2f15-47e6-81da-b38d79ae1d1e.png
+Link: https://itti.com.np/product/rapoo-x1800s-wireless-combo-price-nepal
 
 
 Site: IITI
 Product 14
-Title: Cooler Master Hyper 212 ARGB CPU Cooling Fan
-Price: रु 7,500
-Image: https://admin.itti.com.np/storage/product/cooler-master-hyper-212-argb-cpu-cooling-fan/thumb/738ab65e-1c92-4623-8ceb-d092a3a5c59f.png
-Link: https://itti.com.np/product/cooler-master-hyper-212-argb-cpu-cooling-fan
+Title: Rapoo X1960 Combo with keyboard and mouse
+Price: रु 2,750
+Image: https://admin.itti.com.np/storage/product/rapoo-x1960-combo-price-nepal/thumb/30c5da57-fb5a-45f0-ae70-c9faa791aef1.png
+Link: https://itti.com.np/product/rapoo-x1960-keyboard-and-mouse-combo-price-nepal
 
 
 Site: IITI
 Product 15
-Title: Cooler Master Hyper 212 LED Turbo ARGB Air CPU Cooling Fan
-Price: रु 8,100
-Image: https://admin.itti.com.np/storage/product/cooler-master-hyper-212-led-turbo-argb-air-cpu-cooling-fan/thumb/b64abfa6-44cc-4d16-ab2c-a24b6546b83b.jpeg
-Link: https://itti.com.np/product/cooler-master-hyper-212-led-turbo-argb-air-cpu-cooling-fan
+Title: UGREEN MK004 Wireless Keyboard Mouse Combo
+Price: रु 2,950
+Image: https://admin.itti.com.np/storage/product/ugreen-mk004-wireless-keyboard-mouse-combo/thumb/0090b02f-6135-472d-afbb-ed18dcbb4d1b.webp
+Link: https://itti.com.np/product/ugreen-mk004-wireless-keyboard-mouse-combo
 
 
 Site: IITI
 Product 16
-Title: Cooler Master MasterAir MA620P CPU Cooling fan
-Price: रु 10,600
-Image: https://admin.itti.com.np/storage/product/cooler-master-masterair-ma620p-processor-cooling-fan/thumb/847d94bf-dcc9-429c-b93c-215a0de24dc8.png
-Link: https://itti.com.np/product/cooler-master-masterair-ma620p-cpu-cooling-fan
+Title: Rapoo X3500 Wireless Desktop Set - Wireless Optical Mouse & Keyboard Combo
+Price: रु 3,000
+Image: https://admin.itti.com.np/storage/product/rapoo-x3500-price-nepal/thumb/d1497832-d6be-4f96-9154-09bdddd34c59.jpeg
+Link: https://itti.com.np/product/rapoo-x3500-price-nepal
 
 
 Site: IITI
 Product 17
-Title: Cooler Master MasterLiquid ML120L V2 RGB Liquid CPU Cooling Fan
-Price: रु 11,250
-Image: https://admin.itti.com.np/storage/product/cooler-master-masterliquid-ml120l-v2-rgb-liquid-cpu-cooling-fan/thumb/195072e6-607c-4b1a-b09b-68fb2f8452cb.jpeg
-Link: https://itti.com.np/product/cooler-master-masterliquid-ml120l-v2-rgb-liquid-cpu-cooling-fan
+Title: RAPOO 8000M US-Black Multimode (Wireless / Bluetooth) Keyboard / Mouse Combo
+Price: रु 3,050
+Image: https://admin.itti.com.np/storage/product/rapoo-8000m-dulamode-combo-price-nepal/thumb/e1176d48-516c-4f4b-8439-b66c8739e318.webp
+Link: https://itti.com.np/product/rapoo-8000m-dulamode-combo-price-nepal
 
 
 Site: IITI
 Product 18
-Title: Thermaltake TOUGHLIQUID 240- ARGB Sync/All-In-One Liquid Cooling System/Water Block ARGB Sync/Fan 120*2/PWM 500~2000rpm/black
-Price: रु 17,900
-Image: https://admin.itti.com.np/storage/product/thermaltake-toughliquid-240-argb-syncall-in-one-liquid-cooling-systemwater-block-argb-syncfan-1202pwm-5002000rpmblack/thumb/fbda8865-cc40-4320-860f-b9b636310d3f.jpeg
-Link: https://itti.com.np/product/thermaltake-toughliquid-240-argb-syncall-in-one-liquid-cooling-systemwater-block-argb-syncfan-1202pwm-5002000rpmblack
+Title: RAPOO V50S Backlit Gaming Keyboard - BLACK
+Price: रु 3,250
+Image: https://admin.itti.com.np/storage/product/rapoo-v50s-backlit-gaming-keyboard-price-nepal/thumb/86bdda01-1fca-49f4-8f85-b47bbc5a1efa.png
+Link: https://itti.com.np/product/rapoo-v50s-backlit-gaming-keyboard-price-nepal
