@@ -2,10 +2,11 @@ import { scrapeHamrobazaar } from './hamrobazar.js';
 import { scrapeHamrobazaarPrice } from './hamrobazar.js';
 import { scrapeDaraz } from './daraz.js';
 import { scrapeIiti } from './itti.js';
+import { scrapeFoodMandu } from './foodmandu.js';
 import fs from 'fs';
 
 (async () => {
-  const query = 'keyboard';
+  const query = 'momo';
   console.time('Total time');
 
   const lowPrice = 100
@@ -39,7 +40,13 @@ import fs from 'fs';
     console.timeEnd('Itti time');
   })();
 
-  await Promise.all([hamroPromise, darazPromise, ittiPromise ]);
+  const foodPromise = (async () => {
+    console.time('Foodmandu time');
+    const products = await scrapeFoodMandu(Furl);
+    console.timeEnd('Foodmandu time');
+  })();
+
+  await Promise.all([hamroPromise, darazPromise, ittiPromise , foodPromise]);
 
   console.timeEnd('Total time');
 })();
