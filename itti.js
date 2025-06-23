@@ -1,6 +1,7 @@
 import puppeteer from 'puppeteer';
 import fs from 'fs';
-export async function scrapeIiti(Iurl) {
+
+xport async function scrapeIiti(Iurl) {
   const browser = await puppeteer.launch({
     headless: true, 
     args: ['--start-maximized', '--window-size=1920,1080'],

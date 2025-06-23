@@ -66,6 +66,7 @@ async function parse(page) {
   const lines = products.map((item, i) => (
     `\nSite: ${item.site}\nProduct ${i + 1}\nTitle: ${item.title}\nPrice: ${item.price}\nImage: ${item.img}\nLink: ${item.href}\n`
   )).join('\n');
+
   fs.writeFileSync('daraz.txt', lines, 'utf-8');
 
   return products;
