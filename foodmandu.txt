@@ -255,7 +255,7 @@ Site: Foodmandu
 Product 29
 Title: Momo City by Alobar1000
 Location: Thamel 
-Description: Nepali | Tibetan
+Description: Mo:Mo | Nepali | Tibetan
 Image: https://images.foodmandu.com//Images/Vendor/1658/OriginalSize/WhatsApp_Image_2024-09-24_at_17_240924121509.31.59_aa5c6cdf.jpg
 Link: https://foodmandu.com//Restaurant/Details/1658
 
@@ -352,6 +352,15 @@ Link: https://foodmandu.com//Restaurant/Details/915
 
 Site: Foodmandu
 Product 40
+Title: KTM Local Jhol Momo
+Location: Baluwatar 
+Description: Pizza
+Image: https://images.foodmandu.com//Images/Vendor/1761/OriginalSize/listing_060923053202_051223091008.png
+Link: https://foodmandu.com//Restaurant/Details/1761
+
+
+Site: Foodmandu
+Product 41
 Title: Walnut Bistro
 Location: Pani Pokhari 
 Description: Nepali | Multi Cuisine
@@ -360,18 +369,9 @@ Link: https://foodmandu.com//Restaurant/Details/1636
 
 
 Site: Foodmandu
-Product 41
+Product 42
 Title: Ghangri - Jhamsikhel
 Location: Jhamsikhel, Lalitpur 
 Description: Indian | Chinese | Mo:Mo | Nepali | Asian | Multi Cuisine
 Image: https://images.foodmandu.com//Images/Vendor/233/OriginalSize/Untitled_design_-_2024-06-10T171044_100624112609.133.png
 Link: https://foodmandu.com//Restaurant/Details/233
-
-
-Site: Foodmandu
-Product 42
-Title: Dumdaar Momo- Jhamsikhel
-Location: Jhamsikhel 
-Description: Momo
-Image: https://images.foodmandu.com//Images/Vendor/2321/OriginalSize/Dumdaar_Momo-_Jhamsikhel_App_Listing_160625065537.png
-Link: https://foodmandu.com//Restaurant/Details/2321
