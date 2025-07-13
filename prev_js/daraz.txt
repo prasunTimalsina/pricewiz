@@ -1,0 +1,319 @@
+
+Site: Daraz
+Product 1
+Title: Momo Jali Momo Net 3 Pieces 26cm
+Price: Rs. 199
+Image: https://img.drz.lazcdn.com/static/np/p/0bdfc80f7ffc3bd2353b1672930d7518.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-momo-net-3-pieces-26cm-i185151594.html
+
+
+Site: Daraz
+Product 2
+Title: Non-Sticky Jali Net Silicone MoMo Mat 6 Pieces 26 CM/ Reusable & Washable
+Price: Rs. 599
+Image: https://img.drz.lazcdn.com/static/np/p/bdeef9791504972319e20d5251459a2a.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-jali-net-silicone-momo-mat-6-pieces-26-cm-reusable-washable-i129356102.html
+
+
+Site: Daraz
+Product 3
+Title: Non-Sticky Jali Net Silicone MoMo Mat 6 Pieces 24 CM ,Reusable & Washable
+Price: Rs. 550
+Image: https://img.drz.lazcdn.com/static/np/p/085ec1a1d9d24d40d294e2b8fd9f6943.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-jali-net-silicone-momo-mat-6-pieces-24-cm-reusable-washable-i129346495.html
+
+
+Site: Daraz
+Product 4
+Title: Non Stick Silicone Momo Net Jali 36cm -| Reusable & Washable Non Stick Silicone Multipurpose Net
+Price: Rs. 699
+Image: https://img.drz.lazcdn.com/static/np/p/de7f6c869b0055d70f33ef44f2bfe850.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-stick-silicone-momo-net-jali-36cm-reusable-washable-non-stick-silicone-multipurpose-net-i129354407.html
+
+
+Site: Daraz
+Product 5
+Title: Non Stick Silicone Momo Net Jali 26cm - 6 Pieces | Reusable & Washable
+Price: Rs. 699
+Image: https://img.drz.lazcdn.com/static/np/p/bdeef9791504972319e20d5251459a2a.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-stick-silicone-momo-net-jali-26cm-6-pieces-reusable-washable-i129351659.html
+
+
+Site: Daraz
+Product 6
+Title: NonStick Stainless Steel 10 Inch Momo Chimta Kitchen Tong Big Size BBQ Tong Paratha Grabber Food Buffet Salad Clip Bread Clamp Ice Tong Egg Tong Serving Cooking Utensil BBQ Accessories Bar - Chimta Kabab Fry
+Price: Rs. 185
+Image: https://img.drz.lazcdn.com/static/np/p/fe01e13f21a53395c3810655de32e4f3.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/nonstick-stainless-steel-10-inch-momo-chimta-kitchen-tong-big-size-bbq-tong-paratha-grabber-food-buffet-salad-clip-bread-clamp-ice-tong-egg-tong-serving-cooking-utensil-bbq-accessories-bar-chimta-kabab-fry-i126681425.html
+
+
+Site: Daraz
+Product 7
+Title: Momo Jali Net Slicone Mat 3 Pieces 26 cm
+Price: Rs. 390
+Image: https://img.drz.lazcdn.com/static/np/p/7a3031493b97a2995ebe5a02cefe3159.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-net-slicone-mat-3-pieces-26-cm-i125283447.html
+
+
+Site: Daraz
+Product 8
+Title: Momos Chimta 20 cm Serving Tong
+Price: Rs. 100
+Image: https://img.drz.lazcdn.com/static/np/p/fea4d523a60a33421a3e2884dea1135a.png_200x200q80.avif
+Link: https://www.daraz.com.np/products/momos-chimta-20-cm-serving-tong-i127907044.html
+
+
+Site: Daraz
+Product 9
+Title: Momo Jali Net slicone mat 6 Pieces 26 cm
+Price: Rs. 499
+Image: https://img.drz.lazcdn.com/static/np/p/7a3031493b97a2995ebe5a02cefe3159.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-net-slicone-mat-6-pieces-26-cm-i127797148.html
+
+
+Site: Daraz
+Product 10
+Title: Non-Sticky Jali Net Silicone MoMo Mat 6 Pieces 24 CM
+Price: Rs. 699
+Image: https://img.drz.lazcdn.com/static/np/p/19c607e1483fa8c4e5b26e3e3bb28dc8.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-jali-net-silicone-momo-mat-6-pieces-24-cm-i131964209.html
+
+
+Site: Daraz
+Product 11
+Title: Momo Net set of 3pcs 46cm
+Price: Rs. 675
+Image: https://img.drz.lazcdn.com/static/np/p/75f4741940e4dff5376cf46f690180a0.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-net-set-of-3pcs-46cm-i129585897.html
+
+
+Site: Daraz
+Product 12
+Title: Non-Sticky Jali Net Silicone MoMo Mat 6 Pieces 26 CM
+Price: Rs. 599
+Image: https://img.drz.lazcdn.com/static/np/p/de7f6c869b0055d70f33ef44f2bfe850.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-jali-net-silicone-momo-mat-6-pieces-26-cm-i129340579.html
+
+
+Site: Daraz
+Product 13
+Title: Non Stick Silicone Momo Net Jali 28cm - | Reusable & Washable Non Stick Silicone Multipurpose Net
+Price: Rs. 399
+Image: https://img.drz.lazcdn.com/static/np/p/7dcc2719ba0a8042b6b0be476d7d7c7d.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-stick-silicone-momo-net-jali-28cm-reusable-washable-non-stick-silicone-multipurpose-net-i129340597.html
+
+
+Site: Daraz
+Product 14
+Title: Non Sticky Momo Net/Jali-Set Of 3 Pieces ( 30 Cm)
+Price: Rs. 499
+Image: https://img.drz.lazcdn.com/static/np/p/ebebff91a83ad9f083d632dd6d37ffee.png_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-momo-netjali-set-of-3-pieces-30-cm-i123427598.html
+
+
+Site: Daraz
+Product 15
+Title: Reusable & Washable Non Stick Silicone Multipurpose Net / Non Stick Silicone Momo Net Jali 28cm - |
+Price: Rs. 799
+Image: https://img.drz.lazcdn.com/static/np/p/de7f6c869b0055d70f33ef44f2bfe850.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/reusable-washable-non-stick-silicone-multipurpose-net-non-stick-silicone-momo-net-jali-28cm-i129350695.html
+
+
+Site: Daraz
+Product 16
+Title: Momo Non-Sticky Silicone Jali Net Mat 6 Pieces 28 cm
+Price: Rs. 750
+Image: https://img.drz.lazcdn.com/static/np/p/7a3031493b97a2995ebe5a02cefe3159.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-non-sticky-silicone-jali-net-mat-6-pieces-28-cm-i127781862.html
+
+
+Site: Daraz
+Product 17
+Title: Momo Jali Net Slicone Mat 3 Pieces 46 Cm
+Price: Rs. 670
+Image: https://img.drz.lazcdn.com/static/np/p/62482a128977d377421baefa57580724.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-net-slicone-mat-3-pieces-46-cm-i129711139.html
+
+
+Site: Daraz
+Product 18
+Title: Non Sticky Momo Net 28Cm- Set Of 3
+Price: Rs. 440
+Image: https://img.drz.lazcdn.com/static/np/p/f3d7428b31a1163125545b4dbe2274cb.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-momo-net-28cm-set-of-3-i125306109.html
+
+
+Site: Daraz
+Product 19
+Title: Non Stick Silicone Momo Net Jali 40cm - 6 Pieces | Reusable & Washable Non Stick Silicone Multipurpose Net - 40cm -
+Price: Rs. 750
+Image: https://img.drz.lazcdn.com/static/np/p/19c607e1483fa8c4e5b26e3e3bb28dc8.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-stick-silicone-momo-net-jali-40cm-6-pieces-reusable-washable-non-stick-silicone-multipurpose-net-40cm-i129356128.html
+
+
+Site: Daraz
+Product 20
+Title: 5 Pcs Non Stick Silicone Steamer Liners Mesh Mat Pad, MOMO, Steamed Buns Dumplings Baking Pastry Dim Sum Mesh Mat Pad for Steamer, Airfryer, Reuseable
+Price: Rs. 399
+Image: https://img.drz.lazcdn.com/static/np/p/cdcc52d486948048f34c9be249351e3c.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/5-pcs-non-stick-silicone-steamer-liners-mesh-mat-pad-momo-steamed-buns-dumplings-baking-pastry-dim-sum-mesh-mat-pad-for-steamer-airfryer-reuseable-i168888678.html
+
+
+Site: Daraz
+Product 21
+Title: Pack of 3 Pcs MoMo Maker
+Price: Rs. 200
+Image: https://img.drz.lazcdn.com/static/np/p/d1a537c73f1ae37e1ffcc151587d3ddf.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/pack-of-3-pcs-momo-maker-i128017653.html
+
+
+Site: Daraz
+Product 22
+Title: NonStick Stainless Steel 10 Inch Momo Chimta Kitchen Tong Big Size BBQ Tong Paratha Grabber Food Buffet Salad Clip Bread Clamp Ice Tong Egg Tong Serving Cooking Utensil BBQ Accessories Bar - Chimta Kabab Fry
+Price: Rs. 180
+Image: https://img.drz.lazcdn.com/static/np/p/87c8d7940779d49c15bb650aa1915fc0.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/nonstick-stainless-steel-10-inch-momo-chimta-kitchen-tong-big-size-bbq-tong-paratha-grabber-food-buffet-salad-clip-bread-clamp-ice-tong-egg-tong-serving-cooking-utensil-bbq-accessories-bar-chimta-kabab-fry-i126715054.html
+
+
+Site: Daraz
+Product 23
+Title: Momo Jali Momo Net Silicon Mat 1 Piece 26cm 10Inch Non Sticky
+Price: Rs. 130
+Image: https://img.drz.lazcdn.com/static/np/p/7a3031493b97a2995ebe5a02cefe3159.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-momo-net-silicon-mat-1-piece-26cm-10inch-non-sticky-i125289117.html
+
+
+Site: Daraz
+Product 24
+Title: Momo Jali Net 26Cm 6 Piece
+Price: Rs. 600
+Image: https://img.drz.lazcdn.com/g/kf/S8f71f207d5a94d0aafb98fa2439b0262d.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-net-26cm-6-piece-i347899102.html
+
+
+Site: Daraz
+Product 25
+Title: Momo Jali Momo Net Silicon Mat 1 Piece 26cm 10Inch Non Sticky By Hajurko Online
+Price: Rs. 130
+Image: https://img.drz.lazcdn.com/static/np/p/fe795c6f9adbba8e4201b5601369bbda.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-momo-net-silicon-mat-1-piece-26cm-10inch-non-sticky-by-hajurko-online-i156724650.html
+
+
+Site: Daraz
+Product 26
+Title: 28cm 3 Pieces Non Stick Thick Silicone Momo Jali For Steaming And Dehydrating Food Veggies
+Price: Rs. 382
+Image: https://img.drz.lazcdn.com/static/np/p/5f3560287484eec313419faa8e35c208.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/28cm-3-pieces-non-stick-thick-silicone-momo-jali-for-steaming-and-dehydrating-food-veggies-i171260021.html
+
+
+Site: Daraz
+Product 27
+Title: Momo Jali | Momo Net | 3 Pieces 45 cm
+Price: Rs. 645
+Image: https://img.drz.lazcdn.com/g/kf/S8da9a47ea6584d1b9345bc095deaf60cT.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-momo-net-3-pieces-45-cm-i185111130.html
+
+
+Site: Daraz
+Product 28
+Title: Momo Jali Net Slicone Mat 3 Pieces 26 Cm
+Price: Rs. 240
+Image: https://img.drz.lazcdn.com/static/np/p/3d569e122ea5e0eaea42f67cf9eb107a.png_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-net-slicone-mat-3-pieces-26-cm-i145558246.html
+
+
+Site: Daraz
+Product 29
+Title: Non-Sticky Jali Net Silicone MoMo Mat 3 Pieces 24 CM
+Price: Rs. 399
+Image: https://img.drz.lazcdn.com/static/np/p/19c607e1483fa8c4e5b26e3e3bb28dc8.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-jali-net-silicone-momo-mat-3-pieces-24-cm-i127792485.html
+
+
+Site: Daraz
+Product 30
+Title: Non Sticky Momo Jali/Net 40cm- Set Of 3
+Price: Rs. 660
+Image: https://img.drz.lazcdn.com/static/np/p/da8fabd202a2c6cd78cc06b8a27ce3f5.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-momo-jalinet-40cm-set-of-3-i125288416.html
+
+
+Site: Daraz
+Product 31
+Title: Momo Jali Momo Net 3 Pieces 36cm
+Price: Rs. 615
+Image: https://img.drz.lazcdn.com/static/np/p/8dcbc3dc121d647d78ee31fb0ca2b076.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-momo-net-3-pieces-36cm-i125288744.html
+
+
+Site: Daraz
+Product 32
+Title: Momo Jali Net Slicone Mat 3 Pieces 26 cm
+Price: Rs. 390
+Image: https://img.drz.lazcdn.com/static/np/p/7a3031493b97a2995ebe5a02cefe3159.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-net-slicone-mat-3-pieces-26-cm-i128761422.html
+
+
+Site: Daraz
+Product 33
+Title: 28cm 3 Pieces Non Stick Thick Silicone Momo Jali For Steaming And Dehydrating Food Veggies
+Price: Rs. 379
+Image: https://img.drz.lazcdn.com/static/np/p/263b7a23f5a9a6b0e01115883694f79d.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/28cm-3-pieces-non-stick-thick-silicone-momo-jali-for-steaming-and-dehydrating-food-veggies-i171200496.html
+
+
+Site: Daraz
+Product 34
+Title: Non Sticky Momo Net 3 Pieces - 55Cm
+Price: Rs. 945
+Image: https://img.drz.lazcdn.com/static/np/p/863fc38b0533c768c33f333d1578396e.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-momo-net-3-pieces-55cm-i128102039.html
+
+
+Site: Daraz
+Product 35
+Title: Silicone Momo Jali 20Cm 6Piece
+Price: Rs. 400
+Image: https://img.drz.lazcdn.com/g/kf/S26374cc7bb334f9db2cafc50596b514a3.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/silicone-momo-jali-20cm-6piece-i347896155.html
+
+
+Site: Daraz
+Product 36
+Title: Momo Jali Net Slicone Mat 3 Pieces 46 Cm
+Price: Rs. 670
+Image: https://img.drz.lazcdn.com/static/np/p/a2ca2c834ca66ea2a7e804c77bf9035f.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-net-slicone-mat-3-pieces-46-cm-i129611314.html
+
+
+Site: Daraz
+Product 37
+Title: Silicone Momo Jali 24cm 6Piece
+Price: Rs. 500
+Image: https://img.drz.lazcdn.com/g/kf/S10e196582fd547e5b04ccadf3a561c698.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/silicone-momo-jali-24cm-6piece-i347894199.html
+
+
+Site: Daraz
+Product 38
+Title: Momo Jali Net Slicone Mat 3 Pieces 26 cm
+Price: Rs. 390
+Image: https://img.drz.lazcdn.com/static/np/p/ba27e32ff96f551c131e30400a15713c.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/momo-jali-net-slicone-mat-3-pieces-26-cm-i129745487.html
+
+
+Site: Daraz
+Product 39
+Title: Jali Momo Net -3 Pieces (36cm)
+Price: Rs. 590
+Image: https://img.drz.lazcdn.com/static/np/p/4b1c8774dd5ed7bd4f4967120cf8b48b.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/jali-momo-net-3-pieces-36cm-i125286378.html
+
+
+Site: Daraz
+Product 40
+Title: Non Sticky Momo Net 28Cm- Set Of 3
+Price: Rs. 440
+Image: https://img.drz.lazcdn.com/static/np/p/fefadb22bb38ced6ef447822cb9a8bdf.jpg_200x200q80.avif
+Link: https://www.daraz.com.np/products/non-sticky-momo-net-28cm-set-of-3-i129745493.html
