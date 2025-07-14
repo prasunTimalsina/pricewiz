@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Card from "./card";
 
 interface Product {
@@ -14,6 +14,7 @@ interface Product {
 export default function InputForm() {
     const [input, setInput] = useState("");
     const [result, setResult] = useState<Product[]>([]);
+    const inputRef = useRef<HTMLInputElement>(null); // ref for focusing input
 
     const handleSubmit = async () => {
         const res = await fetch("/api/all", {
@@ -26,13 +27,34 @@ export default function InputForm() {
         setResult(data);
     };
 
+    useEffect(() => {
+        const handleKey = (e: KeyboardEvent) => {
+            if (e.key === "/") {
+                e.preventDefault();
+                inputRef.current?.focus();
+            }
+        };
+
+        window.addEventListener("keydown", handleKey);
+        return () => window.removeEventListener("keydown", handleKey);
+    }, []);
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            handleSubmit();
+        }
+    };
+
     return (
         <div className="flex flex-col items-center gap-4 mt-10">
-            <div className="flex gap-6 ">
+            <div className="flex gap-6">
                 <input
+                    ref={inputRef}
                     className="border p-2 rounded bg-white text-black"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={handleKeyDown}
                     placeholder="Enter product name"
                 />
                 <button

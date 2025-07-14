@@ -5,10 +5,8 @@ export async function POST(req: Request) {
     try {
         const { query } = await req.json();
 
-        const lowPrice = 100;
-        const highPrice = 1000;
 
-        const searchURL = `https://www.daraz.com.np/catalog/?q=${query}&price=${lowPrice}-${highPrice}`;
+        const searchURL = `https://www.daraz.com.np/catalog/?spm=a2a0e.tm80335409.search.d_go&q=${query}`;
         const products = await scrapeDaraz(searchURL);
 
         return NextResponse.json(products);
