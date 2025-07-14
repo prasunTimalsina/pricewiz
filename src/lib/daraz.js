@@ -1,6 +1,5 @@
 import puppeteer from 'puppeteer'
 import fs from 'fs'
-
 export async function scrapeDaraz(Durl) {
   const browser = await puppeteer.launch({
     headless: true,
