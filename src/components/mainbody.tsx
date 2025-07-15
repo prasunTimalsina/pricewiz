@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "./card";
 
 interface Product {
@@ -37,7 +37,7 @@ export default function MainBody({
           onClick={() => setViewAsc(!viewAsc)}
           className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"
         >
-          {viewAsc ? "Back to Normal" : "Low to High"}
+          {viewAsc ? "Site Categorized" : "Filtered"}
         </button>
       </div>
 
@@ -71,12 +71,16 @@ function Section({
 }) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
+  useEffect(() => {
+    setIsOpen(defaultOpen);
+  }, [defaultOpen]);
+
   if (!products || products.length === 0) return null;
 
   return (
     <div className="border rounded-lg shadow">
       <button
-        className="w-full flex justify-between items-center px-4 py-2  text-left text-lg font-semibold"
+        className="w-full flex justify-between items-center px-4 py-2 text-left text-lg font-semibold "
         onClick={() => setIsOpen((prev) => !prev)}
       >
         <span>{title}</span>
