@@ -1,6 +1,13 @@
 [
   {
     "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/jawa-42-single-abs-300-cc-bike-galactic-green-i120836834.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/838ef92d6d467ad6ddd132e6471e0895.jpg_200x200q80.avif",
+    "title": "Jawa 42 Single ABS 300 CC Bike Galactic Green",
+    "price": "Rs. 673,000"
+  },
+  {
+    "site": "Daraz",
     "href": "https://www.daraz.com.np/products/jawa-classic-double-abs-300-cc-bike-black-i120845017.html",
     "img": "https://img.drz.lazcdn.com/static/np/p/ecbc70bf7fe8c2620b31f77453a5e0e3.jpg_200x200q80.avif",
     "title": "Jawa Classic Double ABS 300 CC Bike Black",
@@ -8,17 +15,17 @@
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/jawa-42-double-abs-300-cc-lumos-lime-bik-i120928337.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/b15a430a397a975425249c65a7bfb2f3.jpg_200x200q80.avif",
-    "title": "Jawa 42 Double ABS 300 CC Lumos Lime Bik",
-    "price": "Rs. 704,003"
-  },
-  {
-    "site": "Daraz",
     "href": "https://www.daraz.com.np/products/jawa-42-single-abs-300-cc-halley-steal-bik-i120838620.html",
     "img": "https://img.drz.lazcdn.com/static/np/p/ba7cc3e92e53521dd877468c1327145c.jpg_200x200q80.avif",
     "title": "Jawa 42 Single ABS 300 CC Halley steal Bik",
     "price": "Rs. 673,000"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/jawa-42-double-abs-300-cc-lumos-lime-bik-i120928337.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/b15a430a397a975425249c65a7bfb2f3.jpg_200x200q80.avif",
+    "title": "Jawa 42 Double ABS 300 CC Lumos Lime Bik",
+    "price": "Rs. 704,003"
   },
   {
     "site": "Daraz",
@@ -36,6 +43,13 @@
   },
   {
     "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/jawa-classic-single-abs-300cc-grey-bike-i120837608.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/fe8ad7ea94d5444a058f9d4e269f9fb2.png_200x200q80.avif",
+    "title": "Jawa Classic Single ABS 300CC Grey Bike",
+    "price": "Rs. 705,000"
+  },
+  {
+    "site": "Daraz",
     "href": "https://www.daraz.com.np/products/jawa-42-double-abs-300-cc-bike-straight-blue-i120926792.html",
     "img": "https://img.drz.lazcdn.com/static/np/p/09eef64eb0fdd0cc57a54789c93c6b7a.jpg_200x200q80.avif",
     "title": "Jawa 42 Double ABS 300 CC Bike Straight Blue",
@@ -43,24 +57,10 @@
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/50-i421070821.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/ece6a2ef61bd11a5d1453fd7d9f5a6d5.png_200x200q80.avif",
-    "title": "Ashunqiwen 【Essential Good Item】For Super Soco Cpx Cumini Cux Tc 50 Tc Max Wanderer Tcmax Motorcycle Accessories Handlebar Hand Grips Handle Bar Ends Cap",
-    "price": "Rs. 4,483"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/2025-new-i434727318.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/1243febfd15f4886139f8f56dcb21eac.png_200x200q80.avif",
-    "title": "Linguolin New Motorcycle Auto Racing affordable Back Armor Protection Jacket for Biker Cycling-Black",
-    "price": "Rs. 208,264"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/nav-plus-nav-bike-computer-gps-bicycle-riding-cycling-map-route-navigation-road-wireless-speedometer-odometer-easy-install-i372316861.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/6cee9a7dfe3f8543c078e5ba4332239e.png_200x200q80.avif",
-    "title": "NAV Plus NAV+ Bike Computer GPS Bicycle Riding Cycling Map Route Navigation Road Wireless Speedometer Odometer Easy Install",
-    "price": "Rs. 30,361"
+    "href": "https://www.daraz.com.np/products/jawa-42-double-abs-300-cc-comet-red-bike-i120841312.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/a430c5acc829ae1b58ba3cae2b67cab5.jpg_200x200q80.avif",
+    "title": "Jawa 42 Double ABS 300 CC Comet Red Bike",
+    "price": "Rs. 704,000"
   },
   {
     "site": "Daraz",
@@ -78,38 +78,10 @@
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/jawa-classic-single-abs-300-cc-maroon-bike-i120838806.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/12d1e89669fd95bcee4d1756c922295e.jpg_200x200q80.avif",
-    "title": "Jawa Classic Single ABS 300 CC Maroon Bike",
-    "price": "Rs. 705,000"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/2025-i418297953.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/5ee543ad317c734ecb50f86de0f7e40b.png_200x200q80.avif",
-    "title": "Bizhangpengshu【2025 Version】Bicycle Bottle Holder Bike Water Bottle Holder Cycle Water Bottle Cage, Bike Water Bottle Holder Cages, Water Bottle Carrier for Sports Outdoor Cycling Equipment",
-    "price": "Rs. 595"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/500-530-560-500-530-560-i421047089.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/a0282016646ef4a666ce6f77206b9f5d.png_200x200q80.avif",
-    "title": "Ashunqiwen 【Essential Good Item】For Yamaha T-Max Tmax 500 530 560 Tmax500 Tmax530 Tmax560 Dx Sx Motorcycle Key Rings Keychain Key Cover Cap Protection Keys Case",
-    "price": "Rs. 4,328"
-  },
-  {
-    "site": "Daraz",
     "href": "https://www.daraz.com.np/products/jawa-42-single-abs-300-cc-nebula-blue-bike-i120839625.html",
     "img": "https://img.drz.lazcdn.com/static/np/p/f4ce106004d2416f168923835b04bb09.jpg_200x200q80.avif",
     "title": "Jawa 42 Single ABS 300 CC Nebula Blue Bike",
     "price": "Rs. 673,000"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/1-6-1-1-6-1-i421328345.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/b5554a5e33978b706cb475c734d4c47a.png_200x200q80.avif",
-    "title": "Ashunqiwen 【Too much love!】For Yamaha Yzf-R1 Yzf-R6 Yzf-R1m Yzfr1/r6/r1m Motorcycle Cnc Front Rear Axle Fork Wheel Falling Protector Crash Slider Cap Pad",
-    "price": "Rs. 5,105"
   },
   {
     "site": "Daraz",
@@ -120,6 +92,76 @@
   },
   {
     "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/750-2020-2020-2021-2022-i421503095.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/5f29effe75327382096289d5e755248c.jpg_200x200q80.avif",
+    "title": "Ashunqiwen 【Shop the Latest Trends】For Honda Forza 750 Forza750 2020 2021 2022 Motorcycle Cnc Tank Cover Brake Master Cylinder Front Brake Fuel Fluid Reservoir Cap",
+    "price": "Rs. 4,654"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/1-3-3-6-15-3-15-25-i420993918.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/2cce90b8f4ecedd75b694a8a9a10bd81.jpg_200x200q80.avif",
+    "title": "Ashunqiwen 【Essential Good Item】For Yamaha Yzf R1 R3 R6 R15 V3 R15m R25 Motorcycle Cnc Noctilucent Ignition Switch Key Cover Luminous Ring Lock Circle Cap",
+    "price": "Rs. 4,430"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/50-i421070821.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/ece6a2ef61bd11a5d1453fd7d9f5a6d5.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Essential Good Item】For Super Soco Cpx Cumini Cux Tc 50 Tc Max Wanderer Tcmax Motorcycle Accessories Handlebar Hand Grips Handle Bar Ends Cap",
+    "price": "Rs. 4,483"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/jawa-42-double-abs-300-cc-halley-steal-bike-i120920857.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/ba7cc3e92e53521dd877468c1327145c.jpg_200x200q80.avif",
+    "title": "Jawa 42 Double ABS 300 CC Halley steal Bike",
+    "price": "Rs. 704,002"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/2025-new-i434727318.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/1243febfd15f4886139f8f56dcb21eac.png_200x200q80.avif",
+    "title": "Linguolin New Motorcycle Auto Racing affordable Back Armor Protection Jacket for Biker Cycling-Black",
+    "price": "Rs. 208,264"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/nav-plus-nav-bike-computer-gps-bicycle-riding-cycling-map-route-navigation-road-wireless-speedometer-odometer-easy-install-i372316861.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/6cee9a7dfe3f8543c078e5ba4332239e.png_200x200q80.avif",
+    "title": "NAV Plus NAV+ Bike Computer GPS Bicycle Riding Cycling Map Route Navigation Road Wireless Speedometer Odometer Easy Install",
+    "price": "Rs. 30,361"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/750-750-2020-2021-2022-i421586440.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/5f29effe75327382096289d5e755248c.jpg_200x200q80.avif",
+    "title": "Ashunqiwen 【Too much love!】For Honda Forza 750 Forza750 2020 2021 2022 Motorcycle Cnc Tank Cover Brake Master Cylinder Front Brake Fuel Fluid Reservoir Cap",
+    "price": "Rs. 4,436"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/500-530-560-500-530-560-i421047089.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/a0282016646ef4a666ce6f77206b9f5d.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Essential Good Item】For Yamaha T-Max Tmax 500 530 560 Tmax500 Tmax530 Tmax560 Dx Sx Motorcycle Key Rings Keychain Key Cover Cap Protection Keys Case",
+    "price": "Rs. 4,328"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/1-6-1-1-6-1-i421328345.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/b5554a5e33978b706cb475c734d4c47a.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Too much love!】For Yamaha Yzf-R1 Yzf-R6 Yzf-R1m Yzfr1/r6/r1m Motorcycle Cnc Front Rear Axle Fork Wheel Falling Protector Crash Slider Cap Pad",
+    "price": "Rs. 5,105"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/750-750-2020-2021-2022-i421065099.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/6fa3929d4c540c8595c053d1fee600dd.png_200x200q80.avif",
+    "title": "Ashunqiwen 【LoLular design】For Honda Forza 750 Forza750 2020 2021 2022 Motorcycle Cnc Tank Cover Brake Master Cylinder Front Brake Fuel Fluid Reservoir Cap",
+    "price": "Rs. 4,407"
+  },
+  {
+    "site": "Daraz",
     "href": "https://www.daraz.com.np/products/fifty-percent-discount-i434683821.html",
     "img": "https://img.drz.lazcdn.com/static/np/p/1243febfd15f4886139f8f56dcb21eac.png_200x200q80.avif",
     "title": "Linguolin 【2025 Version】 Motorcycle Auto Racing affordable Back Armor Protection Jacket for Biker Cycling - L",
@@ -127,156 +169,114 @@
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/hot-selling-i434692692.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/1243febfd15f4886139f8f56dcb21eac.png_200x200q80.avif",
-    "title": "Linguolin Hot Selling Motorcycle Auto Racing affordable Back Armor Protection Jacket for Biker Cycling - XXL",
-    "price": "Rs. 199,060"
+    "href": "https://www.daraz.com.np/products/50-125-150-200-250-i421588334.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/607d6262b2e776317b437cedf87363d2.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Shop the Latest Trends】50cc 125cc 150cc 200cc 250cc Kayo Lifan Loncin Gas Fuel Tank Cap For Ybr Cqr Crf Klx Ttr Dirt Pit Monkey Bike Atv Quad",
+    "price": "Rs. 4,289"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/motorcycle-phone-holder-bike-mobile-holder-for-pathao-metal-body-c2-i156554609.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/3beeb1456bc4d73ac568e29c2556041b.jpg_200x200q80.avif",
-    "title": "Motorcycle Phone Holder Bike Mobile Holder for Pathao Metal Body C2",
-    "price": "Rs. 259"
+    "href": "https://www.daraz.com.np/products/50-125-150-200-250-i427077049.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/607d6262b2e776317b437cedf87363d2.png_200x200q80.avif",
+    "title": "Ashunqiwen 【High-quality】【High-quality】50cc 125cc 150cc 200cc 250cc Kayo Lifan Loncin Gas Fuel Tank Cap For Ybr Cqr Crf Klx Ttr Dirt Pit Monkey Bike Atv Quad",
+    "price": "Rs. 3,963"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/waterproof-black-bikemotorcycle-body-cover-for-bajaj-pulsar-150-with-zip-storage-bag-combo-i104222538.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/ecb0300ac03fcad6ef92b3250b8f6f92.jpg_200x200q80.avif",
-    "title": "Waterproof Black Bike/Motorcycle Body Cover for Bajaj Pulsar 150 with Zip Storage Bag Combo",
-    "price": "Rs. 399"
+    "href": "https://www.daraz.com.np/products/800-1200-800-800-800-1200-i421090872.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/646714a335ed22537b7fd7e18ae92b5f.jpg_200x200q80.avif",
+    "title": "Ashunqiwen 【LoLular design】For Honda Vfr 800 1200x Vfr800 Vfr800x Vfr800f Vfr1200x Crosstourer Motorcycle Cnc Front Brake Fluid Reservoir Cover Cap",
+    "price": "Rs. 4,717"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/control-lubricants-scootie-engine-oil-sae-10w30-apisl-jasomb-semi-synthetic-4-stroke-engine-scooter-oil-800ml-i113938665.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/12c927bcc452e2e05e58b739eac69a93.png_200x200q80.avif",
-    "title": "Control Lubricants Scootie Engine Oil , SAE 10W30 API/SL JASOMB Semi Synthetic 4 Stroke Engine / Scooter Oil (800Ml)",
-    "price": "Rs. 365"
+    "href": "https://www.daraz.com.np/products/50-i421483207.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/8b5b8ba1c982e403c4e15a3b0e02523b.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Shop the Latest Trends】For Super Soco Cpx Cumini Cux Tc 50 Tc Max Wanderer Tcmax Motorcycle Accessories Handlebar Hand Grips Handle Bar Ends Cap",
+    "price": "Rs. 4,706"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/uv-protection-waterproof-dustproof-bike-cover-for-pulsar-150-i105022292.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/f6807cabf103f5afc77a973d526c3ca8.jpg_200x200q80.avif",
-    "title": "UV Protection Waterproof Dustproof Bike Cover For Pulsar 150",
-    "price": "Rs. 440"
+    "href": "https://www.daraz.com.np/products/1290-1290-20-i421530434.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/dd6f7421198ed5bdf4a22bd93463c01c.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Shop the Latest Trends】Motorcycle Frame Hole Cover Caps Plug Decorative Frame Cap For Ktm 1290 Super Duke R/rr/gt 1290 Super Adventure 2015 - 2021",
+    "price": "Rs. 4,500"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/control-lubricants-bikers-choice-20w50-api-sl-jasoma2-semi-synthetic-4-stroke-engine-motorcycle-oil-1-ltr-1-ltr-i115641387.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/c82fdd56b3ec9cdd600dde830920544e.jpg_200x200q80.avif",
-    "title": "Control Lubricants Bikers Choice 20W50 API SL JASOMA2 Semi Synthetic 4 Stroke Engine Motorcycle Oil 1 Ltr 1 Ltr",
-    "price": "Rs. 450"
+    "href": "https://www.daraz.com.np/products/4-46-60-90-01-20-10-30-15-1-3-6-i416293914.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/5e3dc1f32a54561d3e3ff61cba167642.png_200x200q80.avif",
+    "title": "Huitounanke 【Popular Categories】4pcs Universal Wholesale Car Motorcycle Wheel Tire Valve Caps for BMW E46 E60 E90 F01 F20 F10 F30 F15 X1 X3 X5 X6 M5 car Styling",
+    "price": "Rs. 4,403"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/mobile-phone-holder-universal-anti-snatch-bike-mount-metal-body-cradle-stand-for-bicycle-motorcycle-i131416177.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/475359e24c1d9c6495918855c5309b14.jpg_200x200q80.avif",
-    "title": "Mobile Phone Holder | Universal Anti-Snatch Bike Mount | Metal Body Cradle Stand for Bicycle & Motorcycle",
-    "price": "Rs. 299"
+    "href": "https://www.daraz.com.np/products/750-2020-2020-2021-2022-i421001649.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/0c64c2ac613ac90fd9b306d4d5d33bff.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Essential Good Item】For Honda Forza 750 Forza750 2020 2021 2022 Motorcycle Cnc Tank Cover Brake Master Cylinder Front Brake Fuel Fluid Reservoir Cap",
+    "price": "Rs. 4,430"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/tvs-ntorq-125-water-resistant-uv-protection-dustproof-full-bike-body-cover-black-i104844790.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/7f58e1ea187141866b92d6251fcec5f9.jpg_200x200q80.avif",
-    "title": "TVS NTORQ 125 - Water Resistant - UV Protection & Dustproof Full Bike Body Cover [ Black ]",
-    "price": "Rs. 399"
+    "href": "https://www.daraz.com.np/products/125-250-300-i421513696.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/8088d9d41bf8cad87ffc3b03ddc67db5.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Too much love!】Cnc Aluminum Gas Fuel Tank Filler Cap Cover Motorcycle Accessories For Piaggio Vespa Gts Gtv 125 250 300 Lx Rimavera Sprint 150",
+    "price": "Rs. 4,694"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/bike-mobile-holder-full-metal-body-phone-holder-i178043702.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/be6de683be8bb03699f1156417d98c54.jpg_200x200q80.avif",
-    "title": "Bike Mobile Holder Full Metal Body Phone Holder",
-    "price": "Rs. 259"
+    "href": "https://www.daraz.com.np/products/1-3-3-6-15-3-15-25-i421476512.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/d856f705bf3e348190ba2a318f08cccf.jpg_200x200q80.avif",
+    "title": "Ashunqiwen 【Shop the Latest Trends】For Yamaha Yzf R1 R3 R6 R15 V3 R15m R25 Motorcycle Cnc Noctilucent Ignition Switch Key Cover Luminous Ring Lock Circle Cap",
+    "price": "Rs. 4,654"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/motorcycle-phone-holder-scooty-bike-mobile-holder-for-pathao-metal-body-i134985386.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/af5dda8997c50c08ba81bfbcb83ae292.jpg_200x200q80.avif",
-    "title": "Motorcycle Phone Holder Scooty Bike Mobile Holder for Pathao Metal Body",
-    "price": "Rs. 279"
+    "href": "https://www.daraz.com.np/products/1000-1000-2008-201-i421576810.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/eb6d4106389d06266c71570f1749acd1.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Too much love!】Motorcycle Cnc Windscreen Windshield Driven Mirror Eliminators Cap Mirror Hole Cover For Honda Cbr1000rr Cbr1000 Rr 2008-2017",
+    "price": "Rs. 4,489"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/waterproof-motorcycle-mobile-cellphone-stand-phone-holder-bag-for-motorcycle-water-proof-i134661792.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/67bfad560054d2c2deba6091a0395211.jpg_200x200q80.avif",
-    "title": "Waterproof Motorcycle Mobile Cellphone Stand Phone Holder Bag For Motorcycle Water Proof",
-    "price": "Rs. 531"
+    "href": "https://www.daraz.com.np/products/800-1200-800-800-800-1200-i421078578.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/6b7e29ff55dca39ef58c9456b751ba1c.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Essential Good Item】For Honda Vfr 800 1200x Vfr800 Vfr800x Vfr800f Vfr1200x Crosstourer Motorcycle Cnc Front Brake Fluid Reservoir Cover Cap",
+    "price": "Rs. 4,740"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/c1-bike-mobile-holder-full-metal-body-phone-holder-360-degree-rotatable-universal-mobile-holder-mount-for-bikes-i117359630.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/67a91cca4161e5ed23741dfdf68d4234.jpg_200x200q80.avif",
-    "title": "Bike Mobile Holder Full Metal Body Phone Holder | 360 Degree Rotatable Universal Mobile Holder Mount For Bikes",
-    "price": "Rs. 299"
+    "href": "https://www.daraz.com.np/products/1100-1000-2020-2023-i421303963.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/01c51632edcc72e733c4f58ef85f920f.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Too much love!】For Honda Crf1100l Africa Twin Dct Adventure Sport Cbr1000rr Sp 2020-2023 Motorcycle Rear Brake Fluid Reservoir Cap Guard Cover",
+    "price": "Rs. 5,105"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/uv-protection-dustproof-full-bike-cover-for-pulsar-220-i104230473.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/f6093e53ba1eb7d6580c8045dffb173e.jpg_200x200q80.avif",
-    "title": "UV Protection & Dustproof Full Bike Cover For Pulsar 220",
-    "price": "Rs. 399"
+    "href": "https://www.daraz.com.np/products/090703-1-6-1525-3-6-8-1-6-3-i421459780.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/2dc49a0ceb94a903d9ed591916d13051.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Shop the Latest Trends】For Yamaha Mt09/07/03 Yzf-R1 R6 R15/25 R3 Fz6 Fz8 Fz1 Xj6 3m Motorcycle Fuel Tank Pad Protector Stickers Tank Cap Decals",
+    "price": "Rs. 4,727"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/universal-bike-and-scooter-uv-protective-black-dust-proof-water-proof-double-mirror-pocket-i187676853.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/b2b07ed106dc2698bd15d73f0e2a70c1.png_200x200q80.avif",
-    "title": "Universal Bike And Scooter UV Protective Black Dust Proof Water Proof Double Mirror Pocket",
-    "price": "Rs. 424"
+    "href": "https://www.daraz.com.np/products/1100-1100-2019-2020-2021-i421063911.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/20c13d57369484f108a0d42c5b5a3efb.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Shop the Latest Trends】For Honda 1100 L Africa Twin 1100l Adventure Sports 2019 2020 2021 Motorcycle Rear Brake Fluid Reservoir Cap Guard Cover",
+    "price": "Rs. 5,220"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/control-lubricants-bikers-choice-20w50-api-sl-jasoma-2-semi-synthetic-4-stroke-motorcycle-engine-oil-motorcycle-oil-12-ltr-i113433581.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/e2e3811ff10f39a71949c508cc861460.jpg_200x200q80.avif",
-    "title": "Control Lubricants Bikers Choice 20W50 API SL JASOMA 2 Semi Synthetic 4 Stroke Motorcycle Engine Oil / Motorcycle Oil 1.2 Ltr",
-    "price": "Rs. 550"
+    "href": "https://www.daraz.com.np/products/1-6-1-1-6-1-i421074910.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/a5d2139f6068b3ba5fb108ece216bb17.png_200x200q80.avif",
+    "title": "Ashunqiwen 【LoLular design】For Yamaha Yzf-R1 Yzf-R6 Yzf-R1m Yzfr1/r6/r1m Motorcycle Cnc Front Rear Axle Fork Wheel Falling Protector Crash Slider Cap Pad",
+    "price": "Rs. 5,076"
   },
   {
     "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/bike-mobile-holder-full-metal-body-phone-holder-i131855063.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/abe46b2f0d303b451f869fcda990c2c8.png_200x200q80.avif",
-    "title": "Bike Mobile Holder Full Metal Body Phone Holder",
-    "price": "Rs. 248"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/yamaha-fz-s-bike-cover-with-extra-surface-body-protection-cover-black-i104838895.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/54c564b1023bcad593261c37c5f70788.jpg_200x200q80.avif",
-    "title": "Yamaha FZ-S Bike Cover with Extra Surface Body Protection Cover (Black)",
-    "price": "Rs. 399"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/motul-engine-oil-mobil-7100-4t-10w40-1ltr-i150075059.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/72e4a3952807e14c102b86263bc927a9.jpg_200x200q80.avif",
-    "title": "Motul Engine oil / Mobil 7100 4T 10W40 1Ltr",
-    "price": "Rs. 1,506"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/waterproof-motorcycle-mobile-cellphone-stand-phone-holder-bag-for-motorcycle-water-proof-i147441382.html",
-    "img": "https://img.drz.lazcdn.com/g/kf/S52806538ddf84c59b5ddd83115687084p.jpg_200x200q80.avif",
-    "title": "Waterproof Motorcycle Mobile Cellphone Stand Phone Holder Bag For Motorcycle Water Proof",
-    "price": "Rs. 549"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/tvs-ntorq-125-new-bs6-bs4bs3bs2-uv-protection-dustproof-water-resistant-full-bike-scooty-body-cover-i105010781.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/f3f95c5577eafe48f1a0c8001fa395ec.jpg_200x200q80.avif",
-    "title": "TVS NTORQ 125 New BS6 - BS4,BS3,BS2 - UV Protection & Dustproof - Water Resistant Full Bike - Scooty Body Cover",
-    "price": "Rs. 439"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/black-cover-compatible-for-all-bike-and-scooter-waterproof-material-i124942525.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/20b00c7069ba00edb3a055feb804ff56.jpg_200x200q80.avif",
-    "title": "Black Cover Compatible For All Bike and Scooter Waterproof Material",
-    "price": "Rs. 399"
-  },
-  {
-    "site": "Daraz",
-    "href": "https://www.daraz.com.np/products/waterproof-black-bikemotorcycle-body-cover-for-ktm-rc200-with-zip-storage-bag-i104230466.html",
-    "img": "https://img.drz.lazcdn.com/static/np/p/b72beeff10324bb304283aabc1297903.jpg_200x200q80.avif",
-    "title": "Waterproof Black Bike/Motorcycle Body Cover for KTM RC200 with Zip Storage Bag",
-    "price": "Rs. 399"
+    "href": "https://www.daraz.com.np/products/29-i421332970.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/3d83f8a7d6262f138233ae911223add2.png_200x200q80.avif",
+    "title": "Ashunqiwen 【Too much love!】Motorcycle 29mm Front Axle Nut Cover Cap Bolt Cnc Aluminum For Harley Touring Softail Breakout Dyna Street Bob V-Rod Vrsc Fltr",
+    "price": "Rs. 5,105"
   }
 ]

@@ -1,30 +1,18 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import Card from "./card";
+import React, { useRef, useEffect, useState } from "react";
+import { Input } from "./ui/input";
 
-interface Product {
-    site: string;
-    href: string;
-    img: string;
-    title: string;
-    price: string;
+interface Props {
+    onSearch: (query: string) => void;
 }
 
-export default function InputForm() {
+export default function InputForm({ onSearch }: Props) {
     const [input, setInput] = useState("");
-    const [result, setResult] = useState<Product[]>([]);
-    const inputRef = useRef<HTMLInputElement>(null); // ref for focusing input
+    const inputRef = useRef<HTMLInputElement>(null);
 
-    const handleSubmit = async () => {
-        const res = await fetch("/api/all", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ query: input }),
-        });
-
-        const data = await res.json();
-        setResult(data);
+    const handleSubmit = () => {
+        onSearch(input);
     };
 
     useEffect(() => {
@@ -45,31 +33,22 @@ export default function InputForm() {
             handleSubmit();
         }
     };
-
     return (
-        <div className="flex flex-col items-center gap-4 mt-10">
-            <div className="flex gap-6">
-                <input
-                    ref={inputRef}
-                    className="border p-2 rounded bg-white text-black"
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    onKeyDown={handleKeyDown}
-                    placeholder="Enter product name"
-                />
-                <button
-                    className="bg-blue-500 text-white px-4 py-2 rounded"
-                    onClick={handleSubmit}
-                >
-                    Go
-                </button>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-                {result.map((item, index) => (
-                    <Card key={index} product={item} />
-                ))}
-            </div>
+        <div className="flex gap-2 justify-center w-full ">
+            <Input
+                ref={inputRef}
+                className="border rounded bg-gray-100 w-100 text-white"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder="Enter product name"
+            />
+            <button
+                className="bg-green-200 text-black px-2 py-1 rounded"
+                onClick={handleSubmit}
+            >
+                Go
+            </button>
         </div>
     );
 }

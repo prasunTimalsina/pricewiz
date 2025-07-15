@@ -14,16 +14,16 @@ export default function Card({ product }: { product: Product; }) {
             href={product.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[400px] border rounded-lg shadow-lg p-4 flex flex-col items-center bg-black-900 hover:shadow-xl transition"
+            className=" border rounded-lg shadow-lg p-4 flex flex-col items-center bg-black-900 hover:shadow-xl transition"
         >
             <img
                 src={product.img}
                 alt={product.title}
                 className="w-40 h-40 object-cover mb-4 rounded"
             />
-            <div className=" text-left font-bold mb-2">{product.title}</div>
+            <div className=" text-left text-white font-bold mb-2">{product.title}</div>
             <div className="text-green-600 font-semibold">{product.price}</div>
-            <div className="text-sm text-white-500 mt-1">{product.site}</div>
+            <div className="text-sm text-white mt-1">{product.site}</div>
         </a>
     );
 }
