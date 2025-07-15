@@ -45,7 +45,8 @@ async function parse(page) {
 
         const infoContainer = item.querySelector('.Ms6aG .qmXQo .buTCk')
         const title = infoContainer?.querySelector('.buTCk a')?.innerText || null
-        const price = infoContainer?.querySelector('.aBrP0 .ooOxS')?.innerText || null
+        const rawPrice = infoContainer?.querySelector('.aBrP0 .ooOxS')?.innerText || null
+        const price = rawPrice ? rawPrice.replace(/[^\d]/g, '') : null
 
         if (href && img && title && price) {
           data.push({
@@ -57,7 +58,7 @@ async function parse(page) {
           })
         }
       } catch (_) {
-        // Ignore parsing error
+
       }
     })
     return data
@@ -89,3 +90,4 @@ async function autoScroll(page) {
     })
   })
 }
+

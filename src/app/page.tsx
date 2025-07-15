@@ -22,8 +22,12 @@ interface Product {
 }
 
 export default function Page() {
-  const [result, setResult] = useState<Product[]>([]);
-
+  const [ascProducts, setAscProducts] = useState<Product[]>([]);
+  const [decProducts, setDecProducts] = useState<Product[]>([]);
+  const [iitiProducts, setIitiProducts] = useState<Product[]>([]);
+  const [darazProducts, setDarazProducts] = useState<Product[]>([]);
+  const [hamroProducts, setHamroProducts] = useState<Product[]>([]);
+  const [foodmanduProducts, setFoodmanduProducts] = useState<Product[]>([]);
   const handleSearch = async (query: string) => {
     const res = await fetch("/api/all", {
       method: "POST",
@@ -31,8 +35,13 @@ export default function Page() {
       body: JSON.stringify({ query }),
     });
 
-    const data = await res.json();
-    setResult(data);
+    const [ascproducts, decproducts, Iproducts, Dproducts, Hproducts, Fproducts] = await res.json();
+    setAscProducts(ascproducts);
+    setDecProducts(decproducts);
+    setIitiProducts(Iproducts);
+    setDarazProducts(Dproducts);
+    setHamroProducts(Hproducts);
+    setFoodmanduProducts(Fproducts);
   };
   return (
     <SidebarProvider>
@@ -47,7 +56,14 @@ export default function Page() {
         <CatagoryBar />
 
         <div>
-          <MainBody result={result} />
+          <MainBody
+            ascproducts={ascProducts}
+            decproducts={decProducts}
+            Iproducts={iitiProducts}
+            Dproducts={darazProducts}
+            Hproducts={hamroProducts}
+            Fproducts={foodmanduProducts}
+          />
         </div>
 
       </SidebarInset>

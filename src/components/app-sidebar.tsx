@@ -14,6 +14,7 @@ import {
   SidebarMenuSubItem,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import { Input } from "./ui/input";
 
 const data = {
   navMain: [
@@ -67,6 +68,17 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        <div className="flex gap-2 justify-center w-full ">
+          <Input
+            className="border rounded bg-gray-100 w-100 text-white"
+            placeholder="Enter product name"
+          />
+          <button
+            className="bg-green-200 text-black px-2 py-1 rounded"
+          >
+            Go
+          </button>
+        </div>
       </SidebarContent>
       <SidebarRail />
     </Sidebar>

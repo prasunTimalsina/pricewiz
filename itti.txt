@@ -1,0 +1,143 @@
+
+Site: IITI
+Product 1
+Title: Lenovo Legion Gaming Control Mouse Pad XXL
+Price: रु 2,500
+Image: https://admin.itti.com.np/storage/product/lenovo-legion-gaming-control-mouse-pad-xxl/thumb/23ac95c3-132d-4cd4-a65b-449183fb34d3.webp
+Link: https://itti.com.np/product/lenovo-legion-gaming-control-mouse-pad-xxl
+
+
+Site: IITI
+Product 2
+Title: Lenovo Legion M200 RGB Gaming Mouse
+Price: रु 3,600
+Image: https://admin.itti.com.np/storage/product/lenovo-legion-m200-rgb-gaming-mouse-price-nepal/thumb/01a2736e-c879-4e71-a861-f9629e75bbcd.webp
+Link: https://itti.com.np/product/lenovo-legion-m200-rgb-gaming-mouse-price-nepal
+
+
+Site: IITI
+Product 3
+Title: Lenovo 510 Wireless Mouse: 1200 DPI, Up To 12 Months Battery Life
+Price: रु 4,200
+Image: https://admin.itti.com.np/storage/product/lenovo-m510-wireless-mouse-price-nepal/thumb/a06bb33f-ba84-4676-9c73-108ff2cab03c.webp
+Link: https://itti.com.np/product/lenovo-m510-wireless-mouse-price-nepal
+
+
+Site: IITI
+Product 4
+Title: Lenovo ThinkPad T300 Laptop Bag Leather Shoulder Bags
+Price: रु 6,500
+Image: https://admin.itti.com.np/storage/product/lenovo-thinkpad-t300-laptop-bag-leather-shoulder-bags-price-nepal/thumb/2f60cdf2-c5e3-482f-a2cc-c045690cb911.webp
+Link: https://itti.com.np/product/lenovo-thinkpad-t300-laptop-bag-leather-shoulder-bags-price-nepal
+
+
+Site: IITI
+Product 5
+Title: Lenovo Legion M600 Wireless Gaming Mouse (Stingray)
+Price: रु 8,500
+Image: https://admin.itti.com.np/storage/product/lenovo-legion-m600-wireless-gaming-mouse-price-nepal/thumb/09ee776f-dc5d-40a6-9f91-1a7f755affdd.webp
+Link: https://itti.com.np/product/lenovo-legion-m600-wireless-gaming-mouse-price-nepal
+
+
+Site: IITI
+Product 6
+Title: Lenovo USB Type-C 7-in-1 Hub
+Price: रु 10,200
+Image: https://admin.itti.com.np/storage/product/lenovo-usb-type-c-7-in-1-hub/thumb/9ad55f67-02e6-4caf-8824-0173f3cc3163.webp
+Link: https://itti.com.np/product/lenovo-usb-type-c-7-in-1-hub
+
+
+Site: IITI
+Product 7
+Title: Lenovo Legion 15.6-inch Recon Gaming Backpack (GX40S69333)
+Price: रु 11,500
+Image: https://admin.itti.com.np/storage/product/lenovo-legion-15-6-gaming-bagpack-price-nepal/thumb/fab61f48-9e3f-45a4-b0e0-f91e9459b6a7.webp
+Link: https://itti.com.np/product/lenovo-legion-15-6-gaming-bagpack-price-nepal
+
+
+Site: IITI
+Product 8
+Title: Lenovo D19-10 Monitor 18.5" TN Monitor
+Price: रु 14,200
+Image: https://admin.itti.com.np/storage/product/lenovo-d19-10-monitor-185-tn-monitor-Price-nepal/thumb/f569b468-b24f-4721-bf1b-b9ad4e58f894.webp
+Link: https://itti.com.np/product/lenovo-d19-10-monitor-185-tn-monitor-Price-nepal
+
+
+Site: IITI
+Product 9
+Title: Lenovo Thinkvision S22i-30 - 21.5'' Monitor | IPS Panel | 4Ms Response Time | HDMI & VGA Port | HDMI Cable Included
+Price: रु 22,500
+Image: https://admin.itti.com.np/storage/product/lenovo-thinkvision-s22i-30-215-monitor-price-nepal/thumb/6aec62da-5c4a-4789-b055-4773497d8b55.webp
+Link: https://itti.com.np/product/lenovo-thinkvision-s22i-30-215-monitor-price-nepal
+
+
+Site: IITI
+Product 10
+Title: Lenovo USB-C Mini Dock ( 40AU0065UK )
+Price: रु 24,000
+Image: https://admin.itti.com.np/storage/product/lenovo-mini-type-c-dock-price-nepal/thumb/2bed8b77-0b1f-464b-bc40-3c89f9920914.webp
+Link: https://itti.com.np/product/lenovo-mini-type-c-dock-price-nepal
+
+
+Site: IITI
+Product 11
+Title: Lenovo Thinkvision S24i-30 - 23.8'' Monitor | IPS Panel | 4Ms Response Time | HDMI & VGA Port | HDMI Cable Included
+Price: रु 29,000
+Image: https://admin.itti.com.np/storage/product/lenovo-thinkvision-s24i-monitor-price-nepal/thumb/9ee7be2f-fd70-466d-8cb7-c79d9fa54bee.webp
+Link: https://itti.com.np/product/lenovo-thinkvision-s24i-monitor-price-nepal
+
+
+Site: IITI
+Product 12
+Title: Lenovo Universal USB-C Dock (40AY0090UK)
+Price: रु 38,000
+Image: https://admin.itti.com.np/storage/product/lenovo-universal-usb-c-dock-40ay0090uk/thumb/e93474a2-c948-4d98-b6f7-be708b7c5f34.webp
+Link: https://itti.com.np/product/lenovo-thinkpad-type-c-dock-price-nepal
+
+
+Site: IITI
+Product 13
+Title: Lenovo IdeaPad L3 15ITL6 Celeron 10th Gen / 4GB RAM / 256GB SSD / 15.6" FHD display
+Price: रु 39,160
+Image: https://admin.itti.com.np/storage/product/lenovo-ideapad-l3-price-nepal/thumb/d17beaa1-6cfe-4dd4-aa1f-5b14bd05295e.webp
+Link: https://itti.com.np/product/lenovo-ideapad-l3-price-nepal
+
+
+Site: IITI
+Product 14
+Title: Lenovo IdeaPad Slim 1 2022 Ryzen 3 7320U | 8GB RAM | 256GB SSD | 14" FHD display
+Price: रु 53,000
+Image: https://admin.itti.com.np/storage/product/lenovo-ideapad-slim-1-2022-price-nepal/thumb/f94ca7f4-2e16-4fe3-952a-ceccc2a96349.webp
+Link: https://itti.com.np/product/lenovo-ideapad-slim-1-2022-price-nepal
+
+
+Site: IITI
+Product 15
+Title: Lenovo IdeaPad Slim 3i 2023 15 i3 13Th Gen / 8GB RAM / 256GB / 15.6" FHD display
+Price: रु 53,000
+Image: https://admin.itti.com.np/storage/product/lenovo-ideapad-slim-3i-2023-15-i3-13th-gen-8gb-ram-256gb-156-fhd-display/thumb/983783f6-f19f-44da-98fa-44da0df89d71.webp
+Link: https://itti.com.np/product/lenovo-ideapad-slim-3i-2023-price-nepal
+
+
+Site: IITI
+Product 16
+Title: Lenovo IdeaPad Slim 3 14 2023 i3 13th Gen | 8GB RAM | 512GB SSD | 14" FHD display | Backlight Keyboard
+Price: रु 55,000
+Image: https://admin.itti.com.np/storage/product/lenovo-ideapad-slim-3-14-2023-i3-13th-gen-price-nepal/thumb/d831690f-d6b2-4e8d-8f23-314c66416c0e.webp
+Link: https://itti.com.np/product/lenovo-ideapad-slim-3-14-2023-i3-13th-gen-price-nepal
+
+
+Site: IITI
+Product 17
+Title: Lenovo V15 G4 - 13th Gen, Intel i3 1315U, 15.6" FHD, 8GB DDR4 RAM, 512GB NVMe SSD, Iron Grey Color, 1 Year Warranty
+Price: रु 55,500
+Image: https://admin.itti.com.np/storage/product/lenovo-v15-g4-13th-gen-intel-i3-1315u-price-nepal-8gb-ddr4-ram-512gb-nvme-ssd-1-year-warranty/thumb/a9deaf82-233c-41bf-8a19-0145954844cd.webp
+Link: https://itti.com.np/product/lenovo-v15-g4-13th-gen-intel-i3-1315u-price-nepal-8gb-ddr4-ram-512gb-nvme-ssd-1-year-warranty
+
+
+Site: IITI
+Product 18
+Title: Lenovo ThinkBook 15 i5 10th Gen | 8GB RAM | 512GB SSD | 15.6" FHD Display
+Price: रु 59,000
+Image: https://admin.itti.com.np/storage/product/lenovo-thinkbook-15p-i5-price-nepal/thumb/31697ade-29c8-4d51-9b51-ff4705131ac0.jpeg
+Link: https://itti.com.np/product/lenovo-thinkbook-15p-i5-price-nepal
