@@ -11,6 +11,8 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 
 interface Product {
@@ -28,6 +30,7 @@ export default function Page() {
   const [darazProducts, setDarazProducts] = useState<Product[]>([]);
   const [hamroProducts, setHamroProducts] = useState<Product[]>([]);
   const [foodmanduProducts, setFoodmanduProducts] = useState<Product[]>([]);
+
   const handleSearch = async (query: string) => {
     const res = await fetch("/api/all", {
       method: "POST",

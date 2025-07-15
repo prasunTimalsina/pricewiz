@@ -44,7 +44,7 @@ export default function InputForm({ onSearch }: Props) {
                 placeholder="Enter product name"
             />
             <button
-                className="bg-green-200 text-black px-2 py-1 rounded"
+                className="bg-green-200 hover:bg-green-300 text-black px-2 py-1 rounded"
                 onClick={handleSubmit}
             >
                 Go

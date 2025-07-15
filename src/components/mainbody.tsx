@@ -35,7 +35,7 @@ export default function MainBody({
       <div className="flex justify-end">
         <button
           onClick={() => setViewAsc(!viewAsc)}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"
+          className="bg-green-200 hover:bg-green-300 text-black font-semibold px-4 py-2 rounded"
         >
           {viewAsc ? "Site Categorized" : "Filtered"}
         </button>
@@ -43,8 +43,8 @@ export default function MainBody({
 
       {viewAsc ? (
         <>
-          <Section title="Sorted: Low to High" products={ascproducts} defaultOpen />
-          <Section title="Sorted: High to Low" products={decproducts} defaultOpen />
+          <Section title="Low to High ▲" products={ascproducts} defaultOpen />
+          <Section title="High to Low ▼" products={decproducts} defaultOpen />
           <Section title="Hamrobazaar" products={Hproducts} />
           <Section title="Foodmandu" products={Fproducts} />
         </>
@@ -88,7 +88,7 @@ function Section({
       </button>
 
       {isOpen && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 p-4">
           {products.map((item, index) => (
             <Card key={index} product={item} />
           ))}
@@ -97,4 +97,5 @@ function Section({
     </div>
   );
 }
+
 
