@@ -1,143 +1,143 @@
 
 Site: IITI
 Product 1
-Title: Lenovo Legion Gaming Control Mouse Pad XXL
-Price: रु 2,500
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-gaming-control-mouse-pad-xxl/thumb/23ac95c3-132d-4cd4-a65b-449183fb34d3.webp
-Link: https://itti.com.np/product/lenovo-legion-gaming-control-mouse-pad-xxl
+Title: Rapoo EP28 Wired Earphones – In-ear headphones, 3.5mm Audio Jack, Volume Control Buttons
+Price: रु 825
+Image: https://admin.itti.com.np/storage/product/rapoo-ep28-wired-earphones-price-nepal/thumb/59b9e312-ccea-4419-90c3-409f3af39b15.jpeg
+Link: https://itti.com.np/product/rapoo-ep28-wired-earphones-price-nepal
 
 
 Site: IITI
 Product 2
-Title: Lenovo Legion M200 RGB Gaming Mouse
-Price: रु 3,600
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-m200-rgb-gaming-mouse-price-nepal/thumb/01a2736e-c879-4e71-a861-f9629e75bbcd.webp
-Link: https://itti.com.np/product/lenovo-legion-m200-rgb-gaming-mouse-price-nepal
+Title: HAVIT Gaming Microphone GK55
+Price: रु 1,600
+Image: https://admin.itti.com.np/storage/product/havit-gaming-microphone-gk55-price-nepal/thumb/b49dea71-3953-4573-94a2-332d5a2ed225.jpeg
+Link: https://itti.com.np/product/havit-gaming-microphone-gk55-price-nepal
 
 
 Site: IITI
 Product 3
-Title: Lenovo Legion M600 Wireless Gaming Mouse (Stingray)
-Price: रु 8,500
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-m600-wireless-gaming-mouse-price-nepal/thumb/09ee776f-dc5d-40a6-9f91-1a7f755affdd.webp
-Link: https://itti.com.np/product/lenovo-legion-m600-wireless-gaming-mouse-price-nepal
+Title: HAVIT H100D Wired Folding Headphone - 3.5mm jack, 32Ohm Impedance, 40mm Driver
+Price: रु 1,700
+Image: https://admin.itti.com.np/storage/product/havit-wired-folding-headphone-hv-h100d-price-nepal/thumb/96c8ce8a-91a7-410a-a2e1-0148abdf1358.jpeg
+Link: https://itti.com.np/product/havit-wired-folding-headphone-hv-h100d-price-nepal
 
 
 Site: IITI
 Product 4
-Title: Lenovo Legion 15.6-inch Recon Gaming Backpack (GX40S69333)
-Price: रु 11,500
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-15-6-gaming-bagpack-price-nepal/thumb/fab61f48-9e3f-45a4-b0e0-f91e9459b6a7.webp
-Link: https://itti.com.np/product/lenovo-legion-15-6-gaming-bagpack-price-nepal
+Title: UGREEN Wired Earphones with 3.5mm Plug (30637)
+Price: रु 1,800
+Image: https://admin.itti.com.np/storage/product/ugreen-wired-earphones-with-35mm-plug-30637/thumb/35440be7-ae91-45bd-aa2b-716336ecaedf.jpeg
+Link: https://itti.com.np/product/ugreen-wired-earphones-with-35mm-plug-30637
 
 
 Site: IITI
 Product 5
-Title: Lenovo Legion Go 8APU1 AMD Ryzen™ Z1 Extreme | 16GB RAM | 512GB SSD | 8.8" WQXGA (2560x1600) | WIN 11 | Handheld PC Gaming Console
-Price: रु 1,05,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-go-8apu1-price-nepal/thumb/ba72b10b-85c8-4307-9525-9e63608d674e.webp
-Link: https://itti.com.np/product/lenovo-legion-go-8apu1-price-nepal
+Title: Havit HV-H2116D Wired Headphone with Microphone - Stereo Headset, 32Ohms Impedance, 40mm Driver
+Price: रु 2,000
+Image: https://admin.itti.com.np/storage/product/havit-wired-headphone-hv-h2116d-price-nepal/thumb/e816bdb0-aef1-410f-81a0-5bb9d4c7aa10.gif
+Link: https://itti.com.np/product/havit-hv-h2116d-wired-headphone-price-nepal
 
 
 Site: IITI
 Product 6
-Title: Lenovo Legion Slim 7 2021 Ryzen 7 5800H / RTX 3060 / 16GB RAM / 512GB SSD / 15.6'' FHD Display / 165Hz Refresh Rate
-Price: रु 1,35,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-slim-7-price-nepal/thumb/1583e151-ab0f-47d5-8cfb-89d10b3d7dc7.jpeg
-Link: https://itti.com.np/product/lenovo-legion-slim-7-price-nepal
+Title: Ugreen Gravity Phone Holder with Suction Cup ( 60990 )
+Price: रु 2,250
+Image: https://admin.itti.com.np/storage/product/ugreen-gravity-phone-holder-with-suction-cup-60990-price-nepal/thumb/34afa83d-115e-4aed-9b40-ff62bd3f158d.webp
+Link: https://itti.com.np/product/ugreen-gravity-phone-holder-with-suction-cup-price-nepal
 
 
 Site: IITI
 Product 7
-Title: Lenovo Legion 5 PRO 2021 Ryzen 7 5800H / RTX 3060 / 16GB RAM / 1TB SSD / 16'' WQXGA Display / 165Hz Refresh Rate
-Price: रु 1,73,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-5-pro-gaming-laptop-price-nepal/thumb/75402e8d-f8b4-4fdf-a81f-2a16c52ea968.webp
-Link: https://itti.com.np/product/lenovo-legion-5-pro-gaming-laptop-price-nepal
+Title: UGREEN Wired Earphones with Type-C Connector(60700)
+Price: रु 2,300
+Image: https://admin.itti.com.np/storage/product/ugreen-wired-earphones-with-type-c-connector60700/thumb/81c51165-fbbd-4466-b5fd-3f763f0d4f6b.webp
+Link: https://itti.com.np/product/ugreen-wired-earphones-with-type-c-connector60700
 
 
 Site: IITI
 Product 8
-Title: Lenovo Legion Slim 7 16ARHA7 2022 Ryzen 7 6800HS | RX 6600S | 16GB RAM | 1TB SSD | 16'' QHD 165Hz Display
-Price: रु 1,75,500
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-slim-7-price-nepal-amd/thumb/05afc4f9-6541-46d7-b5a8-c381d72f3f8a.webp
-Link: https://itti.com.np/product/lenovo-legion-slim-7-price-nepal-amd
+Title: HAVIT H2590BT PRO Wireless Headphone - Bluetooth Sport Headset, Up to 4 hours Play Time
+Price: रु 2,300
+Image: https://admin.itti.com.np/storage/product/havit-wireless-headphone-hv-h2590bt-pro/thumb/27d43f0d-39ae-4820-8a89-e507fa21413d.gif
+Link: https://itti.com.np/product/havit-h2590bt-pro-wireless-headphone-price-nepal
 
 
 Site: IITI
 Product 9
-Title: Lenovo Legion Slim 5 2024 Gen 9 Ryzen 7 8845HS | 2 Year Authorized Warranty | RTX 4060 | 16GB RAM | 1TB GB SSD | 16'' QHD Display | 165Hz Refresh Rate
-Price: रु 1,91,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-slim-5-gen9-2024-price-nepal/thumb/70415116-e43e-4eec-8747-d0df5871f0c8.webp
-Link: https://itti.com.np/product/lenovo-legion-slim-5-2024-price-nepal
+Title: HAVIT HV-E529BT Wireless Neckband Earphone
+Price: रु 2,300
+Image: https://admin.itti.com.np/storage/product/havit-wireless-neckband-earphone-hv-e529bt-price-nepal/thumb/4a013969-3a42-487e-b780-0e0ffb1a5a94.webp
+Link: https://itti.com.np/product/havit-hv-e529bt-wireless-neckband-earphone-price-nepal
 
 
 Site: IITI
 Product 10
-Title: Lenovo Legion Slim 5i Intel i7 13650HX | 2 Year Authorized Warranty | RTX 4060 | 24GB RAM | 1TB SSD | 15.6'' FHD Display | 144Hz Refresh Rate
-Price: रु 1,92,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-slim-5i-4060-2023-gaming-lapotp-price-nepal/thumb/9853700c-74c6-4183-952a-cb6326b9a8b4.webp
-Link: https://itti.com.np/product/lenovo-legion-slim-5i-4060-gaming-lapotp-price-nepal
+Title: Rapoo H150 Stereo Wired Over Ear Headphones with Microphone Noise-Reduction, USB, PC/Mac/Laptop/Chrome OS - Black
+Price: रु 2,625
+Image: https://admin.itti.com.np/storage/product/rapoo-h150-price-nepal/thumb/8ec072d7-ebd5-46be-b89d-f3172467f464.jpeg
+Link: https://itti.com.np/product/rapoo-h150-stereo-headphones-price-nepal
 
 
 Site: IITI
 Product 11
-Title: Lenovo Legion 5i Gen 9 2024 (16IRX9) i7 14650HX | 2 Year Authorized Warranty | RTX 4050 | 16GB RAM | 1TB SSD | 16'' WQXGA 165Hz Display
-Price: रु 1,95,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-5-16irx9-price-nepal/thumb/5aefe9de-f21f-435d-9696-ab57a0aa5040.webp
-Link: https://itti.com.np/product/lenovo-legion-5-16irx9-price-nepal
+Title: Havit H213U Wired Headphone - LED light, 7.1 Sound Card, 32Ohm Impedance, 40mm Driver
+Price: रु 2,700
+Image: https://admin.itti.com.np/storage/product/havit-wired-headphone-h213u-price-nepal/thumb/91834888-97ca-4828-bc10-3c39095599d8.jpeg
+Link: https://itti.com.np/product/havit-h213u-headphone-price-nepal
 
 
 Site: IITI
 Product 12
-Title: Lenovo Legion Slim 7i 2023 13th Gen i7 | RTX 4060 | 16GB RAM | 1TB | 16'' 3.2K Display | 165Hz Refresh Rate
-Price: रु 1,99,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-slim-7i-2023-price-nepal/thumb/c90a4091-4d14-451b-b6de-adbe3300d20a.webp
-Link: https://itti.com.np/product/lenovo-legion-slim-7i-2023-price-nepal
+Title: HAVIT HV-H633BT Wireless Foldable Headphone
+Price: रु 3,000
+Image: https://admin.itti.com.np/storage/product/havit-wireless-foldable-headphone-hv-h633bt-price-nepal/thumb/7642d646-0226-4125-a52c-0610dc802248.webp
+Link: https://itti.com.np/product/havit-hv-h633bt-wireless-foldable-headphone-price-nepal
 
 
 Site: IITI
 Product 13
-Title: Lenovo Legion 5i Gen 9 2024 i7 14650HX | 2 Year Authorized Warranty | RTX 4060 | 16GB RAM | 1TB SSD | 16'' WQXGA 165Hz Display
-Price: रु 2,05,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-5i-gen9-2024-price-nepal/thumb/0fa8b7fa-7e0c-4646-9906-d68bdcadc592.webp
-Link: https://itti.com.np/product/lenovo-legion-5i-2024-price-nepal
+Title: Rapoo VM300 Bluetooth Sports Earphones - 7 hours of battery life, 10m range
+Price: रु 3,750
+Image: https://admin.itti.com.np/storage/product/rapoo-vm300-bluetooth-sports-earphone-price-nepal/thumb/518b7084-b532-4310-a44b-7a8f3a4d98e7.jpeg
+Link: https://itti.com.np/product/rapoo-vm300-bluetooth-sports-earphone-price-nepal
 
 
 Site: IITI
 Product 14
-Title: Lenovo Legion 5 16IRX9 2024 Intel i9 14900HX | RTX 4060 | 32GB RAM | 1TB | 16" WQXGA (2560x1600) 165Hz Refresh Rate
-Price: रु 2,38,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-5-2024-price-nepal-i9-4060/thumb/b92bea33-e574-4130-a74d-c6d3a085aa90.webp
-Link: https://itti.com.np/product/lenovo-legion-5-2024-price-nepal-i9-4060
+Title: Rapoo VH310 Noise Cancelling RGB Gaming Headphone - 7.1 Virtual Surround Channel
+Price: रु 3,860
+Image: https://admin.itti.com.np/storage/product/rapoo-vh310-rgb-gaming-headphone-price-nepal/thumb/8b915d06-47e3-4ec3-9c91-310a7fddb714.jpeg
+Link: https://itti.com.np/product/rapoo-vh310-rgb-gaming-headphone-price-nepal
 
 
 Site: IITI
 Product 15
-Title: Lenovo Legion 5i 2025 - Intel Core i9 14900HX | RTX 5070 | 24 GB RAM | 512 GB SSD | 15.1" WQXGA OLED 165Hz Display | 2 Year Warranty
-Price: रु 2,73,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-pro-5i-intel-core-ultra-7-255hx-1-year-warranty-rtx-5070-16-gb-ram-512-gb-ssd-16-wqxga-2560-x-1600oled-glare165hz/thumb/d8f9f8ed-cee6-4730-9880-ff7ae4e39099.webp
-Link: https://itti.com.np/product/lenovo-legion-5i-2025-price-nepal-rtx-5070
+Title: RAPOO VH10 Backlit RGB Headphone Holder -Multi Interface, Gaming
+Price: रु 3,875
+Image: https://admin.itti.com.np/storage/product/rapoo-vh10-backlit-rgb-headphone-price-nepal/thumb/a15030de-7c3d-469d-a950-5ad13e0d0ed7.jpeg
+Link: https://itti.com.np/product/rapoo-vh10-headphone-holder-price-nepal
 
 
 Site: IITI
 Product 16
-Title: Lenovo Legion 5i Gen 9 2024 (16IRX9) i9 14900HX | RTX 4070 | 32GB RAM | 1TB SSD | 16'' WQXGA 165Hz Display
-Price: रु 2,99,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-5i-gen-9-2024-i9-14900hx-rtx-4070-price-nepal/thumb/e4b26294-2b1a-44bf-b755-3716e7a96aaa.webp
-Link: https://itti.com.np/product/lenovo-legion-5i-gen-9-2024-i9-14900hx-rtx-4070-price-nepal
+Title: UGREEN Apple MFI Earphone
+Price: रु 4,375
+Image: https://admin.itti.com.np/storage/product/ugreen-apple-mfi-earphone-price-nepal/thumb/a0eba97c-001e-4852-aac2-7464b955d5fc.jpeg
+Link: https://itti.com.np/product/ugreen-apple-mfi-earphone-price-nepal
 
 
 Site: IITI
 Product 17
-Title: Lenovo Legion Pro 5i 2025 Intel Core Ultra 9 275HX | RTX 5070 | 32 GB RAM | 1TB SSD | 16" WQXGA OLED, 100% DCI-P3 500 nits, 165Hz Display | 2 Year Warranty
-Price: रु 3,24,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-pro-5i-intel-core-ultra-9-275hx-1-year-warranty-rtx-5070-ti-16-gb-ram-1tb-ssd-16-wqxga-2560-x-1600-oled-100dci-p3-500-nits-165hz/thumb/aef98934-74d6-4b02-9238-629bcf221d19.webp
-Link: https://itti.com.np/product/lenovo-legion-pro-5i-2025-price-nepal
+Title: Rapoo H6020 Bluetooth Headset 12 hours Music Playback, On the Ear headphones
+Price: रु 4,565
+Image: https://admin.itti.com.np/storage/product/rapoo-h6020-bluetooth-headset-price-nepal/thumb/498dea45-1849-49fe-8866-f24b5ae6aeef.jpeg
+Link: https://itti.com.np/product/rapoo-h6020-bluetooth-headset-price-nepal
 
 
 Site: IITI
 Product 18
-Title: Lenovo Legion Pro 7i Gen 9 2024 i9 14900HX | RTX 4080 | 32GB RAM | 1TB SSD | 16" WQXGA 240Hz display
-Price: रु 4,27,000
-Image: https://admin.itti.com.np/storage/product/lenovo-legion-7i-pro-2024-price-nepal/thumb/35a603c0-1b0c-4e2e-8be6-139a100de3f1.webp
-Link: https://itti.com.np/product/lenovo-legion-7i-pro-2024-price-nepal
+Title: Rapoo Pa65 GaN 65 Watts USB Type-C Wall Charger - For Laptops, MacBooks & Smartphones
+Price: रु 4,624
+Image: https://admin.itti.com.np/storage/product/rapoo-pa65-65w-wall-charger-price-nepal/thumb/1ac0248a-7cf1-4a33-a86d-2a66fa633466.png
+Link: https://itti.com.np/product/rapoo-pa65-65w-wall-charger-price-nepal
