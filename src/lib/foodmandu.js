@@ -58,11 +58,11 @@ async function parse(page) {
     })
   })
 
-  const lines = products.map((item, i) => (
-    `\nSite: ${item.site}\nProduct ${i + 1}\nTitle: ${item.title}\nLocation: ${item.location}\nDescription: ${item.description}\nImage: ${item.img}\nLink: ${item.href}\n`
-  )).join('\n')
-
-  fs.writeFileSync('foodmandu.txt', lines, 'utf-8')
+  //const lines = products.map((item, i) => (
+  //  `\nSite: ${item.site}\nProduct ${i + 1}\nTitle: ${item.title}\nLocation: ${item.location}\nDescription: ${item.description}\nImage: ${item.img}\nLink: ${item.href}\n`
+  //)).join('\n')
+  //
+  //fs.writeFileSync('foodmandu.txt', lines, 'utf-8')
 
   return products
 }

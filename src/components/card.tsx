@@ -14,7 +14,7 @@ export default function Card({ product }: { product: Product; }) {
             href={product.href}
             target="_blank"
             rel="noopener noreferrer"
-            className=" border rounded-lg shadow-lg p-4 flex flex-col items-center bg-black-900 hover:shadow-xl transition"
+            className="bg-gradient-to-br from-transparent via-black to-transparent border rounded-lg shadow-lg p-4 flex flex-col items-center bg-black-900 hover:shadow-xl transition"
         >
             <img
                 src={product.img}

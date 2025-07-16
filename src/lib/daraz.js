@@ -64,7 +64,7 @@ async function parse(page) {
     return data
   })
 
-  fs.writeFileSync('daraz.json', JSON.stringify(products, null, 2), 'utf-8')
+  //fs.writeFileSync('daraz.json', JSON.stringify(products, null, 2), 'utf-8')
 
   return products
 }
