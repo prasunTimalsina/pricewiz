@@ -25,6 +25,10 @@ export default function CatagoryBar() {
         <Link href={"/site/cosmetic"}>
           <Button className="rounded-2xl bg-black text-white hover:text-black ring-[1px] ring-white h-[20px]">Cosmetic</Button>
         </Link>
+
+        <Link href={"/site/test"}>
+          <Button className="rounded-2xl bg-black text-white hover:text-black ring-[1px] ring-white h-[20px]">Test</Button>
+        </Link>
       </div>
     </>
   );

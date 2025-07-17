@@ -27,6 +27,7 @@ export default function Page() {
   const [iitiProducts, setIitiProducts] = useState<Product[]>([]);
   const [darazProducts, setDarazProducts] = useState<Product[]>([]);
   const [hamroProducts, setHamroProducts] = useState<Product[]>([]);
+  const [hukutProducts, setHukutProducts] = useState<Product[]>([]);
   const [foodmanduProducts, setFoodmanduProducts] = useState<Product[]>([]);
 
   const handleSearch = async (query: string) => {
@@ -36,12 +37,13 @@ export default function Page() {
       body: JSON.stringify({ query }),
     });
 
-    const [ascproducts, decproducts, Iproducts, Dproducts, Hproducts, Fproducts] = await res.json();
+    const [ascproducts, decproducts, Iproducts, Dproducts, Hproducts, Huproducts, Fproducts] = await res.json();
     setAscProducts(ascproducts);
     setDecProducts(decproducts);
     setIitiProducts(Iproducts);
     setDarazProducts(Dproducts);
     setHamroProducts(Hproducts);
+    setHukutProducts(Huproducts);
     setFoodmanduProducts(Fproducts);
   };
   return (
@@ -63,6 +65,7 @@ export default function Page() {
             Iproducts={iitiProducts}
             Dproducts={darazProducts}
             Hproducts={hamroProducts}
+            HUproducts={hukutProducts}
             Fproducts={foodmanduProducts}
           />
         </div>

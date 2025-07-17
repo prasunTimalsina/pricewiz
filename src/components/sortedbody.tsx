@@ -12,53 +12,20 @@ interface Product {
 }
 
 interface Props {
-  ascproducts: Product[];
   decproducts: Product[];
-  Iproducts: Product[];
-  Dproducts: Product[];
-  Hproducts: Product[];
-  HUproducts: Product[];
-  Fproducts: Product[];
 }
 
-export default function MainBody({
-  ascproducts,
+export default function SortedBody({
   decproducts,
-  Iproducts,
-  Dproducts,
-  Hproducts,
-  HUproducts,
-  Fproducts,
 }: Props) {
   const [viewAsc, setViewAsc] = useState(false);
 
   return (
     <div className="p-4 space-y-10">
       <div className="flex justify-end">
-        <button
-          onClick={() => setViewAsc(!viewAsc)}
-          className="bg-green-200 hover:bg-green-300 text-black font-semibold px-4 py-2 rounded"
-        >
-          {viewAsc ? "Site Categorized" : "Filtered"}
-        </button>
       </div>
-
-      {viewAsc ? (
-        <>
-          <Section title="High to Low ▼" products={decproducts} defaultOpen />
-          <Section title="Low to High ▲" products={ascproducts} defaultOpen />
-          <Section title="Hamrobazaar" products={Hproducts} />
-          <Section title="Foodmandu" products={Fproducts} />
-        </>
-      ) : (
-        <>
-          <Section title="Itti" products={Iproducts} />
-          <Section title="Daraz" products={Dproducts} />
-          <Section title="Hukut" products={HUproducts} />
-          <Section title="Hamrobazaar" products={Hproducts} />
-          <Section title="Foodmandu" products={Fproducts} />
-        </>
-      )}
+      <Section title="High to Low ▼" products={decproducts} defaultOpen />
+      )
     </div>
   );
 }
