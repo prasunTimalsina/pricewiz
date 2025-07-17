@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Card from "./card";
+import SelectTop10 from "../lib/top10Selection.js";
 
 interface Product {
   site: string;
@@ -15,17 +16,16 @@ interface Props {
   decproducts: Product[];
 }
 
-export default function SortedBody({
-  decproducts,
-}: Props) {
-  const [viewAsc, setViewAsc] = useState(false);
+export default function SortedBody({ decproducts }: Props) {
+
+  // Call SelectTop10 with decproducts
+  const selected = SelectTop10(decproducts);
 
   return (
     <div className="p-4 space-y-10">
-      <div className="flex justify-end">
-      </div>
-      <Section title="High to Low ▼" products={decproducts} defaultOpen />
-      )
+      <div className="flex justify-end"></div>
+      <Section title="Top 10 Selected" products={selected} defaultOpen />
+      <Section title="High to Low ▼" products={decproducts} />
     </div>
   );
 }
@@ -67,5 +67,4 @@ function Section({
     </div>
   );
 }
-
 

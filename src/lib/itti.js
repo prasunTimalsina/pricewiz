@@ -46,7 +46,11 @@ async function parse(page) {
       const img = rawImgSrc.includes('url=') ? decodeURIComponent(rawImgSrc.split('url=')[1].split('&')[0]) : null
 
       const priceContainer = item.querySelector('.w-full.mt-1 .flex.flex-col-reverse.mt-1.md\\:flex-col.md\\:mt-0 .flex.mt-0.gap-\\[5px\\].gap-y-0.h-\\[50px\\].md\\:h-\\[56px\\].w-full.flex-col.justify-end p')
-      const price = priceContainer?.innerText || null
+      let price = priceContainer?.innerText || null
+
+      if (price) {
+        price = price.replace(/रु|,/g, '').trim()
+      }
 
       return {
         site: 'IITI',

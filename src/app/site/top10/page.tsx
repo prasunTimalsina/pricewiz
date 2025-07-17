@@ -30,7 +30,7 @@ export default function Page() {
             body: JSON.stringify({ query }),
         });
 
-        const [decproducts] = await res.json();
+        const [_, decproducts] = await res.json();
         setDecProducts(decproducts);
     };
     return (

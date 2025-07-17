@@ -1,9 +1,8 @@
 import puppeteer from 'puppeteer'
-import fs from 'fs'
 
 export async function ScrapeHukut(HUurl) {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     args: ['--start-maximized', '--window-size=1920,1080'],
     defaultViewport: null,
   })
