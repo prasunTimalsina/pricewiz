@@ -1,6 +1,7 @@
 import { scrapeDaraz } from "@/lib/daraz";
 import { scrapeIiti } from "@/lib/itti";
 import { scrapeHamrobazaar } from "@/lib/hamrobazar";
+import { ScrapeHukut } from "@/lib/hukut";
 import { scrapeFoodMandu } from "@/lib/foodmandu";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -11,6 +12,7 @@ export async function POST(req: NextRequest) {
 
         const Durl = `https://www.daraz.com.np/catalog/?spm=a2a0e.tm80335409.search.d_go&q=${query}`;
         const Iurl = `https://itti.com.np/search/result?q=${query}&category_type=search`;
+        const HUurl = `https://hukut.com/search/${query}`;
         const Hurl = `https://hamrobazaar.com/search/product?q=${query}`;
         const Furl = `https://foodmandu.com/Restaurant/Index?q=${query}&k=restaurant&cty=1`;
 
@@ -35,6 +37,13 @@ export async function POST(req: NextRequest) {
             return Iproducts;
         })();
 
+        const hukutPromise = (async () => {
+            console.time("Hukut time");
+            const Huproducts = await ScrapeHukut(HUurl);
+            console.timeEnd("Hukut time");
+            return Huproducts;
+        })();
+
         const foodPromise = (async () => {
             console.time("Foodmandu time");
             const Fproducts = await scrapeFoodMandu(Furl);
@@ -42,16 +51,17 @@ export async function POST(req: NextRequest) {
             return Fproducts;
         })();
 
-        const [Hproducts, Dproducts, Iproducts, Fproducts] = await Promise.all([
+        const [Hproducts, Dproducts, Iproducts, Huproducts, Fproducts] = await Promise.all([
             hamroPromise,
             darazPromise,
             ittiPromise,
+            hukutPromise,
             foodPromise,
         ]);
 
         console.timeEnd("Total time");
 
-        const products = [...Dproducts, ...Iproducts];
+        const products = [...Dproducts, ...Iproducts, ...Huproducts];
 
         const parsePrice = (price: string | null | undefined): number => {
             if (!price) return Infinity;
@@ -72,6 +82,7 @@ export async function POST(req: NextRequest) {
             Iproducts,
             Dproducts,
             Hproducts,
+            Huproducts,
             Fproducts,
         ]);
     } catch (error) {

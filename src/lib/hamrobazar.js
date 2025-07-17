@@ -13,10 +13,16 @@ export async function scrapeHamrobazaar(Hurl) {
     waitUntil: 'networkidle2',
     timeout: 100000,
   })
-  await page.waitForSelector('[data-test-id="virtuoso-item-list"]', { timeout: 30000 })
+  const wrapperExists = await page.waitForSelector('[data-test-id="virtuoso-item-list"]', { timeout: 30000 })
   const seenHrefs = new Set()
   const collectedItems = []
   const maxItems = 40
+
+  if (!wrapperExists) {
+    await browser.close()
+    return []
+  }
+
 
   let lastHeight = 0
   let idleCounter = 0
@@ -85,6 +91,9 @@ export async function scrapeHamrobazaar(Hurl) {
   await browser.close()
   return collectedItems
 }
+
+
+
 export async function scrapeHamrobazaarPrice(Hurl, lowPrice, highPrice) {
   const browser = await puppeteer.launch({
     headless: false,
