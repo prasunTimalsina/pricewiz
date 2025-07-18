@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Card from "./card";
-import SelectTop10 from "../lib/top10Selection.js";
+import SelectTop10 from "../lib/scrapper/top10Selection.js";
 
 interface Product {
   site: string;
@@ -17,7 +17,6 @@ interface Props {
 }
 
 export default function SortedBody({ decproducts }: Props) {
-
   // Call SelectTop10 with decproducts
   const selected = SelectTop10(decproducts);
 
@@ -67,4 +66,3 @@ function Section({
     </div>
   );
 }
-
