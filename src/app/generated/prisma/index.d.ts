@@ -3427,7 +3427,7 @@ export namespace Prisma {
 
   export type ListingWhereUniqueInput = Prisma.AtLeast<{
     id?: number
-    productId_platform?: ListingProductIdPlatformCompoundUniqueInput
+    productId_platform_url?: ListingProductIdPlatformUrlCompoundUniqueInput
     AND?: ListingWhereInput | ListingWhereInput[]
     OR?: ListingWhereInput[]
     NOT?: ListingWhereInput | ListingWhereInput[]
@@ -3439,7 +3439,7 @@ export namespace Prisma {
     url?: StringFilter<"Listing"> | string
     scrapedAt?: DateTimeFilter<"Listing"> | Date | string
     product?: XOR<ProductScalarRelationFilter, ProductWhereInput>
-  }, "id" | "productId_platform">
+  }, "id" | "productId_platform_url">
 
   export type ListingOrderByWithAggregationInput = {
     id?: SortOrder
@@ -3754,9 +3754,10 @@ export namespace Prisma {
     nulls?: NullsOrder
   }
 
-  export type ListingProductIdPlatformCompoundUniqueInput = {
+  export type ListingProductIdPlatformUrlCompoundUniqueInput = {
     productId: number
     platform: string
+    url: string
   }
 
   export type ListingCountOrderByAggregateInput = {

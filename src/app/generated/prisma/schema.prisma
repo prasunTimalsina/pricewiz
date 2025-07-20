@@ -33,5 +33,5 @@ model Listing {
   scrapedAt DateTime @default(now())
   product   Product  @relation(fields: [productId], references: [id])
 
-  @@unique([productId, platform])
+  @@unique([productId, platform, url])
 }

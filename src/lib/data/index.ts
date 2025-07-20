@@ -61,7 +61,11 @@ export async function scrapeAll(productName: string) {
     }));
 
     /// Adding to database
-    finalProducts.map(async (product) => await saveListing(product));
+
+    for (const product of finalProducts) {
+      await saveListing(product);
+    }
+
     return finalProducts;
   } catch (error) {
     console.error("Error scraping:", error);

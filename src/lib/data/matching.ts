@@ -46,19 +46,49 @@ interface Product {
 }
 
 function cleanTitle(raw: string): string {
-  return (
-    raw
-      .toLowerCase()
-      .replace(/\(.*?\)/g, "")
-      .replace(/[\/\\|_-]/g, " ")
-      .replace(
-        /\b(?:8gb|16gb|4gb|128gb|256gb|512gb|ram|ssd|full hd|touch display)\b/g,
-        ""
-      )
-      .replace(/[^a-z0-9\s."]+/gi, "")
-      .replace(/\s{2,}/g, " ")
-      .trim()
-  );
+  const cleaned = raw
+    // 1) lowercase
+    .toLowerCase()
+
+    // 2) remove any parenthetical content
+    .replace(/\(.*?\)/g, "")
+
+    // 3) unify hyphens/slashes/underscores into spaces
+    .replace(/[/\\|_-]+/g, " ")
+
+    // 4) strip common retailer/store/vendor tags
+    .replace(
+      /\b(?:evostore|oliz store|official store|authorized reseller|apple intelligence|store)\b/g,
+      ""
+    )
+
+    // 5) strip measurement units & capacities for tech/electrics
+    .replace(
+      /\b\d+(\.\d+)?\s?(?:gb|tb|mb|kb|ram|ssd|m?ah|w|kw|v|hz|inch|in|cm|mm|kg|g|ml|l|oz)\b/g,
+      ""
+    )
+
+    // 6) strip cosmetic‑specific packaging sizes
+    .replace(/\b\d+(\.\d+)?\s?(?:ml|l|oz)\b/g, "")
+
+    // 7) remove marketing buzzwords
+    .replace(
+      /\b(?:new|latest|sale|edition|limited|original|genuine|authentic)\b/g,
+      ""
+    )
+
+    // 8) remove any remaining non-alphanumeric characters except spaces & quotes
+    .replace(/[^a-z0-9\s."]/g, "")
+
+    // 9) collapse multiple spaces into one
+    .replace(/\s{2,}/g, " ")
+
+    // 10) trim edges
+    .trim();
+
+  // 11) keep only the first 7 words
+  const words = cleaned.split(/\s+/).filter(Boolean);
+  return words.slice(0, 5).join(" ");
 }
 
 export async function findOrCreateProduct(title: string): Promise<number> {
@@ -108,7 +138,7 @@ export async function findOrCreateProduct(title: string): Promise<number> {
 
     const rating = cosineSimilarity(titleVector, productVector);
 
-    if (rating > 0.3 && (!bestMatch || rating > bestMatch.rating)) {
+    if (rating > 0.5 && (!bestMatch || rating > bestMatch.rating)) {
       bestMatch = { id: products[i].id, rating };
     }
   }

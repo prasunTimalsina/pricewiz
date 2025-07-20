@@ -12,12 +12,17 @@ export async function saveListing(scraped: {
     const productId = await findOrCreateProduct(scraped.title);
 
     await prisma.listing.upsert({
-      where: { productId_platform: { productId, platform: scraped.platform } },
+      where: {
+        productId_platform_url: {
+          productId,
+          platform: scraped.platform,
+          url: scraped.url,
+        },
+      },
       update: {
         title: scraped.title,
         price: scraped.price,
         imageUrl: scraped.imgUrl || null,
-        url: scraped.url,
         scrapedAt: new Date(),
       },
       create: {
@@ -30,9 +35,13 @@ export async function saveListing(scraped: {
         scrapedAt: new Date(),
       },
     });
+
+    console.log(
+      `✅ Successfully saved listing: ${scraped.title} (${scraped.platform})`
+    );
   } catch (error) {
     console.error(
-      `Failed to save listing for ${scraped.title} (${scraped.platform}):`,
+      `❌ Failed to save listing for ${scraped.title} (${scraped.platform}):`,
       error
     );
     throw error;
