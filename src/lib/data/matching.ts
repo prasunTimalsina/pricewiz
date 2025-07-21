@@ -51,10 +51,10 @@ function cleanTitle(raw: string): string {
       .toLowerCase()
       .replace(/\(.*?\)/g, "")
       .replace(/[\/\\|_-]/g, " ")
-      // .replace(
-      //   /\b(?:8gb|16gb|4gb|128gb|256gb|512gb|ram|ssd|full hd|touch display)\b/g,
-      //   ""
-      // )
+      .replace(
+        /\b(?:8gb|16gb|4gb|128gb|256gb|512gb|ram|ssd|full hd|touch display)\b/g,
+        ""
+      )
       .replace(/[^a-z0-9\s."]+/gi, "")
       .replace(/\s{2,}/g, " ")
       .trim()
@@ -63,7 +63,6 @@ function cleanTitle(raw: string): string {
 
 export async function findOrCreateProduct(title: string): Promise<number> {
   const cleanedTitle = cleanTitle(title);
-  console.log(`Cleaned title: ${cleanedTitle} (original: ${title})`);
 
   const titleWords: string[] = cleanedTitle
     .split(/\s+/)
@@ -108,11 +107,6 @@ export async function findOrCreateProduct(title: string): Promise<number> {
     );
 
     const rating = cosineSimilarity(titleVector, productVector);
-    console.log(
-      `Comparing "${cleanedTitle}" with "${
-        products[i].title
-      }" (score: ${rating.toFixed(4)})`
-    );
 
     if (rating > 0.3 && (!bestMatch || rating > bestMatch.rating)) {
       bestMatch = { id: products[i].id, rating };
@@ -120,13 +114,6 @@ export async function findOrCreateProduct(title: string): Promise<number> {
   }
 
   if (bestMatch) {
-    console.log(
-      `✅ Matched productId: ${
-        bestMatch.id
-      } (similarity: ${bestMatch.rating.toFixed(4)}, matched title: ${
-        products.find((p) => p.id === bestMatch!.id)?.title
-      })`
-    );
     return bestMatch.id;
   }
 
@@ -134,8 +121,5 @@ export async function findOrCreateProduct(title: string): Promise<number> {
     data: { title: cleanedTitle },
   });
 
-  console.log(
-    `🆕 Created new product: ${newProduct.id} with title: ${cleanedTitle}`
-  );
   return newProduct.id;
 }
