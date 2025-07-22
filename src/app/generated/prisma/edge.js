@@ -120,9 +120,20 @@ exports.Prisma.QueryMode = {
   insensitive: 'insensitive'
 };
 
+exports.Prisma.ProductOrderByRelevanceFieldEnum = {
+  title: 'title'
+};
+
 exports.Prisma.NullsOrder = {
   first: 'first',
   last: 'last'
+};
+
+exports.Prisma.ListingOrderByRelevanceFieldEnum = {
+  platform: 'platform',
+  title: 'title',
+  imageUrl: 'imageUrl',
+  url: 'url'
 };
 
 
@@ -154,8 +165,15 @@ const config = {
         "native": true
       }
     ],
+<<<<<<< HEAD
     "previewFeatures": [],
     "sourceFilePath": "/home/sunil_wsl/personal/pricewiz/prisma/schema.prisma",
+=======
+    "previewFeatures": [
+      "fullTextSearchPostgres"
+    ],
+    "sourceFilePath": "C:\\Users\\uniqu\\OneDrive\\Desktop\\College\\7th Sem\\pricewiz\\prisma\\schema.prisma",
+>>>>>>> 9e75a6f (Add products api with search query)
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -178,8 +196,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"../src/app/generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel Product {\n  id        Int       @id @default(autoincrement())\n  title     String\n  createdAt DateTime  @default(now())\n  updatedAt DateTime  @updatedAt\n  listings  Listing[]\n}\n\nmodel Listing {\n  id        Int      @id @default(autoincrement())\n  productId Int\n  platform  String\n  title     String\n  price     Float\n  imageUrl  String?\n  url       String\n  scrapedAt DateTime @default(now())\n  product   Product  @relation(fields: [productId], references: [id])\n\n  @@unique([productId, platform, url])\n}\n",
-  "inlineSchemaHash": "df7a7b5de313b182d61512f1652f67fc6c5d27e13cabb67c621a779018e89392",
+  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\n// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?\n// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init\n\ngenerator client {\n  provider        = \"prisma-client-js\"\n  output          = \"../src/app/generated/prisma\"\n  previewFeatures = [\"fullTextSearchPostgres\"]\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel Product {\n  id        Int       @id @default(autoincrement())\n  title     String\n  createdAt DateTime  @default(now())\n  updatedAt DateTime  @updatedAt\n  listings  Listing[]\n}\n\nmodel Listing {\n  id        Int      @id @default(autoincrement())\n  productId Int\n  platform  String\n  title     String\n  price     Float\n  imageUrl  String?\n  url       String\n  scrapedAt DateTime @default(now())\n  product   Product  @relation(fields: [productId], references: [id])\n\n  @@unique([productId, platform, url])\n}\n",
+  "inlineSchemaHash": "796770e08620dcdbb202a77d1020df3d69f21628327e83395e6def0954128270",
   "copyEngine": true
 }
 config.dirname = '/'

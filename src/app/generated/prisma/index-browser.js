@@ -148,9 +148,20 @@ exports.Prisma.QueryMode = {
   insensitive: 'insensitive'
 };
 
+exports.Prisma.ProductOrderByRelevanceFieldEnum = {
+  title: 'title'
+};
+
 exports.Prisma.NullsOrder = {
   first: 'first',
   last: 'last'
+};
+
+exports.Prisma.ListingOrderByRelevanceFieldEnum = {
+  platform: 'platform',
+  title: 'title',
+  imageUrl: 'imageUrl',
+  url: 'url'
 };
 
 
