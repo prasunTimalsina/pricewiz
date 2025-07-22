@@ -9,7 +9,7 @@ export default function Page({ searchParams }: PageProps) {
 
   return (
     <div className="p-6">
-      {query ? <Queryresult query={query} /> : <p>Please enter a search term.</p>}
+      <Queryresult query={query} />
     </div>
   );
 }
