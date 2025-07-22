@@ -43,7 +43,7 @@ export default function Queryresult() {
       .then(setProducts)
       .catch((err) => console.error(err))
       .finally(() => setLoading(false));
-  }, []);
+  }, [query]);
 
   if (!query) return <p>Please enter a search term.</p>;
   if (loading) return <p>Loading...</p>;
