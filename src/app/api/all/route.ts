@@ -8,7 +8,6 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   try {
     const { query } = await req.json();
-    console.time("Total time");
 
     const Durl = `https://www.daraz.com.np/catalog/?spm=a2a0e.tm80335409.search.d_go&q=${query}`;
     const Iurl = `https://itti.com.np/search/result?q=${query}&category_type=search`;
@@ -17,37 +16,27 @@ export async function POST(req: NextRequest) {
     const Furl = `https://foodmandu.com/Restaurant/Index?q=${query}&k=restaurant&cty=1`;
 
     const hamroPromise = (async () => {
-      console.time("Hamrobazaar time");
       const Hproducts = await scrapeHamrobazaar(Hurl);
-      console.timeEnd("Hamrobazaar time");
       return Hproducts;
     })();
 
     const darazPromise = (async () => {
-      console.time("Daraz time");
       const Dproducts = await scrapeDaraz(Durl);
-      console.timeEnd("Daraz time");
       return Dproducts;
     })();
 
     const ittiPromise = (async () => {
-      console.time("Itti time");
       const Iproducts = await scrapeIiti(Iurl);
-      console.timeEnd("Itti time");
       return Iproducts;
     })();
 
     const hukutPromise = (async () => {
-      console.time("Hukut time");
       const Huproducts = await ScrapeHukut(HUurl);
-      console.timeEnd("Hukut time");
       return Huproducts;
     })();
 
     const foodPromise = (async () => {
-      console.time("Foodmandu time");
       const Fproducts = await scrapeFoodMandu(Furl);
-      console.timeEnd("Foodmandu time");
       return Fproducts;
     })();
 
@@ -60,7 +49,6 @@ export async function POST(req: NextRequest) {
         foodPromise,
       ]);
 
-    console.timeEnd("Total time");
 
     const products = [...Dproducts, ...Iproducts, ...Huproducts];
 

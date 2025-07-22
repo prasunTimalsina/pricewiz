@@ -1,15 +1,12 @@
 import Queryresult from "@/components/queryresult";
+import SearchBar from "@/components/searchbar";
 
-interface PageProps {
-  searchParams: { q?: string; };
-}
-
-export default function Page({ searchParams }: PageProps) {
-  const query = searchParams.q ?? "";
+export default function Page() {
 
   return (
     <div className="p-6">
-      <Queryresult query={query} />
+      <SearchBar />
+      <Queryresult />
     </div>
   );
 }
