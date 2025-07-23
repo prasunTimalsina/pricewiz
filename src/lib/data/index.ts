@@ -2,7 +2,8 @@ import { scrapeDaraz } from "@/lib/scrapper/daraz";
 import { scrapeIiti } from "@/lib/scrapper/itti";
 import { ScrapeHukut } from "@/lib/scrapper/hukut";
 import SelectTop10 from "../scrapper/top10Selection";
-import { saveListing } from "./database";
+import { saveListing, recordQueryRun } from "./database";
+import prisma from "./prisma";
 
 export async function scrapeAll(productName: string) {
   try {
@@ -60,11 +61,25 @@ export async function scrapeAll(productName: string) {
       platform: product.site,
     }));
 
-    /// Adding to database
-
+    // collect IDs so we could link, if needed
+    const productIds: number[] = [];
     for (const product of finalProducts) {
-      await saveListing(product);
+      const id = await saveListing(product);
+      productIds.push(id);
     }
+
+    // 1) upsert (or create) the Query row
+    //    let’s have recordQueryRun return the Query’s ID:
+    const queryId = await recordQueryRun(productName);
+
+    // 2) now link each product to that query:
+    await prisma.productQueries.createMany({
+      data: productIds.map((productId) => ({
+        productId,
+        queryId,
+      })),
+      skipDuplicates: true, // don’t error if you re‑run the same query
+    });
 
     return finalProducts;
   } catch (error) {

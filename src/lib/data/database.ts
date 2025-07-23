@@ -39,11 +39,41 @@ export async function saveListing(scraped: {
     console.log(
       `✅ Successfully saved listing: ${scraped.title} (${scraped.platform})`
     );
+
+    //returning product id  for query table
+    return productId;
   } catch (error) {
     console.error(
       `❌ Failed to save listing for ${scraped.title} (${scraped.platform}):`,
       error
     );
     throw error;
+  }
+}
+
+/**
+ * Upserts a Query record, setting nextRunAt = 24h from now.
+ */
+// database.ts
+export async function recordQueryRun(queryText: string): Promise<number> {
+  const next = new Date();
+  next.setDate(next.getDate() + 1);
+
+  // find existing
+  const existing = await prisma.query.findFirst({
+    where: { query: queryText },
+  });
+
+  if (existing) {
+    await prisma.query.update({
+      where: { id: existing.id },
+      data: { nextRunAt: next },
+    });
+    return existing.id;
+  } else {
+    const created = await prisma.query.create({
+      data: { query: queryText, nextRunAt: next },
+    });
+    return created.id;
   }
 }
