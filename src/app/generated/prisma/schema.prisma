@@ -16,15 +16,18 @@ datasource db {
 }
 
 model Product {
-  id        Int       @id @default(autoincrement())
-  title     String
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  listings  Listing[]
+  id         Int              @id @default(autoincrement())
+  title      String
+  popularity Int              @default(0)
+  createdAt  DateTime         @default(now())
+  updatedAt  DateTime         @updatedAt
+  listings   Listing[]
+  queries    ProductQueries[]
 }
 
 model Listing {
   id        Int      @id @default(autoincrement())
+  product   Product  @relation(fields: [productId], references: [id])
   productId Int
   platform  String
   title     String
@@ -32,7 +35,37 @@ model Listing {
   imageUrl  String?
   url       String
   scrapedAt DateTime @default(now())
-  product   Product  @relation(fields: [productId], references: [id])
+  tracks    Track[]
 
   @@unique([productId, platform, url])
+}
+
+model Track {
+  id        Int      @id @default(autoincrement())
+  listing   Listing  @relation(fields: [listingId], references: [id])
+  listingId Int
+  minPrice  Int
+  email     String
+  prodTitle String
+  createdAt DateTime @default(now())
+}
+
+model Query {
+  id        Int      @id @default(autoincrement())
+  query     String
+  nextRunAt DateTime
+  createdAt DateTime @default(now())
+
+  products ProductQueries[]
+}
+
+/// join table for Product <-> Query many-to-many
+model ProductQueries {
+  product   Product @relation(fields: [productId], references: [id])
+  productId Int
+
+  query   Query @relation(fields: [queryId], references: [id])
+  queryId Int
+
+  @@id([productId, queryId])
 }

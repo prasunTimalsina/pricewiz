@@ -1,3 +1,4 @@
+-- This is an empty migration.
 -- 1) Add a generated tsvector column on title
 ALTER TABLE "Product"
   ADD COLUMN "_fts_title" tsvector

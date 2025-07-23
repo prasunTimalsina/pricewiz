@@ -123,6 +123,7 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
 exports.Prisma.ProductScalarFieldEnum = {
   id: 'id',
   title: 'title',
+  popularity: 'popularity',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };
@@ -136,6 +137,27 @@ exports.Prisma.ListingScalarFieldEnum = {
   imageUrl: 'imageUrl',
   url: 'url',
   scrapedAt: 'scrapedAt'
+};
+
+exports.Prisma.TrackScalarFieldEnum = {
+  id: 'id',
+  listingId: 'listingId',
+  minPrice: 'minPrice',
+  email: 'email',
+  prodTitle: 'prodTitle',
+  createdAt: 'createdAt'
+};
+
+exports.Prisma.QueryScalarFieldEnum = {
+  id: 'id',
+  query: 'query',
+  nextRunAt: 'nextRunAt',
+  createdAt: 'createdAt'
+};
+
+exports.Prisma.ProductQueriesScalarFieldEnum = {
+  productId: 'productId',
+  queryId: 'queryId'
 };
 
 exports.Prisma.SortOrder = {
@@ -164,10 +186,22 @@ exports.Prisma.ListingOrderByRelevanceFieldEnum = {
   url: 'url'
 };
 
+exports.Prisma.TrackOrderByRelevanceFieldEnum = {
+  email: 'email',
+  prodTitle: 'prodTitle'
+};
+
+exports.Prisma.QueryOrderByRelevanceFieldEnum = {
+  query: 'query'
+};
+
 
 exports.Prisma.ModelName = {
   Product: 'Product',
-  Listing: 'Listing'
+  Listing: 'Listing',
+  Track: 'Track',
+  Query: 'Query',
+  ProductQueries: 'ProductQueries'
 };
 
 /**
