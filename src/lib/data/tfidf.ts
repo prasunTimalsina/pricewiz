@@ -43,3 +43,40 @@ export function cosineSimilarity(vec1: number[], vec2: number[]): number {
   if (vec1Size === 0 || vec2Size === 0) return 0;
   return dotProduct / (vec1Size * vec2Size);
 }
+
+/// logic to get similar products
+export function getSimilarProducts(
+  baseProduct: { id: number; title: string },
+  otherProducts: { id: number; title: string }[]
+): { id: number; title: string; similarity: number }[] {
+  // Tokenize and clean the base product title
+  const baseTokens = baseProduct.title
+    .split(" ")
+    .map(toLowercase)
+    .map(omitPunctuations)
+    .filter(Boolean);
+
+  // Tokenize and clean all other product titles
+  const otherDocs = otherProducts.map((p) =>
+    p.title.split(" ").map(toLowercase).map(omitPunctuations).filter(Boolean)
+  );
+
+  const allWords = Array.from(new Set([...baseTokens, ...otherDocs.flat()]));
+
+  const baseVec = calcTfIdfVectorForDoc(baseTokens, otherDocs, allWords);
+
+  return otherProducts.map((product, idx) => {
+    const otherVec = calcTfIdfVectorForDoc(
+      otherDocs[idx],
+      [baseTokens, ...otherDocs.filter((_, i) => i !== idx)],
+      allWords
+    );
+    const similarity = cosineSimilarity(baseVec, otherVec);
+
+    return {
+      id: product.id,
+      title: product.title,
+      similarity,
+    };
+  });
+}
