@@ -1,12 +1,11 @@
-const express = require("express")
+import express from "express"
+import "./scheduler.js"
+
 const app = express()
 const PORT = 4000
 
-// Import the scheduler
-require("./scheduler")
-
 app.get("/", (req, res) => {
-    res.send("Hello from Express server with Cron Scheduler!")
+    res.send("express server")
 })
 
 app.listen(PORT, () => {
