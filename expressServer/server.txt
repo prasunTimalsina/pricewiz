@@ -1,4 +1,4 @@
-[2025-07-26T10:52:27.734Z] listing Data:
+[2025-07-26T12:27:22.874Z] listing Data:
 [
   {
     "title": "Apple iPhone 16 Pro Max - EvoStore",
@@ -36,656 +36,69 @@
     "price": 104100
   }
 ]
-[2025-07-26T10:52:47.069Z] Scraped Data:
+[2025-07-26T12:28:38.325Z] ✅ Matched Listings:
 [
-  [
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-13-128gb-evostore-i108291639.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/c18572082b3969959876df8308114f29.jpg_200x200q80.avif",
-      "title": "Apple iPhone 13 128GB - EvoStore",
-      "price": "74100"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-13-128gb-61-a15-ios-super-retina-xdr-oled-display-i164974113.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/bcffdd73eeb35bb6583708bca7ac4a0c.png_200x200q80.avif",
-      "title": "Apple iPhone 13 (128GB) | 6.1\" A15 IOS Super Retina XDR OLED Display",
-      "price": "77100"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-14-price-in-nepal",
-      "img": "https://cdn.hukut.com/iphone_14_red.webp",
-      "title": "Apple iPhone 14",
-      "price": "89299"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-14-128gb-61-genuine-super-retina-oled-display-i164984044.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/100768106100b2ae220a3b73435aeb7b.png_200x200q80.avif",
-      "title": "Apple iPhone 14 (128GB) 6.1\" Genuine Super Retina OLED Display",
-      "price": "89300"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-15-61-super-retina-xdr-display-a16-bionic-chipset-48mp-main-camera-with-2x-telephoto-i164985113.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/9d534bfcc7fda1f11d0d082a4e489d29.png_200x200q80.avif",
-      "title": "Apple iPhone 15 | 6.1\" Super Retina XDR display | A16 Bionic Chipset | 48MP Main Camera with 2X Telephoto",
-      "price": "104100"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-15-price-in-nepal",
-      "img": "https://cdn.hukut.com/iPhone%2015%20pink(3).webp",
-      "title": "Apple iPhone 15",
-      "price": "104100"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/apple-iphone-16e",
-      "img": "https://cdn.hukut.com/Apple-iphone-16e-Price-in-Nepal.png1744176699046",
-      "title": "Apple iPhone 16e",
-      "price": "117100"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-16",
-      "img": "https://cdn.hukut.com/apple-iphone-16-ultramarine.webp1728295065216",
-      "title": "Apple iPhone 16",
-      "price": "130200"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 128GB",
-      "price": "135200",
-      "href": "https://itti.com.np/product/apple-iphone-15-128GB-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-128GB-price-nepal/thumb/974daf1d-850f-4382-88e3-d235d03f8d99.webp"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-16-plus",
-      "img": "https://cdn.hukut.com/apple-iphone-16-ultramarine.webp1728296274693",
-      "title": "Apple iPhone 16 Plus",
-      "price": "149600"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 16 128GB",
-      "price": "152000",
-      "href": "https://itti.com.np/product/apple-iphone-16-128-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-16-128-price-nepal/thumb/ebda0919-a9c1-4640-8836-27621de282c4.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 256GB",
-      "price": "154200",
-      "href": "https://itti.com.np/product/apple-iphone-15-256gb",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-256gb/thumb/e2ac3fe6-0afc-40de-9f4f-3985b924578f.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 Plus 128GB",
-      "price": "154200",
-      "href": "https://itti.com.np/product/apple-iphone-15-plus-128GB-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-plus-128GB-price-nepal/thumb/f25f8b1f-aa7a-4fa6-a390-7368e357fdc1.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 16 Plus 128GB",
-      "price": "171000",
-      "href": "https://itti.com.np/product/apple-iphone-16-plus-128gb-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-16-plus-128gb-price-nepal/thumb/16362efd-ee42-4073-9902-007a5529618a.webp"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-16-pro-max-69-inch-super-retina-xdr-oled-display-a18-chip-pro-camera-system-i164897694.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/7ed0083d10bf5c722b301ecb68e1806c.png_200x200q80.avif",
-      "title": "Apple iPhone 16 Pro Max | 6.9 inch Super Retina XDR OLED Display | A18 chip | Pro Camera System",
-      "price": "197000"
-    }
-  ],
-  [
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-16-pro-max-69-inch-super-retina-xdr-oled-display-a18-chip-pro-camera-system-i164897694.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/7ed0083d10bf5c722b301ecb68e1806c.png_200x200q80.avif",
-      "title": "Apple iPhone 16 Pro Max | 6.9 inch Super Retina XDR OLED Display | A18 chip | Pro Camera System",
-      "price": "197000"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 16 Plus 128GB",
-      "price": "171000",
-      "href": "https://itti.com.np/product/apple-iphone-16-plus-128gb-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-16-plus-128gb-price-nepal/thumb/16362efd-ee42-4073-9902-007a5529618a.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 256GB",
-      "price": "154200",
-      "href": "https://itti.com.np/product/apple-iphone-15-256gb",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-256gb/thumb/e2ac3fe6-0afc-40de-9f4f-3985b924578f.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 Plus 128GB",
-      "price": "154200",
-      "href": "https://itti.com.np/product/apple-iphone-15-plus-128GB-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-plus-128GB-price-nepal/thumb/f25f8b1f-aa7a-4fa6-a390-7368e357fdc1.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 16 128GB",
-      "price": "152000",
-      "href": "https://itti.com.np/product/apple-iphone-16-128-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-16-128-price-nepal/thumb/ebda0919-a9c1-4640-8836-27621de282c4.webp"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-16-plus",
-      "img": "https://cdn.hukut.com/apple-iphone-16-ultramarine.webp1728296274693",
-      "title": "Apple iPhone 16 Plus",
-      "price": "149600"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 128GB",
-      "price": "135200",
-      "href": "https://itti.com.np/product/apple-iphone-15-128GB-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-128GB-price-nepal/thumb/974daf1d-850f-4382-88e3-d235d03f8d99.webp"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-16",
-      "img": "https://cdn.hukut.com/apple-iphone-16-ultramarine.webp1728295065216",
-      "title": "Apple iPhone 16",
-      "price": "130200"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/apple-iphone-16e",
-      "img": "https://cdn.hukut.com/Apple-iphone-16e-Price-in-Nepal.png1744176699046",
-      "title": "Apple iPhone 16e",
-      "price": "117100"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-15-61-super-retina-xdr-display-a16-bionic-chipset-48mp-main-camera-with-2x-telephoto-i164985113.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/9d534bfcc7fda1f11d0d082a4e489d29.png_200x200q80.avif",
-      "title": "Apple iPhone 15 | 6.1\" Super Retina XDR display | A16 Bionic Chipset | 48MP Main Camera with 2X Telephoto",
-      "price": "104100"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-15-price-in-nepal",
-      "img": "https://cdn.hukut.com/iPhone%2015%20pink(3).webp",
-      "title": "Apple iPhone 15",
-      "price": "104100"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-14-128gb-61-genuine-super-retina-oled-display-i164984044.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/100768106100b2ae220a3b73435aeb7b.png_200x200q80.avif",
-      "title": "Apple iPhone 14 (128GB) 6.1\" Genuine Super Retina OLED Display",
-      "price": "89300"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-14-price-in-nepal",
-      "img": "https://cdn.hukut.com/iphone_14_red.webp",
-      "title": "Apple iPhone 14",
-      "price": "89299"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-13-128gb-61-a15-ios-super-retina-xdr-oled-display-i164974113.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/bcffdd73eeb35bb6583708bca7ac4a0c.png_200x200q80.avif",
-      "title": "Apple iPhone 13 (128GB) | 6.1\" A15 IOS Super Retina XDR OLED Display",
-      "price": "77100"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-13-128gb-evostore-i108291639.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/c18572082b3969959876df8308114f29.jpg_200x200q80.avif",
-      "title": "Apple iPhone 13 128GB - EvoStore",
-      "price": "74100"
-    }
-  ],
-  [
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 128GB",
-      "price": "135200",
-      "href": "https://itti.com.np/product/apple-iphone-15-128GB-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-128GB-price-nepal/thumb/974daf1d-850f-4382-88e3-d235d03f8d99.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 16 128GB",
-      "price": "152000",
-      "href": "https://itti.com.np/product/apple-iphone-16-128-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-16-128-price-nepal/thumb/ebda0919-a9c1-4640-8836-27621de282c4.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 256GB",
-      "price": "154200",
-      "href": "https://itti.com.np/product/apple-iphone-15-256gb",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-256gb/thumb/e2ac3fe6-0afc-40de-9f4f-3985b924578f.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 15 Plus 128GB",
-      "price": "154200",
-      "href": "https://itti.com.np/product/apple-iphone-15-plus-128GB-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-15-plus-128GB-price-nepal/thumb/f25f8b1f-aa7a-4fa6-a390-7368e357fdc1.webp"
-    },
-    {
-      "site": "IITI",
-      "title": "Apple iPhone 16 Plus 128GB",
-      "price": "171000",
-      "href": "https://itti.com.np/product/apple-iphone-16-plus-128gb-price-nepal",
-      "img": "https://admin.itti.com.np/storage/product/apple-iphone-16-plus-128gb-price-nepal/thumb/16362efd-ee42-4073-9902-007a5529618a.webp"
-    }
-  ],
-  [
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-13-128gb-evostore-i108291639.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/c18572082b3969959876df8308114f29.jpg_200x200q80.avif",
-      "title": "Apple iPhone 13 128GB - EvoStore",
-      "price": "74100"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-13-128gb-61-a15-ios-super-retina-xdr-oled-display-i164974113.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/bcffdd73eeb35bb6583708bca7ac4a0c.png_200x200q80.avif",
-      "title": "Apple iPhone 13 (128GB) | 6.1\" A15 IOS Super Retina XDR OLED Display",
-      "price": "77100"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-15-61-super-retina-xdr-display-a16-bionic-chipset-48mp-main-camera-with-2x-telephoto-i164985113.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/9d534bfcc7fda1f11d0d082a4e489d29.png_200x200q80.avif",
-      "title": "Apple iPhone 15 | 6.1\" Super Retina XDR display | A16 Bionic Chipset | 48MP Main Camera with 2X Telephoto",
-      "price": "104100"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-16-pro-max-69-inch-super-retina-xdr-oled-display-a18-chip-pro-camera-system-i164897694.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/7ed0083d10bf5c722b301ecb68e1806c.png_200x200q80.avif",
-      "title": "Apple iPhone 16 Pro Max | 6.9 inch Super Retina XDR OLED Display | A18 chip | Pro Camera System",
-      "price": "197000"
-    },
-    {
-      "site": "Daraz",
-      "href": "https://www.daraz.com.np/products/apple-iphone-14-128gb-61-genuine-super-retina-oled-display-i164984044.html",
-      "img": "https://img.drz.lazcdn.com/static/np/p/100768106100b2ae220a3b73435aeb7b.png_200x200q80.avif",
-      "title": "Apple iPhone 14 (128GB) 6.1\" Genuine Super Retina OLED Display",
-      "price": "89300"
-    }
-  ],
-  [
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-x-256gb-newi-phone-x-256gbi-phone-x-in-kathmandu/afa540402b674aab55ef7ce9d995ced5",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/26/69ac19ef-4847-ffe3-bdb5-e161a4ee9905.jpg?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone X 256gb New>I Phone X 256gb>I Phone X (Apple IPhone)",
-      "description": "IPhone X 256gb with 6 months warranty ♥️ Phone new condition ma xa. All parts are orginal! No problem No any single scratch Truetone Faceid✅ still water resistant ✅ physical sim👍 Best For Raw camera and Gaming🔥 yo condition ko iphone x paudaina market ma Geniune can be used worldwide Price #23999 negotiable ✅",
-      "price": "23999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/498f190aaec81d80de2ff813e0227be9",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/26/3c42d153-ed24-29ca-0925-68f99d0a3042.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 |I Phone 13 |I Phone 13 128GB | 13 13 (Apple IPhone)",
-      "description": "𝐅𝐫𝐞𝐞 𝐓𝐚𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 𝐰𝐢𝐭𝐡 𝟏 𝐲𝐞𝐚𝐫 𝐚𝐩𝐩𝐥𝐞 𝐰𝐚𝐫𝐫𝐚𝐧𝐭𝐲 /𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 ; 📞𝟗𝟖𝟏𝟎𝟑𝟓𝟖𝟖𝟎𝟗 🚚 𝐇𝐨𝐦𝐞 𝐃𝐞𝐥𝐢𝐯𝐞𝐫𝐲 𝐅𝐫𝐞𝐞 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟑 (𝟔.𝟏𝐢𝐧𝐜𝐡) 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 𝟏𝟐𝐌𝐏 + 𝟏𝟐 𝐌𝐏 | 𝟏𝟐𝐌𝐏 𝐅𝐫𝐨𝐧𝐭 𝐂𝐚𝐦𝐞𝐫𝐚 𝟑𝟐𝟒𝟎 𝐦𝐀𝐡 𝐁𝐚𝐭𝐭𝐞𝐫𝐲 𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟓 𝐁𝐢𝐨𝐧𝐢𝐜 (𝟓 𝐧𝐦) 𝟒 𝐆𝐁 𝐑𝐚𝐦 | 𝟏𝟐𝟖 𝐆𝐁 𝐑𝐎𝐌: 𝟕1𝟎𝟎𝟎",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/e0a49efc55b3197fc190ad2a7cd81ca9",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/26/52f016a2-e7df-67a9-2e72-baf0ab904dfa.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 | I Phone 13 | I Phone 13 128gb | 13 13 (Apple IPhone)",
-      "description": "🔥9768442336🔥𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬+𝐂𝐨𝐯𝐞𝐫✓ -𝟐𝟎𝐰 𝐀𝐩𝐩𝐥𝐞 𝐎𝐫𝐠𝐢𝐧𝐚𝐥 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 Extra Cost 3k ✓1-Year Apple Warranty Fixed ~ 128Gb • 71,000 Color : Black Blue , ( Limited Stock ) IPHONE 13 128gb black - 71,000 ✓ Brand New / Sealed Pack Set 100% Original / Genuine Product 1 Year International Warranty ✓ iPhone 16 256b • 129,999",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/b31003519b8655b5a95319e99e03f501",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/26/72fc5cbe-0a7e-bb17-4f6a-06e9310b6f94.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 |I Phone 13 |I Phone 13 128GB | 13 13 (Apple IPhone)",
-      "description": "𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝒖𝒔 : 𝟗𝟖𝟎𝟖𝟐𝟔𝟖𝟐𝟐𝟔 .🎉 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 😍𝑮𝒐𝒓𝒈𝒆𝒐𝒖𝒔 𝟔.𝟏- 𝑺𝒖𝒑𝒆𝒓 𝑹𝒆𝒕𝒊𝒏𝒂 𝑿𝑫𝑹 𝑶𝑳𝑬𝑫, ⏩𝑨𝒑𝒑𝒍𝒆 𝑨𝟏𝟓 𝑩𝒊𝒐𝒏𝒊𝒄 (𝟓 𝒏𝒎) 📸𝟏𝟐𝑴𝑷 𝒃𝒂𝒄𝒌 𝒄𝒂𝒎𝒆𝒓𝒂. 📱𝟏𝟐𝑴𝑷 𝑭𝒓𝒐𝒏𝒕 . 𝟏 𝒚𝒆𝒂𝒓 𝑾𝒂𝒓𝒓𝒂𝒏𝒕𝒚 ✔️ 💖𝒑𝒓𝒊𝒄𝒆 𝟏𝟐𝟖 𝑮𝑩 : 𝟕1𝟎𝟎𝟎",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/iphone-13-iphone-13-iphone-13-iphone-13-13-in-kathmandu/dd325ef1d1233a44d663a13b890c1ae6",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/e9ba6799-ee98-2912-261a-d335585f4b02.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I-Phone 13, I-Phone 13, I-Phone 13, I-Phone 13, 13 (Apple IPhone)",
-      "description": "Call☏/Msg✉︎ 9767646766 🛍️Cover and tempture glass free of cost. 20Watt⚡ apple adapter available with best price. And All kind of accessories are available at cheap rate. iPhone 13 128Gb comes with one year international warranty.✅ For color option or any queries direct call us.",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-i-16-i-16-in-kathmandu/d1a46cc118b9af626b877e50bdcfe6e7",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/ed9ffc7c-d52c-8eb6-58b6-41da8b772701.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 I Phone 16 I Phone 16 128Gb & I 16 I 16 (Apple IPhone)",
-      "description": "WhatsApp 9802318602 .( Free Itme Tmper Glass and Cover ) Apple Orginal 20W CHARGER extra cost ) Contact now for more information For MDMS REGISTERED ®️ ✅ Extra Charged Introducing the brand new iPhone 16! 📱 🚀 Experience top-tier performance 📷 Capture breathtaking photos and videos with ease. 🆕 Brand new, sealed in the box! 💫 Elevate your Apple experience with the iPhone 16. Don't miss out on this amazing offer! Grab your iPhone 16 today. 🌟 Price: GB 128 = 113000😎 GB = 256 = 134000",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/iphone-16-iphone-16-iphone-16-iphone-16-16-in-kathmandu/46efb0981031b63e626a9c383252fc2f",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/c4a77c98-c328-9c55-675f-82b02c98ab16.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I-Phone 16, I-Phone 16, I-Phone 16, I-Phone 16, 16 (Apple IPhone)",
-      "description": "Call☏/Msg✉︎ 9767646766 🛍️Free cover, tempture glass and 20Watt⚡ apple adapter cost additional available with best price. And All kind of accessories are available at cheap rate. iPhone 16 128Gb comes with one year international warranty. For color option or any queries direct call us.",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/16fe7bb2394b92cd351b2c9867e6d564",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/624d3940-e101-1e4d-38c0-5eddd7bda37f.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 • I Phone 13 • I Phone 13 128gb •13 •13 (Apple IPhone)",
-      "description": "𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐮𝐬: 𝟗𝟖𝟐𝟑𝟕𝟒𝟔𝟒𝟎𝟒 🎉 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 😍𝑮𝒐𝒓𝒈𝒆𝒐𝒖𝒔 𝟔.𝟏- 𝑺𝒖𝒑𝒆𝒓 𝑹𝒆𝒕𝒊𝒏𝒂 𝑿𝑫𝑹 𝑶𝑳𝑬𝑫, ⏩𝑨𝒑𝒑𝒍𝒆 𝑨𝟏𝟓 𝑩𝒊𝒐𝒏𝒊𝒄 (𝟓 𝒏𝒎) 📸𝟏𝟐𝑴𝑷 𝒃𝒂𝒄𝒌 𝒄𝒂𝒎𝒆𝒓𝒂. 📱𝟏𝟐𝑴𝑷 𝑭𝒓𝒐𝒏𝒕 . 𝟏 𝒚𝒆𝒂𝒓 𝑾𝒂𝒓𝒓𝒂𝒏𝒕𝒚 ✔️ 💖𝒑𝒓𝒊𝒄𝒆 𝟏𝟐𝟖 𝑮𝑩 : 71000",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-i-16-i-16-in-kathmandu/a331d9f5bca2d86a5e6efe43bc288a02",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/923b6d0b-56d2-0957-df5e-6022c55ee5ed.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 I Phone 16 I Phone 16 128Gb & I 16 I 16 (Apple IPhone)",
-      "description": "📞𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝒖𝒔 : 9823746404 𝟏 𝒚𝒆𝒂𝒓 𝑾𝒂𝒓𝒓𝒂𝒏𝒕𝒚 ✔️ 🎉 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 𝟐𝟎𝐖 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐄𝐱𝐭𝐫𝐚 𝐜𝐨𝐬𝐭 ( 𝟑,𝟎𝟎𝟎 ) 😍𝑮𝒐𝒓𝒈𝒆𝒐𝒖𝒔 𝟔.𝟏- 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 ⏩𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟖 (𝟑 𝐧𝐦) 📸𝟒𝟖𝑴𝑷 + 𝟏𝟐𝑴𝑷 𝒃𝒂𝒄𝒌 𝒄𝒂𝒎𝒆𝒓𝒂. 📱𝟏𝟐𝑴𝑷 𝑭𝒓𝒐𝒏𝒕 . 💖𝒑𝒓𝒊𝒄𝒆 𝟏𝟐𝟖 𝑮𝑩 : 𝟏𝟏3𝟎𝟎𝟎 💖𝒑𝒓𝒊𝒄𝒆 𝟐𝟓𝟔 𝑮𝑩 : 𝟏𝟑𝟕𝟎𝟎𝟎",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-16-128-16-in-kathmandu/7a9ca5b1e26888cc98285bed782beda7",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/22d582d1-918d-34cb-e221-df0cb44c9920.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 | I Phone 16 | I Phone 16 | 16 128 | 16 (Apple IPhone)",
-      "description": "📛 9866290782 (𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝗮𝗻𝗱 𝗩𝗶𝗯𝗲𝗿) Brand new seal pack iPhone 16 (128gb) available. ~One year international warranty. ~Seal pack genuine Phone. ~Delivery not available. ~Fix and final price.✅ ~Emi not available.",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-i-16-i-16-in-kathmandu/54cd34fb18dd5f6d985e549c5c6359c2",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/0ec4b5b4-8850-21f9-5f0f-f1ae560986dc.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 I Phone 16 I Phone 16 128Gb & I 16 I 16 (Apple IPhone)",
-      "description": "C𝙤𝙣𝙩𝙖𝙘𝙩:𝟗𝟖𝟏𝟖𝟓𝟑𝟎𝟒𝟕𝟑 .\"🛍️ 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 😁 𝘽𝙧𝙖𝙣𝙙 𝙣𝙚𝙬 𝙨𝙚𝙖𝙡 𝙥𝙖𝙘𝙠 𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣: 𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙤𝙧: 𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟖 (𝟑 𝐧𝐦) 𝘾𝙖𝙢𝙚𝙧𝙖: 𝟒𝟖+𝟏𝟐 𝙍𝙖𝙢/𝙧𝙤𝙢 :𝟖/𝟏𝟐𝟖𝙂𝘽 = 𝟏,𝟏3𝟎𝟎𝟎 𝙍𝙖𝙢/𝙧𝙤𝙢 :𝟖/𝟐𝟓𝟔𝙂𝘽 = 𝟏,𝟑𝟕𝟎𝟎𝟎 𝙊𝙣𝙡𝙮 𝙀𝙭𝙥𝙡𝙤𝙧𝙚 𝙤𝙪𝙧 𝙬𝙞𝙙𝙚 𝙧𝙖𝙣𝙜𝙚 𝙤𝙛 𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙨 𝙖𝙣𝙙 𝙚𝙣𝙟𝙤𝙮 𝙛𝙖𝙨𝙩 🚚 𝙙𝙚𝙡𝙞𝙫𝙚𝙧𝙮! 𝙎𝙝𝙤𝙥",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-i-phone-16-16-in-kathmandu/609d4f34fe4e4c2c37720478614e4122",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/5b6a6635-c5e3-4a18-fd48-18bb479d2e80.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 >I Phone 16 >I Phone 16 >I Phone 16 >16 (Apple IPhone)",
-      "description": "*Oneday💥 Offer!!💫🎉 *9702688461 call before arrival IPhone 16 128gb phone seal pack with 1 year global warranty. (Software warranty) *Brand new genuine authentic products. *Sim slot (1 Esim and another physical sim slot). *Location (Pako,Newroad K.T.M)",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/a3bcec43bacaf6dff53ce7c8dad044d6",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/76dd7a4e-27cb-8700-0bcb-1e46421673f3.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 |I Phone 13 |I Phone 13 128GB | 13 13 (Apple IPhone)",
-      "description": "𝐅𝐫𝐞𝐞 𝐓𝐚𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 𝐰𝐢𝐭𝐡 𝟏 𝐲𝐞𝐚𝐫 𝐚𝐩𝐩𝐥𝐞 𝐰𝐚𝐫𝐫𝐚𝐧𝐭𝐲 /𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 ; 📞𝟗𝟖𝟏𝟎𝟑𝟓𝟖𝟖𝟎𝟗 🚚 𝐇𝐨𝐦𝐞 𝐃𝐞𝐥𝐢𝐯𝐞𝐫𝐲 𝐅𝐫𝐞𝐞 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟑 (𝟔.𝟏𝐢𝐧𝐜𝐡) 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 𝟏𝟐𝐌𝐏 + 𝟏𝟐 𝐌𝐏 | 𝟏𝟐𝐌𝐏 𝐅𝐫𝐨𝐧𝐭 𝐂𝐚𝐦𝐞𝐫𝐚 𝟑𝟐𝟒𝟎 𝐦𝐀𝐡 𝐁𝐚𝐭𝐭𝐞𝐫𝐲 𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟓 𝐁𝐢𝐨𝐧𝐢𝐜 (𝟓 𝐧𝐦) 𝟒 𝐆𝐁 𝐑𝐚𝐦 | 𝟏𝟐𝟖 𝐆𝐁 𝐑𝐎𝐌: 𝟕1𝟎𝟎𝟎",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/70b50eba8c558997cf654d9cd6981c48",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/89d4a5fb-0571-8f62-030f-5e9155b682a3.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 • I Phone 16 • I Phone 16 128Gb • 16 16 (Apple IPhone)",
-      "description": "𝐓𝐚𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 📤 𝐈𝐧𝐛𝐨𝐱 𝐎𝐑, 𝐐𝐮𝐢𝐜𝐤 𝐂𝐚𝐥𝐥 /𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 : 📞𝟗𝟖𝟏𝟎𝟑𝟓𝟖𝟖𝟎𝟗 𝐍𝐞𝐰𝐫𝐨𝐚𝐝 𝐊𝐚𝐭𝐡𝐦𝐚𝐧𝐝𝐮- 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟔 ( 𝟖𝐆𝐁, 𝟏𝟐𝟖𝐆𝐁) & ( 𝟖𝐆𝐁, 𝟐𝟓𝟔𝐆𝐁) | (𝟔.1𝐢𝐧𝐜𝐡) 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 𝟒𝟖𝐌𝐏 + 𝟏𝟐 𝐌𝐏 | 𝟏𝟐𝐌𝐏 𝐅𝐫𝐨𝐧𝐭 𝐂𝐚𝐦𝐞𝐫𝐚 𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟖 (𝟑 𝐧𝐦) 𝐏𝐫𝐢𝐜𝐞= 𝟏𝟐𝟖 𝐆𝐛 + 𝟏,𝟏3𝟎𝟎𝟎 𝐏𝐫𝐢𝐜𝐞= 𝟐𝟓𝟔 𝐆𝐛 + 𝟏,𝟑4𝟎𝟎𝟎",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/15595325bbf287e8806b2648befb30b7",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/cc527e4f-1d10-287a-4f59-ed5665b16523.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 ->I Phone 16 ->I Phone 16 128gb 16 ->16 (Apple IPhone)",
-      "description": "For Phone✅, PhoneMandu 💯 📳Number - 📞9810281862 iPhone 16 128Gb box pack physical+esim. Box pack📲 not refurbished phone❌🚫. Genuine product seal pack comes with one year apple international🌐 warranty and fully original product. #Phone details↪️ °Display size \"6.12\"☑️ °Chipset \"a18\"☑️ °Camera \"48+12\" 2x optical☑️ °Release date \"20,sep. (2024)☑️ °Fix rate \" 1,13,000✔️",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/782702dc973399a52384fd156dbaab65",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/fd1efc88-276b-d0f1-debc-69b7e8ee4bfa.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 | I Phone 16 | I Phone 16 128gb | 16 16 (Apple IPhone)",
-      "description": "𝐂𝐚𝐥𝐥•𝟗𝟖𝟔𝟒𝟒𝟕𝟔𝟒𝟓𝟏💥𝙁𝙧𝙚𝙚 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬+𝐂𝐨𝐯𝐞r { 𝟐𝟎𝐰 𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 𝐄𝐱𝐭𝐫𝐚 Cost 3k ● Black, Blue, White, Green √ iPhone 16 128gb Seal Pack Brand New 1 Year Apple International Warranty Iphone 16 128gb • 113,000 Iphone 16 256gb • 130,000",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-i-16-i-16-in-kathmandu/d26bf5ff3668233199738f12ca37ac8f",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/25/92339340-5301-9054-f53a-51547574c6ae.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 I Phone 16 I Phone 16 128Gb & I 16 I 16 (Apple IPhone)",
-      "description": "📞𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝒖𝒔 : 𝟗𝟖𝟎𝟖𝟐𝟔𝟖𝟐𝟐𝟔 𝟏 𝒚𝒆𝒂𝒓 𝑾𝒂𝒓𝒓𝒂𝒏𝒕𝒚 ✔️🎉 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 𝟐𝟎𝐖 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐄𝐱𝐭𝐫𝐚 𝐜𝐨𝐬𝐭 ( 𝟑,𝟎𝟎𝟎 ) 😍𝑮𝒐𝒓𝒈𝒆𝒐𝒖𝒔 𝟔.𝟏- 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 ⏩𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟖 (𝟑 𝐧𝐦) 📸𝟒𝟖𝑴𝑷 + 𝟏𝟐𝑴𝑷 𝒃𝒂𝒄𝒌 𝒄𝒂𝒎𝒆𝒓𝒂. 📱𝟏𝟐𝑴𝑷 𝑭𝒓𝒐𝒏𝒕 . 💖𝒑𝒓𝒊𝒄𝒆 𝟏𝟐𝟖 𝑮𝑩 : 𝟏𝟏30𝟎𝟎 💖𝒑𝒓𝒊𝒄𝒆 𝟐𝟓𝟔 𝑮𝑩 : 𝟏𝟑2𝟎𝟎𝟎 💖𝒑𝒓𝒊𝒄𝒆 𝟏𝟐𝟖 𝑮𝑩 : 𝟏𝟕𝟎𝟎𝟎𝟎 𝟏𝟔 𝐏𝐫𝐨",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/056d5d18109b775e66db68482ff47a59",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/24/078225b5-7597-8fe5-0f0e-8b3f272877cf.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 ᯾ I Phone 16 ᯾ I Phone 16 128Gb ᯾ 16 16 (Apple IPhone)",
-      "description": "𝗚𝗿𝗮𝗯 𝗮 𝗕𝗲𝘀𝘁 𝗗𝗲𝗮𝗹✨ with a reasonable price.🥳 iPhone 16 (128GB) Phone Seal-Pack authentic Product. • One year Apple international warranty. • Free accessories ( Transparent cover+Screen Protector ) • Genuine/Original Product, Can be used worldwide. • ( Whatsapp 9702688461 )",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/26f1c825726152797adc9970ca755a24",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/24/af60a3f9-bd57-c977-c658-19e6ee3cf41a.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 | I Phone 16 | I Phone 16 128gb | 16 16 (Apple IPhone)",
-      "description": "♦️-9866290780 ✓Free🆓 Temper Glass & Cover📍100% Original Sealed Pack-Brand New 📍1-Year Apple Limited Warranty 📍 iPhone 16 128gb • 113,000 fix rate 📍 Express Delivery All Over Nepal 📍No Exchange & No Emi Option",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/38c8d88429bfa1d1ba0d3edb80b52779",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/24/42741ab2-0484-935c-bcd0-cdd2f58c9650.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 • I Phone 16 • I Phone 16 128Gb • 16 16 (Apple IPhone)",
-      "description": "𝐓𝐚𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 📤 𝐈𝐧𝐛𝐨𝐱 𝐎𝐑, 𝐐𝐮𝐢𝐜𝐤 𝐂𝐚𝐥𝐥 /𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 : 📞𝟗𝟖𝟏𝟎𝟑𝟓𝟖𝟖𝟎𝟗 𝐍𝐞𝐰𝐫𝐨𝐚𝐝 𝐊𝐚𝐭𝐡𝐦𝐚𝐧𝐝𝐮- 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟔 ( 𝟖𝐆𝐁, 𝟏𝟐𝟖𝐆𝐁) & ( 𝟖𝐆𝐁, 𝟐𝟓𝟔𝐆𝐁) | (𝟔.1𝐢𝐧𝐜𝐡) 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 𝟒𝟖𝐌𝐏 + 𝟏𝟐 𝐌𝐏 | 𝟏𝟐𝐌𝐏 𝐅𝐫𝐨𝐧𝐭 𝐂𝐚𝐦𝐞𝐫𝐚 𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟖 (𝟑 𝐧𝐦) 𝐏𝐫𝐢𝐜𝐞= 𝟏𝟐𝟖 𝐆𝐛 + 𝟏,𝟏3𝟎𝟎𝟎 𝐏𝐫𝐢𝐜𝐞= 𝟐𝟓𝟔 𝐆𝐛 + 𝟏,𝟑4𝟎𝟎𝟎",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/2ec020efe57e1a6946022702bcae693b",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/23/f525512e-2093-7fd8-9f14-abc95bb0d05a.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 |I Phone 13 |I Phone 13 128GB | 13 13 (Apple IPhone)",
-      "description": "WhatsApp 9802318602 Free Itme (Tmper Glass and Cover \\) Contact now for more information. For MDMS REGISTERED ®️ ✅ Extra Charged 🚀 Experience top-tier performance 📷 Capture breathtaking photos and videos with ease. 🆕 Brand new, sealed in the box! 💫 Elevate your Apple experience with the iPhone 13. 📈 Get ahead with cutting-edge technology. Price: 71000",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-i-16-i-16-in-kathmandu/d59527596146d628a4a7e3210abf8092",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/24/a259c66a-7f9a-da2b-f48d-a4bf5e717b80.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 I Phone 16 I Phone 16 128Gb & I 16 I 16 (Apple IPhone)",
-      "description": "WhatsApp 9802318602 .( Free Itme Tmper Glass and Cover ) Apple Orginal 20W CHARGER extra cost ) Contact now for more information For MDMS REGISTERED ®️ ✅ Extra Charged Introducing the brand new iPhone 16! 📱 🚀 Experience top-tier performance 📷 Capture breathtaking photos and videos with ease. 🆕 Brand new, sealed in the box! 💫 Elevate your Apple experience with the iPhone 16. Don't miss out on this amazing offer! Grab your iPhone 16 today. 🌟 Price: GB 128 = 113000😎 GB = 256 = 134000",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-i-phone-16-16-in-kathmandu/98424e051533c126805d7c3d4350dd7d",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/24/b57132a8-4114-4261-dc69-0adc7d085209.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 I Phone 16 I Phone 16 I Phone 16 & 16 . (Apple IPhone)",
-      "description": "🔥Hurry up limited product available☄️ Fast call at📞 9810281862 🚴三 Samsung S24 12/256gb seal pack, 1 year international warranty. T&C applied original/genuine product, Can be used world wide. Hurry up only at 113k -Fix price🔥",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-i-16-i-16-in-kathmandu/2911f7fa4ad368c3eba3d5296ed28242",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/24/f1df9c8a-2f83-9a6e-50df-5127ba93bef3.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 I Phone 16 I Phone 16 128Gb & I 16 I 16 (Apple IPhone)",
-      "description": "C𝙤𝙣𝙩𝙖𝙘𝙩:𝟗𝟖𝟏𝟖𝟓𝟑𝟎𝟒𝟕𝟑 .\"🛍️ 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 😁 𝘽𝙧𝙖𝙣𝙙 𝙣𝙚𝙬 𝙨𝙚𝙖𝙡 𝙥𝙖𝙘𝙠 𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣: 𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙤𝙧: 𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟖 (𝟑 𝐧𝐦) 𝘾𝙖𝙢𝙚𝙧𝙖: 𝟒𝟖+𝟏𝟐 𝙍𝙖𝙢/𝙧𝙤𝙢 :𝟖/𝟏𝟐𝟖𝙂𝘽 = 𝟏,𝟏3𝟎𝟎𝟎 𝙍𝙖𝙢/𝙧𝙤𝙢 :𝟖/𝟐𝟓𝟔𝙂𝘽 = 𝟏,𝟑𝟕𝟎𝟎𝟎 𝙊𝙣𝙡𝙮 𝙀𝙭𝙥𝙡𝙤𝙧𝙚 𝙤𝙪𝙧 𝙬𝙞𝙙𝙚 𝙧𝙖𝙣𝙜𝙚 𝙤𝙛 𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙨 𝙖𝙣𝙙 𝙚𝙣𝙟𝙤𝙮 𝙛𝙖𝙨𝙩 🚚 𝙙𝙚𝙡𝙞𝙫𝙚𝙧𝙮! 𝙎𝙝𝙤𝙥",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/a261c47da82156d572485c8e18577093",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/23/62198d1d-1fc0-40be-f1e7-8fe1b4847f7f.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 | I Phone 13 | I Phone 13 128gb | 13 13 (Apple IPhone)",
-      "description": "Contact number = 9702048286 Direct call or whatsapp msg I phone 13 128GB With battery health 91% 🔋 All parts are orginal! No problem No any single scratch . ✅ Comes with cover, glass and cable 🥳🎮 Geniune physical sim👍 Best For Raw camera and Gaming🔥 Geniune can be used worldwide Price #53000fix✅ only And we provide brand new also Brand new price 70000 only",
-      "price": "52999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/aff79901312980e33e43d67656911b12",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/23/d7831114-c3e7-782d-fa99-c4ab1d377e03.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 | I Phone 16 | I Phone 16 128gb | 16 16 (Apple IPhone)",
-      "description": "𝐂𝐚𝐥𝐥•𝟗𝟖𝟔𝟒𝟒𝟕𝟔𝟒𝟓𝟏💥𝙁𝙧𝙚𝙚 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬+𝐂𝐨𝐯𝐞r { 𝟐𝟎𝐰 𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 𝐄𝐱𝐭𝐫𝐚 Cost 3k ● Black, Blue, White, Green √ iPhone 16 128gb Seal Pack Brand New 1 Year Apple International Warranty Iphone 16 128gb • 113,000 Iphone 16 256gb • 130,000",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/c91e731c40fb76760203b7b0c694f80e",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/23/76c8d4fb-e4ad-91f6-43bb-2b3d2b829eda.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 | I Phone 13 | I Phone 13 128gb | 13 13 (Apple IPhone)",
-      "description": "Contact number = 9813563955 Direct call or whatsapp us IPhone 13 128 GB with 94%battery new with 6 months warranty Comes with phone and cable , cover and glass All parts are geniune Not a single scratch physical sim👍 Best For Raw camera and Gaming🔥 can be used worldwide Check time for 15 days offer 🥳🥳 Price #54000 fix✅ Brand new cost 70000 only",
-      "price": "53999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-i-16-i-16-in-kathmandu/6ec35e8baf5870e1e4155c0564f022b6",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/23/85051a94-e5bc-ecac-f27d-200a8b5233ad.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 I Phone 16 I Phone 16 128Gb & I 16 I 16 (Apple IPhone)",
-      "description": "📞𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝒖𝒔 : 9823746404 𝟏 𝒚𝒆𝒂𝒓 𝑾𝒂𝒓𝒓𝒂𝒏𝒕𝒚 ✔️ 🎉 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 𝟐𝟎𝐖 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐄𝐱𝐭𝐫𝐚 𝐜𝐨𝐬𝐭 ( 𝟑,𝟎𝟎𝟎 ) 😍𝑮𝒐𝒓𝒈𝒆𝒐𝒖𝒔 𝟔.𝟏- 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 ⏩𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟖 (𝟑 𝐧𝐦) 📸𝟒𝟖𝑴𝑷 + 𝟏𝟐𝑴𝑷 𝒃𝒂𝒄𝒌 𝒄𝒂𝒎𝒆𝒓𝒂. 📱𝟏𝟐𝑴𝑷 𝑭𝒓𝒐𝒏𝒕 . 💖𝒑𝒓𝒊𝒄𝒆 𝟏𝟐𝟖 𝑮𝑩 : 𝟏𝟏3𝟎𝟎𝟎 💖𝒑𝒓𝒊𝒄𝒆 𝟐𝟓𝟔 𝑮𝑩 : 𝟏𝟑𝟕𝟎𝟎𝟎",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13i-phone-13i-phone-13i-phone-1313-13-in-kathmandu/54a52c1f5479d24223da9f8aabfce9f7",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/22/9d2a5619-6afa-fc21-5dac-b73728b0eec1.jpg?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13>I Phone 13>I Phone 13>I Phone 13>13 13 (Apple IPhone)",
-      "description": "IPhone 13 128gb 90% battery new with 6 months warranty ♥️ Phone like new xa. Comes with phone only! All parts are orginal! No problem No any single scratch Truetone Faceid✅ Battery health 90% Geniune physical sim👍 Best For Raw camera and Gaming🔥 Geniune can be used worldwide Price #52999 fix✅",
-      "price": "52999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-11-128gbi-phone-11-128gbi-phone-1111-11-in-kathmandu/011c1fb624d3122ade52424466ec94ca",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/22/78388e3c-21c1-04d9-edaa-5236730612be.jpg?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 11 128gb>I Phone 11 128gb>I Phone 11>11 11 (Apple IPhone)",
-      "description": "IPhone 11 128gb Like new❤️ All working 🙏 Phone fresh xa all working Comes with new datacable✅ No any problems in device No any single scratch Faceid✅ truetone ✅ battery health 91% physical sim👍 Best For Raw camera and Gaming🔥 Geniune can be used worldwide comes with 1 months repair warranty 💪♥️🙏 Price #33999 Don't Bargain ❌❌",
-      "price": "33999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/601daeafec021f6baf954b2427f27eed",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/22/58bb6f84-16fd-de38-9542-b6b95a54ec9a.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 |I Phone 13 |I Phone 13 128GB | 13 13 (Apple IPhone)",
-      "description": "𝐅𝐫𝐞𝐞 𝐓𝐚𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 𝐰𝐢𝐭𝐡 𝟏 𝐲𝐞𝐚𝐫 𝐚𝐩𝐩𝐥𝐞 𝐰𝐚𝐫𝐫𝐚𝐧𝐭𝐲 /𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 ; 📞𝟗𝟖𝟏𝟎𝟑𝟓𝟖𝟖𝟎𝟗 🚚 𝐇𝐨𝐦𝐞 𝐃𝐞𝐥𝐢𝐯𝐞𝐫𝐲 𝐅𝐫𝐞𝐞 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟑 (𝟔.𝟏𝐢𝐧𝐜𝐡) 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 𝟏𝟐𝐌𝐏 + 𝟏𝟐 𝐌𝐏 | 𝟏𝟐𝐌𝐏 𝐅𝐫𝐨𝐧𝐭 𝐂𝐚𝐦𝐞𝐫𝐚 𝟑𝟐𝟒𝟎 𝐦𝐀𝐡 𝐁𝐚𝐭𝐭𝐞𝐫𝐲 𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟓 𝐁𝐢𝐨𝐧𝐢𝐜 (𝟓 𝐧𝐦) 𝟒 𝐆𝐁 𝐑𝐚𝐦 | 𝟏𝟐𝟖 𝐆𝐁 𝐑𝐎𝐌: 𝟕1𝟎𝟎𝟎",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/7f0715529d538a9b5bdce8c0cfa5128f",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/22/ec89b48c-6455-9328-fb55-9620699d6e3d.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 | I Phone 13 | I Phone 13 128gb | 13 13 (Apple IPhone)",
-      "description": "𝐐𝐮𝐢𝐜𝐤- 9763413657 ✓Gift🎁Cover & Screen Protector)✓ ××-20W Apple Adapter Extra Cost Rs•3,000 ✓ Brand New-Sealpack || 100% Original Product 🔥 Variant - ( Sim+Esim ) - 70,999 Can Be Use World-wide || 1-Year International Warranty / 1Year Software Warranty From Shop ✓ iPhone 16 (128gb) Rs- 112,999 ✓ iPhone 16 Plus (128gb) Rs- 126,999 ✓ iPhone 16 Plus (256gb) Rs- 140,999",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/87a16a7fc8a049b3042bdd1f8fc4917d",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/22/61015f76-6db5-c122-52e9-9891d1b0431f.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 • I Phone 13 • I Phone 13 128gb •13 •13 (Apple IPhone)",
-      "description": "𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐮𝐬: 𝟗𝟖𝟐𝟑𝟕𝟒𝟔𝟒𝟎𝟒 🎉 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 😍𝑮𝒐𝒓𝒈𝒆𝒐𝒖𝒔 𝟔.𝟏- 𝑺𝒖𝒑𝒆𝒓 𝑹𝒆𝒕𝒊𝒏𝒂 𝑿𝑫𝑹 𝑶𝑳𝑬𝑫, ⏩𝑨𝒑𝒑𝒍𝒆 𝑨𝟏𝟓 𝑩𝒊𝒐𝒏𝒊𝒄 (𝟓 𝒏𝒎) 📸𝟏𝟐𝑴𝑷 𝒃𝒂𝒄𝒌 𝒄𝒂𝒎𝒆𝒓𝒂. 📱𝟏𝟐𝑴𝑷 𝑭𝒓𝒐𝒏𝒕 . 𝟏 𝒚𝒆𝒂𝒓 𝑾𝒂𝒓𝒓𝒂𝒏𝒕𝒚 ✔️ 💖𝒑𝒓𝒊𝒄𝒆 𝟏𝟐𝟖 𝑮𝑩 : 71000",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/34628bc3002cdd149ed3973fa02d5bf7",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/20/b9552fb8-6925-7ed6-fa97-591ef9d55cc1.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 |I Phone 13 |I Phone 13 128GB | 13 13 (Apple IPhone)",
-      "description": "𝐅𝐫𝐞𝐞 𝐓𝐚𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 𝐰𝐢𝐭𝐡 𝟏 𝐲𝐞𝐚𝐫 𝐚𝐩𝐩𝐥𝐞 𝐰𝐚𝐫𝐫𝐚𝐧𝐭𝐲 /𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 ; 📞𝟗𝟖𝟏𝟎𝟑𝟓𝟖𝟖𝟎𝟗 🚚 𝐇𝐨𝐦𝐞 𝐃𝐞𝐥𝐢𝐯𝐞𝐫𝐲 𝐅𝐫𝐞𝐞 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟑 (𝟔.𝟏𝐢𝐧𝐜𝐡) 𝐒𝐮𝐩𝐞𝐫 𝐑𝐞𝐭𝐢𝐧𝐚 𝐗𝐃𝐑 𝐎𝐋𝐄𝐃 𝟏𝟐𝐌𝐏 + 𝟏𝟐 𝐌𝐏 | 𝟏𝟐𝐌𝐏 𝐅𝐫𝐨𝐧𝐭 𝐂𝐚𝐦𝐞𝐫𝐚 𝟑𝟐𝟒𝟎 𝐦𝐀𝐡 𝐁𝐚𝐭𝐭𝐞𝐫𝐲 𝐀𝐩𝐩𝐥𝐞 𝐀𝟏𝟓 𝐁𝐢𝐨𝐧𝐢𝐜 (𝟓 𝐧𝐦) 𝟒 𝐆𝐁 𝐑𝐚𝐦 | 𝟏𝟐𝟖 𝐆𝐁 𝐑𝐎𝐌: 𝟕1𝟎𝟎𝟎",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/9cda982d02daffe9efa83772bcc9588f",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/20/5195f769-fd55-3251-3d38-dcf63f140ae1.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 | I Phone 13 | I Phone 13 128gb | 13 13 (Apple IPhone)",
-      "description": "𝐏𝐡𝐧-9861807226📌𝐅𝐫𝐞𝐞-𝐂𝐨𝐯𝐞𝐫+𝐒𝐜𝐫𝐞𝐞𝐧 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐨𝐫- ( -𝟐𝟎𝐰 𝐀𝐩𝐩𝐥𝐞 𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 3,000 For Extra Cost ) 1-Year Apple Warranty/-Iphone 13 128gb-𝐑𝐬• 70,𝟗𝟗𝟗 ✓ Seal/Pack (𝐂𝐨𝐥𝐨𝐫- Black ) -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- iPhone 16 128gb - 113,000 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟔 𝟐𝟓𝟔𝐠𝐛 - 𝟏𝟑0,𝟎𝟎𝟎",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/f6395598b687e6849a97541d1413800d",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/20/d0b13f55-4bcb-0da6-0963-545c83a609fc.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 | I Phone 16 | I Phone 16 128gb | 16 16 (Apple IPhone)",
-      "description": "𝐏𝐡𝐧-9861807226📌𝐅𝐫𝐞𝐞-𝐂𝐨𝐯𝐞𝐫+𝐒𝐜𝐫𝐞𝐞𝐧 𝐏𝐫𝐨𝐭𝐞𝐜𝐭𝐨𝐫- ( -𝟐𝟎𝐰 𝐀𝐩𝐩𝐥𝐞 𝐎𝐫𝐢𝐠𝐢𝐧𝐚𝐥 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 3,000 For Extra Cost ) 1-Year Apple Warranty/-Iphone 16 128gb-𝐑𝐬• 𝟏𝟏𝟑,𝟎𝟎𝟎 ✓ Seal/Pack (𝐂𝐨𝐥𝐨𝐫-White, Black, Teal, Ultramarine & Pink ) -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟔 𝟐𝟓𝟔𝐠𝐛 - 𝟏𝟑0,𝟎𝟎𝟎 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟔 𝐏𝐥𝐮𝐬 𝟏𝟐𝟖𝐠𝐛 - 𝟏𝟑0,𝟎𝟎𝟎 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟔 𝐏𝐥𝐮𝐬 𝟐𝟓𝟔𝐠𝐛 - 𝟏𝟒2,𝟎𝟎𝟎 ✓ Newroad Pipalbot ✓",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/0e761c85e5f0144fa840cfa1c50136d8",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/20/e2be55a1-47e4-4cc8-9863-00b7667addbf.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 ->I Phone 13 ->I Phone 13 128gb 13 ->13 (Apple IPhone)",
-      "description": "For Phone✅, PhoneMandu💯 📳Number -9810281862♉ IPhone 13 128Gb box pack physical+esim. Box pack📲 not refurbished phone❌🚫. Genuine product seal pack comes with one year apple international🌐 warranty and fully original product. #Phone details↪️ °Display size \"6.06\"☑️ °Chipset \"a15\"☑️ °Camera \"12+12\" 2x optical☑️ °Release date \"24,sep. (2021)☑️ °Fix rate \" 71,000✔️",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/167483790696a8ac777be76278ce0760",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/19/bbdd69bf-2cd0-6245-19f5-35e00bdf2c39.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 |I Phone 13 |I Phone 13 128GB | 13 13 (Apple IPhone)",
-      "description": "WhatsApp 9802318602 Free Itme (Tmper Glass and Cover \\) Contact now for more information. For MDMS REGISTERED ®️ ✅ Extra Charged 🚀 Experience top-tier performance 📷 Capture breathtaking photos and videos with ease. 🆕 Brand new, sealed in the box! 💫 Elevate your Apple experience with the iPhone 13. 📈 Get ahead with cutting-edge technology. Price: 71000",
-      "price": "70999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-16-i-phone-16-i-phone-16-128gb-16-16-in-kathmandu/0d0f3375ee83afa9a79170a8781aa092",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/18/f1566052-77fd-282e-efd3-8c6e4060b113.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 16 | I Phone 16 | I Phone 16 128gb | 16 16 (Apple IPhone)",
-      "description": "🔥9768442336🔥𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬+𝐂𝐨𝐯𝐞𝐫✓ -𝟐𝟎𝐰 𝐀𝐩𝐩𝐥𝐞 𝐎𝐫𝐠𝐢𝐧𝐚𝐥 𝐀𝐝𝐚𝐩𝐭𝐞𝐫 Extra Cost 3k ✓1-Year Apple Warranty Fixed ~ 128Gb • 113,000 Color : Black Blue White & Green , ( Limited Stock ) IPHONE 16 128gb black - 113,000 ✓ Brand New / Sealed Pack Set 100% Original / Genuine Product 1 Year International Warranty ✓ iPhone 16 256b • 129,999",
-      "price": "112999"
-    },
-    {
-      "site": "Hmaro_Bazar",
-      "href": "https://hamrobazaar.com/mobile-phone-handsets/apple-iphone/i-phone-13-i-phone-13-i-phone-13-128gb-13-13-in-kathmandu/dbff48d5f1674cf857de23a2d0f2d135",
-      "img": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2025/07/18/967860aa-de9f-1c63-48e5-4432cbf6fcf2.webp?x-image-process=image/resize,m_lfit,h_320,w_320/format,webp",
-      "title": "I Phone 13 |I Phone 13 |I Phone 13 128GB | 13 13 (Apple IPhone)",
-      "description": "𝑪𝒐𝒏𝒕𝒂𝒄𝒕 𝒖𝒔 : 𝟗𝟖𝟎𝟖𝟐𝟔𝟖𝟐𝟐𝟔 .🎉 𝐅𝐫𝐞𝐞 𝐓𝐞𝐦𝐩𝐞𝐫 𝐆𝐥𝐚𝐬𝐬 𝐀𝐧𝐝 𝐂𝐨𝐯𝐞𝐫 😍𝑮𝒐𝒓𝒈𝒆𝒐𝒖𝒔 𝟔.𝟏- 𝑺𝒖𝒑𝒆𝒓 𝑹𝒆𝒕𝒊𝒏𝒂 𝑿𝑫𝑹 𝑶𝑳𝑬𝑫, ⏩𝑨𝒑𝒑𝒍𝒆 𝑨𝟏𝟓 𝑩𝒊𝒐𝒏𝒊𝒄 (𝟓 𝒏𝒎) 📸𝟏𝟐𝑴𝑷 𝒃𝒂𝒄𝒌 𝒄𝒂𝒎𝒆𝒓𝒂. 📱𝟏𝟐𝑴𝑷 𝑭𝒓𝒐𝒏𝒕 . 𝟏 𝒚𝒆𝒂𝒓 𝑾𝒂𝒓𝒓𝒂𝒏𝒕𝒚 ✔️ 💖𝒑𝒓𝒊𝒄𝒆 𝟏𝟐𝟖 𝑮𝑩 : 𝟕1𝟎𝟎𝟎",
-      "price": "70999"
-    }
-  ],
-  [
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-14-price-in-nepal",
-      "img": "https://cdn.hukut.com/iphone_14_red.webp",
-      "title": "Apple iPhone 14",
-      "price": "89299"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-15-price-in-nepal",
-      "img": "https://cdn.hukut.com/iPhone%2015%20pink(3).webp",
-      "title": "Apple iPhone 15",
-      "price": "104100"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/apple-iphone-16e",
-      "img": "https://cdn.hukut.com/Apple-iphone-16e-Price-in-Nepal.png1744176699046",
-      "title": "Apple iPhone 16e",
-      "price": "117100"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-16",
-      "img": "https://cdn.hukut.com/apple-iphone-16-ultramarine.webp1728295065216",
-      "title": "Apple iPhone 16",
-      "price": "130200"
-    },
-    {
-      "site": "Hukut",
-      "href": "https://hukut.com/iphone-16-plus",
-      "img": "https://cdn.hukut.com/apple-iphone-16-ultramarine.webp1728296274693",
-      "title": "Apple iPhone 16 Plus",
-      "price": "149600"
-    }
-  ],
-  []
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/apple-iphone-15-61-super-retina-xdr-display-a16-bionic-chipset-48mp-main-camera-with-2x-telephoto-i164985113.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/9d534bfcc7fda1f11d0d082a4e489d29.png_200x200q80.avif",
+    "title": "apple iphone 15 6.1\" super",
+    "price": "104100"
+  },
+  {
+    "site": "Hukut",
+    "href": "https://hukut.com/iphone-15-price-in-nepal",
+    "img": "https://cdn.hukut.com/iPhone%2015%20pink(3).webp",
+    "title": "apple iphone 15",
+    "price": "104100"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/apple-iphone-16-pro-max-69-inch-super-retina-xdr-oled-display-a18-chip-pro-camera-system-i164897694.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/7ed0083d10bf5c722b301ecb68e1806c.png_200x200q80.avif",
+    "title": "apple iphone 16 pro max",
+    "price": "197000"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/apple-iphone-16-pro-max-69-inch-super-retina-xdr-oled-display-a18-chip-pro-camera-system-i164897694.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/7ed0083d10bf5c722b301ecb68e1806c.png_200x200q80.avif",
+    "title": "apple iphone 16 pro max",
+    "price": "197000"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/apple-iphone-15-61-super-retina-xdr-display-a16-bionic-chipset-48mp-main-camera-with-2x-telephoto-i164985113.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/9d534bfcc7fda1f11d0d082a4e489d29.png_200x200q80.avif",
+    "title": "apple iphone 15 6.1\" super",
+    "price": "104100"
+  },
+  {
+    "site": "Hukut",
+    "href": "https://hukut.com/iphone-15-price-in-nepal",
+    "img": "https://cdn.hukut.com/iPhone%2015%20pink(3).webp",
+    "title": "apple iphone 15",
+    "price": "104100"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/apple-iphone-15-61-super-retina-xdr-display-a16-bionic-chipset-48mp-main-camera-with-2x-telephoto-i164985113.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/9d534bfcc7fda1f11d0d082a4e489d29.png_200x200q80.avif",
+    "title": "apple iphone 15 6.1\" super",
+    "price": "104100"
+  },
+  {
+    "site": "Daraz",
+    "href": "https://www.daraz.com.np/products/apple-iphone-16-pro-max-69-inch-super-retina-xdr-oled-display-a18-chip-pro-camera-system-i164897694.html",
+    "img": "https://img.drz.lazcdn.com/static/np/p/7ed0083d10bf5c722b301ecb68e1806c.png_200x200q80.avif",
+    "title": "apple iphone 16 pro max",
+    "price": "197000"
+  },
+  {
+    "site": "Hukut",
+    "href": "https://hukut.com/iphone-15-price-in-nepal",
+    "img": "https://cdn.hukut.com/iPhone%2015%20pink(3).webp",
+    "title": "apple iphone 15",
+    "price": "104100"
+  }
 ]
-[2025-07-26T10:52:47.069Z] ✅ Matched Listings:
-[]

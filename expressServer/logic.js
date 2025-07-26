@@ -9,6 +9,12 @@ const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
 })
 
+function logToFile(message) {
+    const logFile = path.resolve("server.txt")
+    const timestamp = new Date().toISOString()
+    fs.appendFileSync(logFile, `[${timestamp}] ${message}\n`)
+}
+
 export async function UpdateListing() {
     console.time("schedule time")
     try {
@@ -17,7 +23,8 @@ export async function UpdateListing() {
 
         for (const q of queries) {
             console.time("loop time")
-            await ScrapeAndCompare(q.id, q.query)
+            const matchedListings = await ScrapeAndCompare(q.id, q.query)
+            await UpdateDb(matchedListings)
             console.timeEnd("loop time")
         }
         console.timeEnd("schedule time")
@@ -64,12 +71,12 @@ export async function ScrapeAndCompare(qid, query) {
         const scrapeDuration = ((scrapeEnd - scrapeStart) / 1000).toFixed(2)
 
         //logToFile(`Scrape time for query "${query}" (qid=${qid}): ${scrapeDuration}s`)
-        logToFile(`Scraped Data:\n${JSON.stringify(scrapedListing, null, 2)}`)
+        //logToFile(`Scraped Data:\n${JSON.stringify(scrapedListing, null, 2)}`)
 
         const matchedListings = Compare(listings, scrapedListing)
         logToFile(`✅ Matched Listings:\n${JSON.stringify(matchedListings, null, 2)}`)
 
-        return { listings, scrapedListing }
+        return { matchedListings }
     } catch (err) {
         logToFile(`❌ Error in ScrapeAndCompare for query ID ${qid}: ${err.message}`)
         throw err
@@ -77,17 +84,77 @@ export async function ScrapeAndCompare(qid, query) {
 }
 
 
-// Logging helper
-function logToFile(message) {
-    const logFile = path.resolve("server.txt")
-    const timestamp = new Date().toISOString()
-    fs.appendFileSync(logFile, `[${timestamp}] ${message}\n`)
-}
 
 function Compare(listings, scrapedListing) {
-    const matchedListings = scrapedListing.filter(yItem => {
-        return listings.some(xItem => xItem.title === yItem.title)
+    const flatScraped = scrapedListing.flat()
+
+    const matchedListings = flatScraped.filter(yItem => {
+        const cleanedYTitle = cleanTitle(yItem.title)
+        yItem.title = cleanedYTitle
+
+        return listings.some(xItem => cleanTitle(xItem.title) === cleanedYTitle && xItem.platform == yItem.site)
     })
     return matchedListings
 }
+
+
+export async function UpdateDb(matchedListings) {
+    for (const listing of matchedListings) {
+        const { site, title, href, price } = listing
+
+        try {
+            const result = await pool.query(
+                `SELECT id FROM "Listing" WHERE "platform" = $1 AND "title" = $2 AND "url" = $3 LIMIT 1`,
+                [site, title, href]
+            )
+
+            if (result.rows.length > 0) {
+                const id = result.rows[0].id
+                const rows = result.rows[0]
+                console.log(`matched row:`, rows)
+                await pool.query(
+                    `UPDATE listing SET price = $1 WHERE id = $2`,
+                    [price, id]
+                )
+
+                console.log(`✅ Updated price for: ${title} (${site})`)
+            } else {
+                console.log(`❌ No match found in DB for: ${title} (${site})`)
+            }
+        } catch (err) {
+            console.error(`⚠️ Error updating ${title} (${site}):`, err)
+        }
+    }
+}
+
+function cleanTitle(raw) {
+    if (typeof raw !== 'string' || !raw.trim()) return ""
+
+    const cleaned = raw
+        .toLowerCase()
+        .replace(/\(.*?\)/g, "")
+        .replace(/[/\\|_-]+/g, " ")
+        .replace(
+            /\b(?:evostore|oliz store|official store|authorized reseller|apple intelligence|store)\b/g,
+            ""
+        )
+        .replace(
+            /\b\d+(\.\d+)?\s?(?:gb|tb|mb|kb|ram|ssd|m?ah|w|kw|v|hz|inch|in|cm|mm|kg|g|ml|l|oz)\b/g,
+            ""
+        )
+        .replace(/\b\d+(\.\d+)?\s?(?:ml|l|oz)\b/g, "")
+        .replace(
+            /\b(?:new|latest|sale|edition|limited|original|genuine|authentic)\b/g,
+            ""
+        )
+        .replace(/[^a-z0-9\s."]/g, "")
+        .replace(/\s{2,}/g, " ")
+        .trim()
+
+    const words = cleaned.split(/\s+/).filter(Boolean)
+    return words.slice(0, 5).join(" ")
+}
+
+
+
 
