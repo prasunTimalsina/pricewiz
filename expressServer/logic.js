@@ -1,5 +1,7 @@
 import { Pool } from "pg"
 import dotenv from "dotenv"
+import fs from 'fs'
+import path from "path"
 
 dotenv.config()
 
@@ -27,7 +29,7 @@ export async function UpdateListing() {
 }
 
 
-async function ScrapeAndCompare(qid, query) {
+export async function ScrapeAndCompare(qid, query) {
     try {
         const listingRes = await pool.query(
             `
@@ -41,8 +43,9 @@ async function ScrapeAndCompare(qid, query) {
         )
 
         const listings = listingRes.rows
+        logToFile(`listing Data:\n${JSON.stringify(listings, null, 2)}`)
+        const scrapeStart = Date.now()
 
-        console.time("srape time")
         const response = await fetch("http://localhost:3000/api/all", {
             method: "POST",
             headers: {
@@ -56,25 +59,35 @@ async function ScrapeAndCompare(qid, query) {
         }
 
         const scrapedListing = await response.json()
-        console.timeEnd("srape time")
 
-        console.log(`scraped data:`, scrapedListing)
+        const scrapeEnd = Date.now()
+        const scrapeDuration = ((scrapeEnd - scrapeStart) / 1000).toFixed(2)
+
+        //logToFile(`Scrape time for query "${query}" (qid=${qid}): ${scrapeDuration}s`)
+        logToFile(`Scraped Data:\n${JSON.stringify(scrapedListing, null, 2)}`)
+
         const matchedListings = Compare(listings, scrapedListing)
-        console.log(`matched items`, matchedListings)
+        logToFile(`✅ Matched Listings:\n${JSON.stringify(matchedListings, null, 2)}`)
 
         return { listings, scrapedListing }
     } catch (err) {
-        console.error(` Error in ScrapeAndCompare for query ID ${qid}:`, err)
+        logToFile(`❌ Error in ScrapeAndCompare for query ID ${qid}: ${err.message}`)
         throw err
     }
 }
 
+
+// Logging helper
+function logToFile(message) {
+    const logFile = path.resolve("server.txt")
+    const timestamp = new Date().toISOString()
+    fs.appendFileSync(logFile, `[${timestamp}] ${message}\n`)
+}
+
 function Compare(listings, scrapedListing) {
     const matchedListings = scrapedListing.filter(yItem => {
-        return listings.some(xItem =>
-            xItem.title === yItem.title && xItem.platform === yItem.site
-        )
+        return listings.some(xItem => xItem.title === yItem.title)
     })
-
     return matchedListings
 }
+
