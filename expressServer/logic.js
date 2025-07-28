@@ -60,10 +60,7 @@ export async function TrackAndUpdate() {
             if (listingResult.rows.length > 0) {
                 const currentPrice = listingResult.rows[0].price
 
-                console.log(currentPrice, minPrice)
-
                 if (currentPrice < minPrice) {
-                    console.log(currentPrice, "<", minPrice)
                     alerts.push({
                         prodTitle,
                         email,
@@ -72,8 +69,6 @@ export async function TrackAndUpdate() {
                 }
             }
         }
-
-        console.log("Price Drop Alerts:", alerts)
         return alerts
     } catch (err) {
         console.error("⚠️ Error in TrackAndUpdate:", err)
