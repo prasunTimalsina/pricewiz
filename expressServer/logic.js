@@ -18,20 +18,19 @@ function logToFile(message) {
 export async function UpdateListing() {
     console.time("schedule time")
     try {
-        //const res = await pool.query(`SELECT id,query FROM "Query"`)
-        //const queries = res.rows
-        //
-        //for (const q of queries) {
-        //    console.time("loop time")
-        //    const matchedListings = await ScrapeAndCompare(q.id, q.query)
-        //    await UpdateDb(matchedListings)
-        //    console.timeEnd("loop time")
-        //}
+        const res = await pool.query(`SELECT id,query FROM "Query"`)
+        const queries = res.rows
 
-        //@NOTE:  check track table for email and url since it is more specific
+        for (const q of queries) {
+            console.time("loop time")
+            const matchedListings = await ScrapeAndCompare(q.id, q.query)
+            await UpdateDb(matchedListings)
+            console.timeEnd("loop time")
+        }
 
         const toemail = await TrackAndUpdate()
-        console.log(toemail)
+
+        //@NOTE: now need to go over this toeamil array and email the users 
 
         console.timeEnd("schedule time")
         //return queries
