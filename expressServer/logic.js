@@ -18,23 +18,68 @@ function logToFile(message) {
 export async function UpdateListing() {
     console.time("schedule time")
     try {
-        const res = await pool.query(`SELECT id,query FROM "Query"`)
-        const queries = res.rows
+        //const res = await pool.query(`SELECT id,query FROM "Query"`)
+        //const queries = res.rows
+        //
+        //for (const q of queries) {
+        //    console.time("loop time")
+        //    const matchedListings = await ScrapeAndCompare(q.id, q.query)
+        //    await UpdateDb(matchedListings)
+        //    console.timeEnd("loop time")
+        //}
 
-        for (const q of queries) {
-            console.time("loop time")
-            const matchedListings = await ScrapeAndCompare(q.id, q.query)
-            await UpdateDb(matchedListings)
-            console.timeEnd("loop time")
-        }
+        //@NOTE:  check track table for email and url since it is more specific
+
+        const toemail = await TrackAndUpdate()
+        console.log(toemail)
+
         console.timeEnd("schedule time")
-        return queries
+        //return queries
     } catch (err) {
         console.error("Error fetching query IDs:", err)
         throw err
     }
 }
 
+
+export async function TrackAndUpdate() {
+    try {
+        const trackResult = await pool.query(`
+      SELECT "id", "listingId", "minPrice", "email", "prodTitle" FROM "Track";
+    `)
+        const alerts = []
+
+        for (const track of trackResult.rows) {
+            const { listingId, minPrice, email, prodTitle } = track
+
+            const listingResult = await pool.query(
+                `SELECT price FROM "Listing" WHERE id = $1;`,
+                [listingId]
+            )
+
+            if (listingResult.rows.length > 0) {
+                const currentPrice = listingResult.rows[0].price
+
+                console.log(currentPrice, minPrice)
+
+                if (currentPrice < minPrice) {
+                    console.log(currentPrice, "<", minPrice)
+                    alerts.push({
+                        prodTitle,
+                        email,
+                        price: currentPrice,
+                    })
+                }
+            }
+        }
+
+        console.log("Price Drop Alerts:", alerts)
+        return alerts
+    } catch (err) {
+        console.error("⚠️ Error in TrackAndUpdate:", err)
+        return []
+    }
+}
 
 export async function ScrapeAndCompare(qid, query) {
     try {
@@ -98,34 +143,43 @@ function Compare(listings, scrapedListing) {
 }
 
 
-export async function UpdateDb(matchedListings) {
+export async function UpdateDb({ matchedListings }) {
+    if (!Array.isArray(matchedListings)) {
+        console.error(" matchedListings is not an array:", matchedListings)
+        return
+    }
+
     for (const listing of matchedListings) {
         const { site, title, href, price } = listing
 
         try {
             const result = await pool.query(
-                `SELECT id FROM "Listing" WHERE "platform" = $1 AND "title" = $2 AND "url" = $3 LIMIT 1`,
-                [site, title, href]
+                //`SELECT id FROM "Listing" WHERE "platform" = $1 AND "title" = $2 AND "url" = $3 `,
+                //[site, title, href]
+                //@NOTE: tighter search
+
+                `SELECT id FROM "Listing" WHERE "platform" = $1 AND "url" = $2;`,
+                [site, href]
             )
+            console.log("result.row:", result.rows)
 
             if (result.rows.length > 0) {
                 const id = result.rows[0].id
-                const rows = result.rows[0]
-                console.log(`matched row:`, rows)
                 await pool.query(
-                    `UPDATE listing SET price = $1 WHERE id = $2`,
+                    `UPDATE "Listing" SET price = $1 WHERE id = $2`,
                     [price, id]
                 )
 
                 console.log(`✅ Updated price for: ${title} (${site})`)
             } else {
-                console.log(`❌ No match found in DB for: ${title} (${site})`)
+                console.log(`XXXXXX====> No match found in DB for: ${title} (${site})`)
             }
         } catch (err) {
             console.error(`⚠️ Error updating ${title} (${site}):`, err)
         }
     }
 }
+
 
 function cleanTitle(raw) {
     if (typeof raw !== 'string' || !raw.trim()) return ""
