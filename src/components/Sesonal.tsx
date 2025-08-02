@@ -15,7 +15,14 @@ export default function Seasonal() {
         <p className="text-xl text-center text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
           Discover real-time deals from trusted online stores
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+        <div
+          className="flex flex-wrap justify-center gap-6 px-4
+    sm:max-w-xl sm:mx-auto
+    md:max-w-4xl md:mx-auto
+    lg:max-w-6xl lg:mx-auto
+    xl:max-w-[1600px] xl:mx-auto"
+        >
+
           {FeaturedProducts.map((product, index) => (
             <Card key={index} product={product} />
           ))}

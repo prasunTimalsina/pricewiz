@@ -17,7 +17,7 @@ function HomeSearchbar() {
   );
   return (
     <div className='w-full flex justify-center dark'>
-      <AuroraBackground className='h-[400px] w-[1400px] rounded-2xl z-0'>
+      <AuroraBackground className='h-[400px] w-[300px] sm:w-[400px] xl:w-[1400px] rounded-2xl z-0'>
         <div className='flex justify-center w-full z-10 px-3'>
           <div className="w-[500px] text-white">
             <div className="text-3xl font-bold mb-10">
