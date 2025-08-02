@@ -1,3 +1,42 @@
+//import React from "react";
+//
+//interface Product {
+//    site: string;
+//    href: string;
+//    img: string;
+//    title: string;
+//    price: string;
+//}
+//
+//export default function Card({ product }: { product: Product; }) {
+//    return (
+//        <a
+//            href={product.href}
+//            target="_blank"
+//            rel="noopener noreferrer"
+//            className="group relative overflow-hidden rounded-2xl shadow-xl transition-transform duration-300 transform hover:scale-105 w-64 h-[380px] bg-black"
+//        >
+//            <div className="absolute inset-0 flex items-center justify-center p-4">
+//                <img
+//                    src={product.img}
+//                    alt={product.title}
+//                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+//                />
+//            </div>
+//
+//            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
+//
+//            <div className="absolute bottom-0 z-20 p-4 w-full text-white">
+//                <h3 className="text-lg font-bold leading-tight mb-1 line-clamp-2">{product.title}</h3>
+//                <div className="text-xl font-extrabold text-white mb-2">
+//                    {product.price}
+//                </div>
+//                <p className="text-sm text-gray-300">{product.site}</p>
+//            </div>
+//        </a>
+//    );
+//}
+
 import React from "react";
 
 interface Product {
@@ -14,16 +53,31 @@ export default function Card({ product }: { product: Product; }) {
             href={product.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-br from-transparent via-black to-transparent border rounded-lg shadow-lg p-4 flex flex-col items-center bg-black-900 hover:shadow-xl transition"
+            className="group relative overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105 w-64 h-[400px] bg-white"
+            style={{
+                boxShadow: "10px 10px 30px rgba(0, 0, 0, 0.2)",
+            }}
         >
-            <img
-                src={product.img}
-                alt={product.title}
-                className="w-40 h-40 object-cover mb-4 rounded"
-            />
-            <div className=" text-left text-white font-bold mb-2">{product.title}</div>
-            <div className="text-green-600 font-semibold">{product.price}</div>
-            <div className="text-sm text-white mt-1">{product.site}</div>
+            <div className="absolute inset-0 flex items-center justify-center p-4">
+                <img
+                    src={product.img}
+                    alt={product.title}
+                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+            </div>
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-10"></div>
+
+            <div className="absolute bottom-0 z-20 p-4 w-full text-white">
+                <h3 className="text-lg font-bold leading-tight mb-1 line-clamp-2">
+                    {product.title}
+                </h3>
+                <div className="text-xl font-extrabold mb-2">
+                    {product.price}
+                </div>
+                <p className="text-sm text-gray-200">{product.site}</p>
+            </div>
         </a>
     );
 }
+
