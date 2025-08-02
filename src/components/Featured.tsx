@@ -1,108 +1,172 @@
+
 "use client";
+import React, { useState, useRef, useEffect } from "react";
 
-import Card from "./card";
+interface Product {
+  site: string;
+  href: string;
+  img: string;
+  title: string;
+  price: string;
+}
 
-const FeaturedProducts = [
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/iphone-13-price-in-nepal",
-    "img": "https://cdn.hukut.com/Apple%20iPhone%2013%20Red2.webp",
-    "title": "Apple iPhone 13",
-    "price": "74099"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/iphone-14-price-in-nepal",
-    "img": "https://cdn.hukut.com/iphone_14_red.webp",
-    "title": "Apple iPhone 14",
-    "price": "89299"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/iphone-15-price-in-nepal",
-    "img": "https://cdn.hukut.com/iPhone%2015%20pink(3).webp",
-    "title": "Apple iPhone 15",
-    "price": "104100"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/apple-iphone-16e",
-    "img": "https://cdn.hukut.com/Apple-iphone-16e-Price-in-Nepal.png1744176699046",
-    "title": "Apple iPhone 16e",
-    "price": "117100"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/iphone-16",
-    "img": "https://cdn.hukut.com/apple-iphone-16-ultramarine.webp1728295065216",
-    "title": "Apple iPhone 16",
-    "price": "130200"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/iphone-16-plus",
-    "img": "https://cdn.hukut.com/apple-iphone-16-ultramarine.webp1728296274693",
-    "title": "Apple iPhone 16 Plus",
-    "price": "149600"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/iphone-16-pro",
-    "img": "https://cdn.hukut.com/iphone-16-pro-desert-titanium.webp1728297752349",
-    "title": "Apple iPhone 16 Pro",
-    "price": "168700"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/iphone-16-pro-max",
-    "img": "https://cdn.hukut.com/iphone-16-pro-max-desert-titanium.webp1728298969978",
-    "title": "Apple iPhone 16 Pro Max",
-    "price": "197000"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/nothing-phone-(3)",
-    "img": "https://cdn.hukut.com/nothing-phone-(3)-white.webp1751630405457",
-    "title": "Nothing Phone (3)",
-    "price": "109999"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/nothing-phone-(3a)",
-    "img": "https://cdn.hukut.com/Nothing-Phone-3a%20(1).webp1744872875299",
-    "title": "Nothing Phone (3a)",
-    "price": "55999"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/nothing-cmf-phone-2-pro",
-    "img": "https://cdn.hukut.com/nothing-cmf-phone-2-pro-orange.webp1750135743580",
-    "title": "Nothing CMF Phone 2 Pro",
-    "price": "34999"
-  },
-  {
-    "site": "Hukut",
-    "href": "https://hukut.com/nothing-phone-(2a)-plus",
-    "img": "https://cdn.hukut.com/nothing-phone-2a-plus.webp1739965935798",
-    "title": "Nothing Phone (2a) Plus",
-    "price": "54000"
-  }
-];
+const ProductCard = ({
+  product,
+  isActive,
+  onClick,
+}: {
+  product: Product;
+  index: number;
+  isActive: boolean;
+  onClick: () => void;
+}) => {
+  return (
+    <div
+      className="relative w-80 h-[460px] overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl flex-shrink-0"
+      onClick={onClick}
+    >
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-500"
+        style={{ backgroundImage: `url(${product.img})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+      </div>
 
+      <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-10">
+        <div className="text-sm font-medium text-gray-300 mb-2">
+          {product.site}
+        </div>
+        <h3 className="text-2xl font-bold mb-2">{product.title}</h3>
+        <div className="text-3xl font-bold text-white mb-3">
+          Rs {product.price}
+        </div>
+      </div>
 
-export default function Featured() {
-  //there will be a array here which will call the db for featured products
-  //the loop is the same
-  //component would be a db card 
+      {isActive && (
+        <div className="absolute -bottom-1 left-0 right-0 h-1 bg-blue-500 rounded-full z-20"></div>
+      )}
+    </div>
+  );
+};
+
+const ProductContent = ({ product }: { product: Product; }) => {
+  return (
+    <div className="max-w-4xl mx-auto p-8">
+      <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-3xl p-8 mb-6">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h4 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              {product.title}
+            </h4>
+            <p className="text-gray-600 dark:text-gray-300 text-lg mb-6">
+              Buy the {product.title} from {product.site} for just Rs{" "}
+              {product.price}.
+            </p>
+            <div className="mt-8">
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+                Rs {product.price}
+              </div>
+              <a
+                href={product.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-200"
+              >
+                Visit Product
+              </a>
+            </div>
+          </div>
+          <div className="relative">
+            <img
+              src={product.img}
+              alt={product.title}
+              className="w-full h-80 object-contain rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export function FeaturedProductsCarousel({
+  products,
+}: {
+  products: Product[];
+}) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollToCard = (index: number) => {
+    setActiveIndex(index);
+    if (scrollRef.current) {
+      const cardWidth = 336;
+      const containerWidth = scrollRef.current.clientWidth;
+      const scrollLeft =
+        index * cardWidth - containerWidth / 2 + cardWidth / 2;
+      scrollRef.current.scrollTo({
+        left: scrollLeft,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % products.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [products]);
 
   return (
-    <>
-      <div>Featured Products</div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-        {FeaturedProducts.map((product, index) => (
-          <Card key={index} product={product} />
-        ))}
+    <div className="w-full py-20 bg-white dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-4xl md:text-6xl font-bold text-center mb-4 text-gray-900 dark:text-white">
+          Featured Products
+        </h2>
+        <p className="text-xl text-center text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
+          Discover real-time deals from trusted online stores
+        </p>
+
+        {/* Carousel */}
+        <div className="relative mb-16">
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 px-4"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {products.map((product, index) => (
+              <ProductCard
+                key={index}
+                product={product}
+                index={index}
+                isActive={index === activeIndex}
+                onClick={() => scrollToCard(index)}
+              />
+            ))}
+          </div>
+
+          {/* Navigation dots */}
+          <div className="flex justify-center gap-2 mt-8">
+            {products.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => scrollToCard(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${index === activeIndex
+                  ? "bg-blue-600 w-8"
+                  : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Active product details */}
+        <div className="transition-all duration-500">
+          <ProductContent product={products[activeIndex]} />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
+
