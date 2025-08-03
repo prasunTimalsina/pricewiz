@@ -19,7 +19,9 @@ export async function GET(req: Request) {
       },
     },
     take: 20,
-    select: { id: true, title: true },
+    include: {
+      listings: true, // ✅ include all related listings
+    },
   });
 
   return NextResponse.json(products);

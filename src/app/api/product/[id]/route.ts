@@ -25,6 +25,16 @@ export async function GET(
     return NextResponse.json({ error: "Product not found" }, { status: 404 });
   }
 
+  // ✅ Increment popularity by 1
+  await prisma.product.update({
+    where: { id },
+    data: {
+      popularity: {
+        increment: 1,
+      },
+    },
+  });
+
   // Fetch other products for recommendation
   const otherProducts = await prisma.product.findMany({
     where: {
