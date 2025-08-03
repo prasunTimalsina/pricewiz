@@ -1,58 +1,3 @@
-//import { cn } from "@/lib/utils";
-//
-//export const BentoGrid = ({
-//  className,
-//  children,
-//}: {
-//  className?: string;
-//  children?: React.ReactNode;
-//}) => {
-//  return (
-//    <div
-//      className={cn(
-//        "mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3",
-//        className,
-//      )}
-//    >
-//      {children}
-//    </div>
-//  );
-//};
-//
-//export const BentoGridItem = ({
-//  className,
-//  title,
-//  description,
-//  header,
-//  icon,
-//}: {
-//  className?: string;
-//  title?: string | React.ReactNode;
-//  description?: string | React.ReactNode;
-//  header?: React.ReactNode;
-//  icon?: React.ReactNode;
-//}) => {
-//  return (
-//    <div
-//      className={cn(
-//        "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
-//        className,
-//      )}
-//    >
-//      {header}
-//      <div className="transition duration-200 group-hover/bento:translate-x-2">
-//        {icon}
-//        <div className="mt-2 mb-2 font-sans font-bold text-neutral-600 dark:text-neutral-200">
-//          {title}
-//        </div>
-//        <div className="font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
-//          {description}
-//        </div>
-//      </div>
-//    </div>
-//  );
-//};
-
 import { cn } from "@/lib/utils";
 
 export const BentoGrid = ({
@@ -84,32 +29,36 @@ export const BentoGridItem = ({
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  header?: React.ReactNode;
   icon?: React.ReactNode;
   image?: string;
 }) => {
   return (
     <div
       className={cn(
-        "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
+        "group/bento relative overflow-hidden shadow-input row-span-1 flex flex-col justify-end rounded-xl border border-neutral-200 bg-white transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
         className,
       )}
     >
       {image && (
-        <img
-          src={image}
-          alt="bento item"
-          className="w-full h-40 object-cover rounded-md"
+        <div
+          className="absolute inset-0 bg-cover bg-center z-0"
+          style={{ backgroundImage: `url(${image})` }}
         />
       )}
-      <div className="transition duration-200 group-hover/bento:translate-x-2">
-        {icon}
-        <div className="mt-2 mb-2 font-sans font-bold text-neutral-600 dark:text-neutral-200">
-          {title}
-        </div>
-        <div className="font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
-          {description}
-        </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-10" />
+
+      <div className="relative z-20 p-4 transition duration-200 group-hover/bento:translate-x-2">
+        {icon && <div className="mb-2">{icon}</div>}
+        {title && (
+          <div className="font-sans font-bold text-lg text-white mb-1">
+            {title}
+          </div>
+        )}
+        {description && (
+          <div className="font-sans text-sm font-normal text-white">
+            {description}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ interface Product {
   price: string;
 }
 
-async function fetchProducts(query: string): Promise<Product[]> {
+async function fetchDbProducts(query: string): Promise<Product[]> {
 
   const res = await fetch("/api/all", {
     method: "POST",
@@ -29,7 +29,7 @@ async function fetchProducts(query: string): Promise<Product[]> {
   return decproducts as Product[];
 }
 
-export default function Queryresult() {
+export default function DbQueryresult() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
 
@@ -40,7 +40,7 @@ export default function Queryresult() {
     if (!query) return;
 
     setLoading(true);
-    fetchProducts(query)
+    fetchDbProducts(query)
       .then(setProducts)
       .catch((err) => console.error(err))
       .finally(() => setLoading(false));
