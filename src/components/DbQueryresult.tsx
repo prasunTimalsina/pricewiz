@@ -2,34 +2,42 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import Card from "./card";
+import DbCard from "./Dbcard";
+import SkeletonCard from "./Skeletoncard";
+
+interface Listing {
+  id: number;
+  productId: number;
+  platform: string;
+  title: string;
+  price: number;
+  imageUrl: string;
+  url: string;
+  scrapedAt: string;
+}
 
 interface Product {
-  site: string;
-  href: string;
-  img: string;
+  id: number;
   title: string;
-  price: string;
+  popularity: number;
+  createdAt: string;
+  updatedAt: string;
+  listings: Listing[];
 }
 
 async function fetchDbProducts(query: string): Promise<Product[]> {
-
-  const res = await fetch("/api/all", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query }),
+  const res = await fetch(`/api/products?query=${query}`, {
     cache: "no-store",
   });
 
   if (!res.ok) {
-    throw new Error("Failed to fetch products");
+    throw new Error("Failed to fetch DB products");
   }
 
-  const [_, decproducts] = await res.json();
-  return decproducts as Product[];
+  return await res.json();
 }
 
-export default function DbQueryresult() {
+export default function Dbqueryresult() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
 
@@ -55,27 +63,34 @@ export default function DbQueryresult() {
 
   if (loading)
     return (
-      <div className="flex justify-center items-center h-64">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-gray-900 dark:border-gray-100"></div>
+      <div className="flex flex-wrap justify-center gap-6 px-4 py-10">
+        {Array.from({ length: 10 }).map((_, i) => (
+          <div
+            key={i}
+            className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
+          >
+            <SkeletonCard />
+          </div>
+        ))}
       </div>
     );
 
   return (
     <>
       <h2 className="text-4xl md:text-6xl font-bold text-left mb-6 ml-[5%] text-gray-900 dark:text-white">
-        Freshly Scraped Products
+        Products we have for you
       </h2>
-      <div className="flex flex-wrap justify-center gap-y-6 px-4">
-        {products.map((product, index) => (
+      <div className="flex flex-wrap justify-center gap-y-6 px-4 mb-10">
+        {products.map((product) => (
           <div
-            key={index}
+            key={product.id}
             className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
           >
-            <Card product={product} />
+            <DbCard product={product} />
           </div>
         ))}
       </div>
     </>
   );
-}
 
+}

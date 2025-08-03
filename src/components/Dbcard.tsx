@@ -29,7 +29,7 @@ export default function DbCard({ product }: { product: Product; }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % listings.length);
-    }, 3000); // Change image every 3s
+    }, 3000);
     return () => clearInterval(interval);
   }, [listings.length]);
 
@@ -46,7 +46,6 @@ export default function DbCard({ product }: { product: Product; }) {
         boxShadow: "10px 10px 30px rgba(0, 0, 0, 0.2)",
       }}
     >
-      {/* Image Carousel */}
       <div className="absolute inset-0 flex items-center justify-center p-4">
         <img
           key={currentListing.id}
@@ -56,10 +55,8 @@ export default function DbCard({ product }: { product: Product; }) {
         />
       </div>
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-10"></div>
+      <div className="absolute bottom-0 w-full h-[70%] bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"></div>
 
-      {/* Content */}
       <div className="absolute bottom-0 z-20 p-4 w-full text-white">
         <h3 className="text-lg font-bold leading-tight mb-1 line-clamp-2">
           {product.title}

@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Card from "./card";
+import SkeletonCard from "./Skeletoncard";
 
 interface Product {
   site: string;
@@ -54,10 +55,27 @@ export default function Queryresult() {
     );
 
   if (loading)
+    //return (
+    //  <div className="flex justify-center items-center h-64">
+    //    <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-gray-900 dark:border-gray-100"></div>
+    //  </div>
+    //);
     return (
-      <div className="flex justify-center items-center h-64">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-gray-900 dark:border-gray-100"></div>
-      </div>
+      <>
+        <h2 className="text-4xl md:text-6xl font-bold text-left mb-6 ml-[5%] text-gray-900 dark:text-white">
+          Scraping live Products for you ...
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6 px-4 py-10">
+          {Array.from({ length: 10 }).map((_, i) => (
+            <div
+              key={i}
+              className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
+            >
+              <SkeletonCard />
+            </div>
+          ))}
+        </div>
+      </>
     );
 
   return (
