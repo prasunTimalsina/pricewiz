@@ -1,5 +1,5 @@
-
 "use client";
+
 import React, { useState, useRef, useEffect } from "react";
 
 interface Product {
@@ -16,7 +16,6 @@ const ProductCard = ({
   onClick,
 }: {
   product: Product;
-  index: number;
   isActive: boolean;
   onClick: () => void;
 }) => {
@@ -36,14 +35,12 @@ const ProductCard = ({
         <div className="text-sm font-medium text-gray-300 mb-2">
           {product.site}
         </div>
-        <h3 className="text-2xl font-bold mb-2">{product.title}</h3>
-        <div className="text-3xl font-bold text-white mb-3">
-          Rs {product.price}
-        </div>
+        <h3 className="text-2xl font-bold mb-2 line-clamp-2">{product.title}</h3>
+        <div className="text-3xl font-bold text-white mb-3">Rs {product.price}</div>
       </div>
 
       {isActive && (
-        <div className="absolute -bottom-1 left-0 right-0 h-1 bg-blue-500 rounded-full z-20"></div>
+        <div className="absolute -bottom-1 left-0 right-0 h-1 bg-blue-500 rounded-full z-20" />
       )}
     </div>
   );
@@ -89,11 +86,7 @@ const ProductContent = ({ product }: { product: Product; }) => {
   );
 };
 
-export function FeaturedProductsCarousel({
-  products,
-}: {
-  products: Product[];
-}) {
+export function FeaturedProductsCarousel({ products }: { products: Product[]; }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -119,7 +112,7 @@ export function FeaturedProductsCarousel({
   }, [products]);
 
   return (
-    <div className="w-full py-20 bg-white dark:bg-gray-900">
+    <div className="w-full py-2 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-4 text-gray-900 dark:text-white">
           Featured Products
@@ -127,44 +120,46 @@ export function FeaturedProductsCarousel({
         <p className="text-xl text-center text-gray-600 dark:text-gray-300 mb-16 max-w-3xl mx-auto">
           Discover real-time deals from trusted online stores
         </p>
+      </div>
 
-        {/* Carousel */}
-        <div className="relative mb-16">
-          <div
-            ref={scrollRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 px-4"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {products.map((product, index) => (
-              <ProductCard
-                key={index}
-                product={product}
-                index={index}
-                isActive={index === activeIndex}
-                onClick={() => scrollToCard(index)}
-              />
-            ))}
-          </div>
-
-          {/* Navigation dots */}
-          <div className="flex justify-center gap-2 mt-8">
-            {products.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => scrollToCard(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${index === activeIndex
-                  ? "bg-blue-600 w-8"
-                  : "bg-gray-300 hover:bg-gray-400"
-                  }`}
-              />
-            ))}
-          </div>
+      {/* Full-width Carousel */}
+      <div className="w-screen overflow-x-hidden">
+        <div
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-auto px-4 scrollbar-hide pb-4"
+          style={{
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+        >
+          {products.map((product, index) => (
+            <ProductCard
+              key={index}
+              product={product}
+              isActive={index === activeIndex}
+              onClick={() => scrollToCard(index)}
+            />
+          ))}
         </div>
+      </div>
 
-        {/* Active product details */}
-        <div className="transition-all duration-500">
-          <ProductContent product={products[activeIndex]} />
-        </div>
+      {/* Navigation dots */}
+      <div className="flex justify-center gap-2 mt-8">
+        {products.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => scrollToCard(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-200 ${index === activeIndex
+              ? "bg-blue-600 w-8"
+              : "bg-gray-300 hover:bg-gray-400"
+              }`}
+          />
+        ))}
+      </div>
+
+      {/* Product Detail Section */}
+      <div className="transition-all duration-500">
+        <ProductContent product={products[activeIndex]} />
       </div>
     </div>
   );

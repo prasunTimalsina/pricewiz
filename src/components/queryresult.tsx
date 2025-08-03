@@ -13,15 +13,15 @@ interface Product {
 }
 
 async function fetchProducts(query: string): Promise<Product[]> {
-  const res = await fetch('/api/all', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+  const res = await fetch("/api/all", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ query }),
-    cache: 'no-store',
+    cache: "no-store",
   });
 
   if (!res.ok) {
-    throw new Error('Failed to fetch products');
+    throw new Error("Failed to fetch products");
   }
 
   const [_, decproducts] = await res.json();
@@ -45,15 +45,36 @@ export default function Queryresult() {
       .finally(() => setLoading(false));
   }, [query]);
 
-  if (!query) return <p>Please enter a search term.</p>;
-  if (loading) return <p>Loading...</p>;
+  if (!query)
+    return (
+      <p className="text-center mt-10 text-gray-700 dark:text-gray-300">
+        Please enter a search term.
+      </p>
+    );
+
+  if (loading)
+    return (
+      <div className="flex justify-center items-center h-64">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-gray-900 dark:border-gray-100"></div>
+      </div>
+    );
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      {products.map((product, index) => (
-        <Card key={index} product={product} />
-      ))}
-    </div>
+    <>
+      <h2 className="text-4xl md:text-6xl font-bold text-left mb-6 ml-[5%] text-gray-900 dark:text-white">
+        Freshly Scraped Products
+      </h2>
+      <div className="flex flex-wrap justify-center gap-y-6 px-4">
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
+          >
+            <Card product={product} />
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
