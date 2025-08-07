@@ -17,7 +17,6 @@ interface Params {
 export default async function ProductPage({ params }: Params) {
   const id = Number(params.id);
 
-  // Fetch the product from DB directly in server component
   const product = await prisma.product.findUnique({
     where: { id },
   });

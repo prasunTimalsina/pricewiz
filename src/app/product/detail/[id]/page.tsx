@@ -1,7 +1,6 @@
-import Dbqueryresult from "@/components/DbQueryresult";
 import Footer from "@/components/footer";
 import Header from "@/components/Header";
-import Queryresult from "@/components/queryresult";
+import ProductDetail from "@/components/ProductdetailScreen";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function Page() {
@@ -10,7 +9,7 @@ export default function Page() {
     <div className="h-screen">
       <AuroraBackground className="w-screen z-0 p-2 pb-4 rounded-b-2xl mb-6">
         <Header />
-        <Dbqueryresult />
+        <ProductDetail />
         <Footer />
       </AuroraBackground>
     </div>
