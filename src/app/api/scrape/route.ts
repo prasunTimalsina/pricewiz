@@ -4,7 +4,7 @@ import { scrapeAll } from "@/lib/data/index";
 export async function POST(req: NextRequest) {
   try {
     const { query } = await req.json();
-    if (!query || typeof query !== "string") {
+    if (!query || typeof query !== "string" || query.trim() === "") {
       return NextResponse.json(
         { error: "Invalid query provided." },
         { status: 400 }
