@@ -21,3 +21,5 @@ dist/
 build/
 
 
+
+/lib/generated/prisma
