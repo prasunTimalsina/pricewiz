@@ -38,7 +38,7 @@ export default function DbCard({ product }: { product: Product; }) {
 
   return (
     <Link
-      href={`/product/detail/${currentListing.id}`}>
+      href={`/product/detail/${product.id}`}>
       <div
         rel="noopener noreferrer"
         className="group relative overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105

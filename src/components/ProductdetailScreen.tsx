@@ -64,25 +64,8 @@ const ProductDetail = () => {
   const { product, recommendedProducts } = productData;
 
   return (
-    <div className="flex flex-col w-full px-6">
-      {/* SECTION 1: Main product image + info */}
-      <section className="min-h-screen flex flex-col md:flex-row gap-6 py-10">
-        {/* Left: Product title, price, platforms */}
-        <div className="md:w-1/2 flex flex-col justify-center gap-4">
-          <h1 className="text-4xl font-bold">{product.title}</h1>
-          <p className="text-2xl font-semibold text-gray-700">
-            Rs. {product.listings[0]?.price.toLocaleString()}
-          </p>
-          <div className="text-md text-gray-500">
-            Available on:
-            <ul className="list-disc ml-6 mt-1">
-              {product.listings.map((listing) => (
-                <li key={listing.id}>{listing.platform}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
+    <div className="flex flex-col w-full px-6 z-10">
+      <section className="min-h-fit flex flex-col md:flex-row gap-6 py-10">
         <div className="md:w-1/2 flex flex-col items-center">
           <div className="w-full max-w-md aspect-square border rounded overflow-hidden">
             {selectedImage && (
@@ -114,6 +97,22 @@ const ProductDetail = () => {
             ))}
           </div>
         </div>
+        <div className="md:w-1/2 flex flex-col justify-center gap-4">
+          <h1 className="text-4xl font-bold">{product.title}</h1>
+          <p className="text-2xl font-semibold text-gray-700">
+            Rs. {product.listings[0]?.price.toLocaleString()}
+          </p>
+          <div className="text-md text-gray-500">
+            Available on:
+            <ul className="list-disc ml-6 mt-1">
+              {product.listings.map((listing) => (
+                <li key={listing.id}>{listing.platform}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+
       </section>
 
       <section className="w-full py-10 border-t">
