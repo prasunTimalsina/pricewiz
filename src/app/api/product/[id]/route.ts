@@ -56,8 +56,21 @@ export async function GET(
     .sort((a, b) => b.similarity - a.similarity)
     .slice(0, 5); // return top 5
 
+  // get all recommened product with listings
+  const recommendedProductIds = recommended.map((p) => p.id);
+  const recommendedProducts = await prisma.product.findMany({
+    where: {
+      id: {
+        in: recommendedProductIds,
+      },
+    },
+    include: {
+      listings: true, // ✅ include all related listings
+    },
+  });
+
   return NextResponse.json({
     product,
-    recommendedProducts: recommended,
+    recommendedProducts,
   });
 }
