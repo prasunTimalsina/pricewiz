@@ -48,8 +48,7 @@ const TrackListingPopup: React.FC<TrackListingPopupProps> = ({
         body: JSON.stringify({
           email,
           minPrice,
-          title: listing.title,
-          platform: listing.platform,
+          listing,
         }),
       });
 
@@ -77,8 +76,7 @@ const TrackListingPopup: React.FC<TrackListingPopupProps> = ({
         <h2 className="text-2xl text-center font-bold mb-2 text-black">
           <span>{listing.title}</span>
         </h2>
-        <h3
-          className="text-gray-500 text-lg mb-4">
+        <h3 className="text-gray-500 text-lg mb-4">
           Current Price: <span className="font-medium">{listing.price}</span>
         </h3>
         <p className="text-gray-500 text-sm mb-4">
@@ -132,4 +130,3 @@ const TrackListingPopup: React.FC<TrackListingPopupProps> = ({
 };
 
 export default TrackListingPopup;
-
