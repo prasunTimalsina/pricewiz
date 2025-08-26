@@ -33,7 +33,8 @@ export async function UpdateListing() {
         //@NOTE: now need to go over this toeamil array and email the users 
 
         console.timeEnd("schedule time")
-        //return queries
+        return toemail
+
     } catch (err) {
         console.error("Error fetching query IDs:", err)
         throw err
