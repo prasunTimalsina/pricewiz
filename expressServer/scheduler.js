@@ -1,12 +1,11 @@
 import cron from "node-cron";
-import { scrapeQueries } from "./lib/scrapingUtility.js";
-
+import { rehydrateDatabase } from "./lib/scrapingUtility.js";
 const task = cron.schedule(
-  "0 */2 * * * *",
+  "0 */1 * * * *",
   async () => {
     try {
       try {
-        await scrapeQueries();
+        await rehydrateDatabase();
       } catch (err) {
         console.log("failed to run update listing", err);
       }
