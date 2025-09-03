@@ -25,17 +25,22 @@ export const BentoGridItem = ({
   description,
   icon,
   image,
+  href,
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   icon?: React.ReactNode;
   image?: string;
+  href: string;
 }) => {
   return (
-    <div
+    <a
+      target="_blank"
+      href={href}
       className={cn(
-        "group/bento relative overflow-hidden shadow-input row-span-1 flex flex-col justify-end rounded-xl border border-neutral-200 bg-white transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
+        "group/bento relative overflow-hidden shadow-input row-span-1 flex flex-col justify-end rounded-xl border border-neutral-200 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:shadow-none",
+        image ? "" : "bg-white dark:bg-black",
         className,
       )}
     >
@@ -45,6 +50,7 @@ export const BentoGridItem = ({
           style={{ backgroundImage: `url(${image})` }}
         />
       )}
+
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent z-10" />
 
       <div className="relative z-20 p-4 transition duration-200 group-hover/bento:translate-x-2">
@@ -60,7 +66,7 @@ export const BentoGridItem = ({
           </div>
         )}
       </div>
-    </div>
+    </a>
   );
 };
 

@@ -75,6 +75,14 @@ export default function Dbqueryresult() {
       </div>
     );
 
+  if (products.length === 0) {
+    return (
+      <p className="text-center mt-10 text-gray-700 dark:text-gray-300">
+        No products found for "{query}".
+      </p>
+    );
+  }
+
   return (
     <>
       <h2 className="text-4xl md:text-6xl font-bold text-left mb-6 ml-[5%] text-gray-900 dark:text-white">
@@ -92,5 +100,5 @@ export default function Dbqueryresult() {
       </div>
     </>
   );
-
 }
+
