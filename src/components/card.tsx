@@ -1,17 +1,16 @@
 import React from "react";
 
 interface Product {
-    site: string;
-    href: string;
-    img: string;
     title: string;
-    price: string;
+    price: number;
+    url: string;
+    img: string;
+    site: string;
 }
-
 export default function Card({ product }: { product: Product; }) {
     return (
         <a
-            href={product.href}
+            href={product.url}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105

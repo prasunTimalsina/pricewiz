@@ -6,15 +6,14 @@ import Card from "./card";
 import SkeletonCard from "./Skeletoncard";
 
 interface Product {
-  site: string;
-  href: string;
-  img: string;
   title: string;
-  price: string;
+  price: number;
+  url: string;
+  img: string;
+  site: string;
 }
 
 async function fetchProducts(query: string): Promise<Product[]> {
-
   const res = await fetch("/api/scrape", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -26,7 +25,7 @@ async function fetchProducts(query: string): Promise<Product[]> {
     throw new Error("Failed to fetch products");
   }
 
-  const [_, decproducts] = await res.json();
+  const decproducts = await res.json();
   return decproducts as Product[];
 }
 
@@ -55,11 +54,6 @@ export default function Queryresult() {
     );
 
   if (loading)
-    //return (
-    //  <div className="flex justify-center items-center h-64">
-    //    <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-gray-900 dark:border-gray-100"></div>
-    //  </div>
-    //);
     return (
       <>
         <h2 className="text-4xl md:text-6xl font-bold text-left mb-6 ml-[5%] text-gray-900 dark:text-white">
@@ -84,14 +78,15 @@ export default function Queryresult() {
         Freshly Scraped Products
       </h2>
       <div className="flex flex-wrap justify-center gap-y-6 px-4">
-        {products.map((product, index) => (
-          <div
-            key={index}
-            className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
-          >
-            <Card product={product} />
-          </div>
-        ))}
+        {Array.isArray(products) &&
+          products.map((product, index) => (
+            <div
+              key={index}
+              className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
+            >
+              <Card product={product} />
+            </div>
+          ))}
       </div>
     </>
   );

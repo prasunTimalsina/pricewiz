@@ -13,6 +13,7 @@ export async function POST(req: NextRequest) {
 
     const results = await scrapeAll(query);
     return NextResponse.json(results);
+
   } catch (error) {
     console.error("Error in scraping process:", error);
     return NextResponse.json(

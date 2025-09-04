@@ -4,9 +4,9 @@ import { findOrCreateProduct } from "./matching";
 export async function saveListing(scraped: {
   title: string;
   price: number;
-  imgUrl?: string;
   url: string;
-  platform: string;
+  img: string;
+  site: string;
 }) {
   try {
     const productId = await findOrCreateProduct(scraped.title);
@@ -15,36 +15,36 @@ export async function saveListing(scraped: {
       where: {
         productId_platform_url: {
           productId,
-          platform: scraped.platform,
+          platform: scraped.site,
           url: scraped.url,
         },
       },
       update: {
         title: scraped.title,
         price: scraped.price,
-        imageUrl: scraped.imgUrl || null,
+        imageUrl: scraped.img || null,
         scrapedAt: new Date(),
       },
       create: {
         productId,
         title: scraped.title,
         price: scraped.price,
-        imageUrl: scraped.imgUrl || null,
+        imageUrl: scraped.img || null,
         url: scraped.url,
-        platform: scraped.platform,
+        platform: scraped.site,
         scrapedAt: new Date(),
       },
     });
 
     console.log(
-      `✅ Successfully saved listing: ${scraped.title} (${scraped.platform})`
+      `✅ Successfully saved listing: ${scraped.title} (${scraped.site})`
     );
 
     //returning product id  for query table
     return productId;
   } catch (error) {
     console.error(
-      `❌ Failed to save listing for ${scraped.title} (${scraped.platform}):`,
+      `❌ Failed to save listing for ${scraped.title} (${scraped.site}):`,
       error
     );
     throw error;

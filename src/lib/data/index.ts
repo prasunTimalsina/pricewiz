@@ -12,24 +12,19 @@ export async function scrapeAll(productName: string) {
     const HUurl = `https://hukut.com/search/${productName}`;
 
     const darazPromise = (async () => {
-      console.time("Daraz time");
       const Dproducts = await scrapeDaraz(Durl);
-      console.timeEnd("Daraz time");
       return Dproducts;
     })();
 
     const ittiPromise = (async () => {
-      console.time("Itti time");
       const Iproducts = await scrapeIiti(Iurl);
-      console.timeEnd("Itti time");
       return Iproducts;
     })();
 
     const hukutPromise = (async () => {
-      console.time("Hukut time");
-      const Huproducts = await ScrapeHukut(HUurl);
-      console.timeEnd("Hukut time");
-      return Huproducts;
+      //const Huproducts = await ScrapeHukut(HUurl);
+      //return Huproducts;
+      return [];
     })();
 
     const [Dproducts, Iproducts, Huproducts] = await Promise.all([
@@ -37,8 +32,6 @@ export async function scrapeAll(productName: string) {
       ittiPromise,
       hukutPromise,
     ]);
-
-    console.timeEnd("Total time");
 
     const products = [...Dproducts, ...Iproducts, ...Huproducts];
 
@@ -57,28 +50,24 @@ export async function scrapeAll(productName: string) {
       title: product.title,
       price: parseInt(product.price),
       url: product.href,
-      imgUrl: product.img,
-      platform: product.site,
+      img: product.img,
+      site: product.site,
     }));
 
-    // collect IDs so we could link, if needed
     const productIds: number[] = [];
     for (const product of finalProducts) {
       const id = await saveListing(product);
       productIds.push(id);
     }
 
-    // 1) upsert (or create) the Query row
-    //    let’s have recordQueryRun return the Query’s ID:
     const queryId = await recordQueryRun(productName);
 
-    // 2) now link each product to that query:
     await prisma.productQueries.createMany({
       data: productIds.map((productId) => ({
         productId,
         queryId,
       })),
-      skipDuplicates: true, // don’t error if you re‑run the same query
+      skipDuplicates: true,
     });
 
     return finalProducts;
