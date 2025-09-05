@@ -46,6 +46,7 @@ export async function scrapeAll(productName: string) {
     );
 
     const uniqueProducts = SelectTop10(decproducts);
+
     const finalProducts = uniqueProducts.map((product) => ({
       title: product.title,
       price: parseInt(product.price),
