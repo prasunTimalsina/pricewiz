@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import TrackListingPopup from "./TrackListing";
 import BellIcon from "./BellIcon";
 import DbCard from "./Dbcard";
+import Image from "next/image";
 
 interface Listing {
   id: number;
@@ -71,19 +72,19 @@ const ProductDetail = () => {
   return (
     <div className="flex flex-col w-full px-6 z-10 items-center ">
       <section className="min-h-fit flex flex-col md:flex-row gap-6 py-10">
-
         <div className="md:w-1/2 flex items-center">
           <div className="flex flex-col gap-3 mt-4 flex-wrap p-6">
             {product.listings.map((listing) => (
               <div
                 key={listing.id}
-                className={`w-20 h-20 border rounded cursor-pointer ${selectedListing?.imageUrl === listing.imageUrl
-                  ? "ring-2 ring-blue-500"
-                  : ""
-                  }`}
+                className={`w-20 h-20 border rounded cursor-pointer ${
+                  selectedListing?.imageUrl === listing.imageUrl
+                    ? "ring-2 ring-blue-500"
+                    : ""
+                }`}
                 onClick={() => setSelectedListing(listing)}
               >
-                <img
+                <Image
                   src={listing.imageUrl}
                   alt="Thumbnail"
                   width={80}
@@ -96,15 +97,17 @@ const ProductDetail = () => {
 
           <div className="w-[500px] h-[500px] border rounded overflow-hidden flex items-center justify-center">
             {selectedListing && (
-              <img
-                src={selectedListing.imageUrl}
-                alt="Selected product"
-                className="object-contain w-full h-full"
-              />
+              <div className="relative w-full h-full">
+                <Image
+                  src={selectedListing.imageUrl}
+                  alt="Selected product"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             )}
           </div>
         </div>
-
 
         <div className="md:w-1/2 flex flex-col justify-start gap-4">
           <h1 className="text-5xl font-extrabold mt-8 mb-6 text-left">
@@ -153,7 +156,7 @@ const ProductDetail = () => {
               key={listing.id}
               className="flex items-center gap-4 p-4 border rounded hover:bg-gray-50 transition w-1/2"
             >
-              <img
+              <Image
                 src={listing.imageUrl}
                 alt={listing.title}
                 width={100}
@@ -197,12 +200,9 @@ const ProductDetail = () => {
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-6 text-gray-900 dark:text-white">
           Recommended products
         </h2>
-        <ul
-          className="flex flex-wrap justify-center"
-        >
+        <ul className="flex flex-wrap justify-center">
           {recommendedProducts.map((rec) => (
-            <div
-              className="justify-center gap-y-6 px-4 mb-10">
+            <div className="justify-center gap-y-6 px-4 mb-10">
               <DbCard key={rec.id} product={rec} />
             </div>
           ))}
@@ -221,4 +221,3 @@ const ProductDetail = () => {
 };
 
 export default ProductDetail;
-

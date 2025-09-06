@@ -5,9 +5,7 @@ import HomeSearchbar from "@/components/HomeSearchbar";
 import Seasonal from "@/components/Sesonal";
 import Footer from "@/components/footer";
 
-
 export default function Page() {
-
   return (
     <>
       <div className="flex-row justify-center items-center mt-10">
@@ -20,5 +18,3 @@ export default function Page() {
     </>
   );
 }
-
-

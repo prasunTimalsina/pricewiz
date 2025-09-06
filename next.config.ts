@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
       "pngfre.com",
       "plus.unsplash.com",
       "images.unsplash.com",
+      "admin.itti.com.np",
+      "img.drz.lazcdn.com",
+      "cdn.hukut.com",
     ],
   },
 };

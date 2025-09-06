@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 
 interface Listing {
@@ -30,6 +31,12 @@ const ProductCard = ({
 }) => {
   const listing = product.listings[listingIndex % product.listings.length];
 
+  // Return null if listing doesn't exist
+  if (!listing) {
+    console.warn("No listing found for product:", product.title);
+    return null;
+  }
+
   return (
     <div
       className="relative w-80 h-[520px] overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl flex-shrink-0"
@@ -46,8 +53,12 @@ const ProductCard = ({
         <div className="text-sm font-medium text-gray-300 mb-2">
           {listing.platform}
         </div>
-        <h3 className="text-2xl font-bold mb-2 line-clamp-2">{listing.title}</h3>
-        <div className="text-3xl font-bold text-white mb-3">Rs {listing.price}</div>
+        <h3 className="text-2xl font-bold mb-2 line-clamp-2">
+          {listing.title}
+        </h3>
+        <div className="text-3xl font-bold text-white mb-3">
+          Rs {listing.price}
+        </div>
       </div>
 
       {isActive && (
@@ -65,6 +76,11 @@ const ProductContent = ({
   listingIndex: number;
 }) => {
   const listing = product.listings[listingIndex % product.listings.length];
+
+  // Return null if listing doesn't exist
+  if (!listing) {
+    return null;
+  }
 
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -93,11 +109,14 @@ const ProductContent = ({
             </div>
           </div>
           <div className="relative">
-            <img
-              src={listing.imageUrl}
-              alt={listing.title}
-              className="w-full h-80 object-contain rounded-2xl shadow-2xl"
-            />
+            <div className="relative w-full h-80">
+              <Image
+                src={listing.imageUrl}
+                alt={listing.title}
+                fill
+                className="w-full h-80 object-contain rounded-2xl shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -116,8 +135,7 @@ export function FeaturedProductsCarousel() {
     if (scrollRef.current) {
       const cardWidth = 336;
       const containerWidth = scrollRef.current.clientWidth;
-      const scrollLeft =
-        index * cardWidth - containerWidth / 2 + cardWidth / 2;
+      const scrollLeft = index * cardWidth - containerWidth / 2 + cardWidth / 2;
       scrollRef.current.scrollTo({
         left: scrollLeft,
         behavior: "smooth",
@@ -127,15 +145,29 @@ export function FeaturedProductsCarousel() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const res = await fetch("api/feature-product", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ productIds: [1, 6, 11, 20, 26, 12, 25] }),
-      });
+      try {
+        const res = await fetch("api/feature-product", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ productIds: [1, 6, 11, 20, 26, 12, 25] }),
+        });
 
-      const data = await res.json();
-      setProducts(data);
-      setListingIndices(Array(data.length).fill(0));
+        const data = await res.json();
+        console.log("Fetched products:", data);
+
+        // Filter out any undefined products or products without listings
+        const validProducts = data.filter(
+          (product: Product) =>
+            product && product.listings && product.listings.length > 0
+        );
+
+        setProducts(validProducts);
+        setListingIndices(Array(validProducts.length).fill(0));
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setProducts([]);
+        setListingIndices([]);
+      }
     }
 
     fetchProducts();
@@ -181,15 +213,20 @@ export function FeaturedProductsCarousel() {
             msOverflowStyle: "none",
           }}
         >
-          {products.map((product, index) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              isActive={index === activeIndex}
-              onClick={() => scrollToCard(index)}
-              listingIndex={listingIndices[index] || 0}
-            />
-          ))}
+          {products
+            .filter(
+              (product) =>
+                product && product.listings && product.listings.length > 0
+            )
+            .map((product, index) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                isActive={index === activeIndex}
+                onClick={() => scrollToCard(index)}
+                listingIndex={listingIndices[index] || 0}
+              />
+            ))}
         </div>
       </div>
 
@@ -198,21 +235,23 @@ export function FeaturedProductsCarousel() {
           <button
             key={index}
             onClick={() => scrollToCard(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-200 ${index === activeIndex
-              ? "bg-blue-600 w-8"
-              : "bg-gray-300 hover:bg-gray-400"
-              }`}
+            className={`w-3 h-3 rounded-full transition-all duration-200 ${
+              index === activeIndex
+                ? "bg-blue-600 w-8"
+                : "bg-gray-300 hover:bg-gray-400"
+            }`}
           />
         ))}
       </div>
 
-      {products[activeIndex] && (
-        <ProductContent
-          product={products[activeIndex]}
-          listingIndex={listingIndices[activeIndex] || 0}
-        />
-      )}
+      {products[activeIndex] &&
+        products[activeIndex].listings &&
+        products[activeIndex].listings.length > 0 && (
+          <ProductContent
+            product={products[activeIndex]}
+            listingIndex={listingIndices[activeIndex] || 0}
+          />
+        )}
     </div>
   );
 }
-
