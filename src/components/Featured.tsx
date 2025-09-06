@@ -31,7 +31,6 @@ const ProductCard = ({
 }) => {
   const listing = product.listings[listingIndex % product.listings.length];
 
-  // Return null if listing doesn't exist
   if (!listing) {
     console.warn("No listing found for product:", product.title);
     return null;
@@ -60,8 +59,6 @@ const ProductCard = ({
         <div className="text-3xl font-bold text-white mb-3">
           Rs {listing.price}
         </div>
-        <h3 className="text-lg font-bold mb-1 line-clamp-2">{listing.title}</h3>
-        <div className="text-xl font-bold text-white">Rs {listing.price}</div>
       </div>
 
       {isActive && (
@@ -80,7 +77,6 @@ const ProductContent = ({
 }) => {
   const listing = product.listings[listingIndex % product.listings.length];
 
-  // Return null if listing doesn't exist
   if (!listing) {
     return null;
   }
@@ -118,11 +114,6 @@ const ProductContent = ({
                 className="w-full h-80 object-contain rounded-2xl shadow-2xl"
               />
             </div>
-            <img
-              src={listing.imageUrl}
-              alt={listing.title}
-              className="w-full h-72 object-contain rounded-2xl shadow-2xl"
-            />
           </div>
         </div>
       </div>
@@ -142,7 +133,6 @@ export function FeaturedProductsCarousel() {
       const cardWidth = 256 + 16; // card width + gap
       const containerWidth = scrollRef.current.clientWidth;
       const scrollLeft = index * cardWidth - containerWidth / 2 + cardWidth / 2;
-      const scrollLeft = index * cardWidth - containerWidth / 2 + cardWidth / 2;
       scrollRef.current.scrollTo({
         left: scrollLeft,
         behavior: "smooth",
@@ -159,9 +149,21 @@ export function FeaturedProductsCarousel() {
           body: JSON.stringify({ productIds: [1, 6, 11, 20, 26, 12, 25] }),
         });
 
-      const data = await res.json();
-      setProducts(data);
-      setListingIndices(Array(data.length).fill(0));
+        const data = await res.json();
+        console.log("Fetched products:", data);
+
+        const validProducts = data.filter(
+          (product: Product) =>
+            product && product.listings && product.listings.length > 0
+        );
+
+        setProducts(validProducts);
+        setListingIndices(Array(validProducts.length).fill(0));
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setProducts([]);
+        setListingIndices([]);
+      }
     }
     fetchProducts();
   }, []);
@@ -200,8 +202,11 @@ export function FeaturedProductsCarousel() {
       <div className="w-screen overflow-x-hidden">
         <div
           ref={scrollRef}
-          className="flex gap-4 overflow-x-auto px-4 scrollbar-hide pb-4"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          className="flex gap-6 overflow-x-auto px-4 scrollbar-hide pb-4"
+          style={{
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
         >
           {products
             .filter(
@@ -225,16 +230,10 @@ export function FeaturedProductsCarousel() {
           <button
             key={index}
             onClick={() => scrollToCard(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-200 ${
-              index === activeIndex
-                ? "bg-blue-600 w-8"
-                : "bg-gray-300 hover:bg-gray-400"
-            }`}
-            className={`w-3 h-3 rounded-full transition-all duration-200 ${
-              index === activeIndex
-                ? "bg-blue-600 w-8"
-                : "bg-gray-300 hover:bg-gray-400"
-            }`}
+            className={`w-3 h-3 rounded-full transition-all duration-200 ${index === activeIndex
+              ? "bg-blue-600 w-8"
+              : "bg-gray-300 hover:bg-gray-400"
+              }`}
           />
         ))}
       </div>
@@ -250,3 +249,4 @@ export function FeaturedProductsCarousel() {
     </div>
   );
 }
+
