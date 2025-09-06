@@ -74,7 +74,7 @@ export default function Popular() {
 
   return (
     <>
-      <h2 className="text-4xl md:text-6xl font-bold text-left mb-6 ml-[5%] text-gray-900 dark:text-white">
+      <h2 className="text-4xl md:text-6xl font-bold text-center mb-6 mt-10 text-gray-900 dark:text-white">
         Popular Products
       </h2>
       <div className="flex flex-wrap justify-center gap-y-6 px-4 mb-10">
@@ -90,4 +90,3 @@ export default function Popular() {
     </>
   );
 }
-

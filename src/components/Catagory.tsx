@@ -79,7 +79,7 @@ const items = [
     image:
       "https://plus.unsplash.com/premium_photo-1661304671477-37c77d0c6930?q=80&w=1470&auto=format&fit=crop",
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-    link: "/product/query?q=accessories",
+    link: "/product/query?q=tech%20accessories",
   },
   {
     title: "Gpu's",
@@ -98,4 +98,3 @@ const items = [
     link: "/product/query?q=laptop",
   },
 ];
-

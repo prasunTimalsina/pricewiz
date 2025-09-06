@@ -82,7 +82,7 @@ export default function Queryresult() {
           products.map((product, index) => (
             <div
               key={index}
-              className="w-full sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
+              className="m-4 sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
             >
               <Card product={product} />
             </div>
@@ -91,4 +91,3 @@ export default function Queryresult() {
     </>
   );
 }
-

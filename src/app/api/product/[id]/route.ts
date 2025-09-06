@@ -5,9 +5,9 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: { id: string; }; }
 ) {
-  const id = Number(params.id);
+  const id = await Number(params.id);
 
   if (isNaN(id)) {
     return NextResponse.json({ error: "Invalid product ID" }, { status: 400 });

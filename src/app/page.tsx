@@ -2,6 +2,7 @@
 import Catagory from "@/components/Catagory";
 import { FeaturedProductsCarousel } from "@/components/Featured";
 import HomeSearchbar from "@/components/HomeSearchbar";
+import Popular from "@/components/Popular";
 import Seasonal from "@/components/Sesonal";
 import Footer from "@/components/footer";
 
@@ -12,6 +13,7 @@ export default function Page() {
         <HomeSearchbar />
         <FeaturedProductsCarousel />
         <Catagory />
+        <Popular />
         <Seasonal />
         <Footer />
       </div>
