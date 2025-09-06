@@ -6,15 +6,19 @@ export async function GET(req: Request) {
   if (!q)
     return NextResponse.json({ error: "query is required" }, { status: 400 });
 
+  // Convert multi-word queries to PostgreSQL tsquery format
+  // "logitech webcam" becomes "logitech & webcam"
+  const searchQuery = q.split(/\s+/).join(" & ");
+
   const products = await prisma.product.findMany({
     where: {
-      title: { search: q }, // uses the GIN index
+      title: { search: searchQuery }, // uses the GIN index
     },
     orderBy: {
       _relevance: {
         // ranks by ts_rank_cd()
         fields: ["title"],
-        search: q,
+        search: searchQuery,
         sort: "desc",
       },
     },
@@ -26,6 +30,3 @@ export async function GET(req: Request) {
 
   return NextResponse.json(products);
 }
-
-
-
