@@ -6,6 +6,175 @@ import {
   toLowercase,
 } from "@/lib//data/tfidf"; // adjust the path based on your structure
 
+// =============================================================================
+// SIMILARITY ALGORITHMS - Clean, traceable implementations
+// =============================================================================
+
+/**
+ * Algorithm 1: TF-IDF + Cosine Similarity
+ * Purpose: Semantic similarity based on word importance
+ * Best for: Long product titles with many descriptive words
+ */
+function calculateTFIDFSimilarity(title1: string, title2: string): number {
+  console.log(`🔍 TF-IDF Analysis: "${title1}" vs "${title2}"`);
+  
+  // Clean and tokenize titles
+  const words1 = cleanTitle(title1).split(/\s+/).map(omitPunctuations).map(toLowercase).filter(Boolean);
+  const words2 = cleanTitle(title2).split(/\s+/).map(omitPunctuations).map(toLowercase).filter(Boolean);
+  
+  if (words1.length === 0 || words2.length === 0) {
+    console.log(`❌ TF-IDF: Empty words after cleaning`);
+    return 0;
+  }
+  
+  // Create vocabulary and calculate TF-IDF vectors
+  const allWords = Array.from(new Set([...words1, ...words2]));
+  const vector1 = calcTfIdfVectorForDoc(words1, [words1, words2], allWords);
+  const vector2 = calcTfIdfVectorForDoc(words2, [words1, words2], allWords);
+  
+  // Calculate cosine similarity
+  const similarity = cosineSimilarity(vector1, vector2);
+  console.log(`📊 TF-IDF Similarity: ${similarity.toFixed(3)}`);
+  
+  return similarity;
+}
+
+/**
+ * Algorithm 2: Jaccard Similarity
+ * Purpose: Exact word overlap similarity
+ * Best for: Brand matching, exact product variants
+ */
+function calculateJaccardSimilarity(title1: string, title2: string): number {
+  console.log(`🎯 Jaccard Analysis: "${title1}" vs "${title2}"`);
+  
+  // Clean titles and create word sets
+  const words1 = new Set(cleanTitle(title1).toLowerCase().split(/\s+/).filter(Boolean));
+  const words2 = new Set(cleanTitle(title2).toLowerCase().split(/\s+/).filter(Boolean));
+  
+  if (words1.size === 0 || words2.size === 0) {
+    console.log(`❌ Jaccard: Empty word sets after cleaning`);
+    return 0;
+  }
+  
+  // Calculate intersection and union
+  const intersection = new Set([...words1].filter(word => words2.has(word)));
+  const union = new Set([...words1, ...words2]);
+  
+  const similarity = intersection.size / union.size;
+  
+  console.log(`📝 Words1: [${Array.from(words1).join(', ')}]`);
+  console.log(`📝 Words2: [${Array.from(words2).join(', ')}]`);
+  console.log(`🎯 Intersection: [${Array.from(intersection).join(', ')}] (${intersection.size})`);
+  console.log(`🔗 Union: ${union.size} total words`);
+  console.log(`📊 Jaccard Similarity: ${similarity.toFixed(3)}`);
+  
+  return similarity;
+}
+
+/**
+ * Algorithm 3: Price Range Similarity (Optional)
+ * Purpose: Business logic based on price proximity
+ * Best for: Ensuring products are in similar price ranges
+ */
+function calculatePriceRangeSimilarity(price1?: number, price2?: number): number {
+  if (!price1 || !price2) {
+    console.log(`💰 Price Similarity: Missing price data, returning neutral (0.5)`);
+    return 0.5; // Neutral score if no price data
+  }
+  
+  const avgPrice = (price1 + price2) / 2;
+  const priceDiff = Math.abs(price1 - price2);
+  const relativeDiff = priceDiff / avgPrice;
+  
+  // Similar prices get higher similarity (exponential decay for large differences)
+  const similarity = Math.max(0, Math.exp(-relativeDiff * 2));
+  
+  console.log(`💰 Price Analysis: Rs${price1} vs Rs${price2}`);
+  console.log(`💰 Relative Difference: ${(relativeDiff * 100).toFixed(1)}%`);
+  console.log(`💰 Price Similarity: ${similarity.toFixed(3)}`);
+  
+  return similarity;
+}
+
+// =============================================================================
+// ENSEMBLE SIMILARITY - Combines multiple algorithms
+// =============================================================================
+
+interface SimilarityBreakdown {
+  tfidf: number;
+  jaccard: number;
+  price?: number;
+  final: number;
+  explanation: string[];
+}
+
+/**
+ * Ensemble Similarity Calculator
+ * Combines TF-IDF, Jaccard, and optional Price similarities
+ * with weighted voting for final decision
+ */
+function calculateEnsembleSimilarity(
+  title1: string, 
+  title2: string, 
+  price1?: number, 
+  price2?: number
+): SimilarityBreakdown {
+  console.log(`\n🚀 ENSEMBLE SIMILARITY ANALYSIS`);
+  console.log(`📋 Product 1: "${title1}" ${price1 ? `(Rs${price1})` : ''}`);
+  console.log(`📋 Product 2: "${title2}" ${price2 ? `(Rs${price2})` : ''}`);
+  console.log(`${'='.repeat(80)}`);
+  
+  // Calculate individual similarities
+  const tfidfSim = calculateTFIDFSimilarity(title1, title2);
+  const jaccardSim = calculateJaccardSimilarity(title1, title2);
+  const priceSim = calculatePriceRangeSimilarity(price1, price2);
+  
+  // Ensemble weights (can be tuned based on your data)
+  const weights = {
+    tfidf: 0.5,    // Semantic understanding
+    jaccard: 0.3,  // Exact word matching  
+    price: 0.2     // Business logic
+  };
+  
+  // Calculate weighted ensemble
+  let finalSimilarity: number;
+  let explanation: string[] = [];
+  
+  if (price1 && price2) {
+    // Include price in ensemble
+    finalSimilarity = (tfidfSim * weights.tfidf) + 
+                     (jaccardSim * weights.jaccard) + 
+                     (priceSim * weights.price);
+    explanation = [
+      `TF-IDF: ${tfidfSim.toFixed(3)} × ${weights.tfidf} = ${(tfidfSim * weights.tfidf).toFixed(3)}`,
+      `Jaccard: ${jaccardSim.toFixed(3)} × ${weights.jaccard} = ${(jaccardSim * weights.jaccard).toFixed(3)}`,
+      `Price: ${priceSim.toFixed(3)} × ${weights.price} = ${(priceSim * weights.price).toFixed(3)}`
+    ];
+  } else {
+    // Price-agnostic ensemble (normalize weights)
+    const textWeights = { tfidf: 0.7, jaccard: 0.3 };
+    finalSimilarity = (tfidfSim * textWeights.tfidf) + (jaccardSim * textWeights.jaccard);
+    explanation = [
+      `TF-IDF: ${tfidfSim.toFixed(3)} × ${textWeights.tfidf} = ${(tfidfSim * textWeights.tfidf).toFixed(3)}`,
+      `Jaccard: ${jaccardSim.toFixed(3)} × ${textWeights.jaccard} = ${(jaccardSim * textWeights.jaccard).toFixed(3)}`,
+      `Price: Not available`
+    ];
+  }
+  
+  console.log(`\n📊 ENSEMBLE RESULTS:`);
+  explanation.forEach(line => console.log(`   ${line}`));
+  console.log(`🎯 Final Similarity: ${finalSimilarity.toFixed(3)}`);
+  console.log(`${'='.repeat(80)}\n`);
+  
+  return {
+    tfidf: tfidfSim,
+    jaccard: jaccardSim,
+    price: priceSim,
+    final: finalSimilarity,
+    explanation
+  };
+}
+
 function cleanTitle(raw: string): string {
   const cleaned = raw
     .toLowerCase()
@@ -32,66 +201,105 @@ function cleanTitle(raw: string): string {
   return words.slice(0, 5).join(" ");
 }
 
-interface Product {
-  id: number;
-  title: string;
-}
+// =============================================================================
+// PRODUCT MATCHING - Main clustering function with ensemble similarity
+// =============================================================================
 
-export async function findOrCreateProduct(title: string): Promise<number> {
+/**
+ * Enhanced product matching using ensemble similarity
+ * Now supports multiple algorithms for better accuracy
+ */
+export async function findOrCreateProduct(
+  title: string, 
+  price?: number
+): Promise<{ productId: number; matchDetails?: SimilarityBreakdown }> {
+  
+  console.log(`\n🔍 PRODUCT MATCHING: "${title}" ${price ? `(Rs${price})` : ''}`);
+  
   const cleanedTitle = cleanTitle(title);
-
-  const titleWords: string[] = cleanedTitle
-    .split(/\s+/)
-    .map(omitPunctuations)
-    .map(toLowercase)
-    .filter(Boolean);
-
-  const products: Product[] = await prisma.product.findMany({
-    select: { id: true, title: true },
+  
+  // Fetch existing products with their listing data for price context
+  const products = await prisma.product.findMany({
+    select: { 
+      id: true, 
+      title: true,
+      listings: {
+        select: { price: true },
+        orderBy: { scrapedAt: 'desc' },
+        take: 1 // Get most recent price
+      }
+    },
   });
 
-  const productWordLists: string[][] = products.map((p) =>
-    cleanTitle(p.title)
-      .split(/\s+/)
-      .map(omitPunctuations)
-      .map(toLowercase)
-      .filter(Boolean)
-  );
+  if (products.length === 0) {
+    console.log(`✨ Creating first product: "${cleanedTitle}"`);
+    const newProduct = await prisma.product.create({
+      data: { title: cleanedTitle },
+    });
+    return { productId: newProduct.id };
+  }
 
-  const allWordsUnique: string[] = Array.from(
-    new Set([...titleWords, ...productWordLists.flat()])
-  );
+  let bestMatch: { 
+    id: number; 
+    similarity: number; 
+    breakdown: SimilarityBreakdown 
+  } | null = null;
 
-  const titleVector = calcTfIdfVectorForDoc(
-    titleWords,
-    productWordLists,
-    allWordsUnique
-  );
+  const SIMILARITY_THRESHOLD = 0.4; // Lowered for more inclusive matching
 
-  let bestMatch: { id: number; rating: number } | null = null;
+  console.log(`\n📊 Analyzing against ${products.length} existing products...\n`);
 
-  for (let i = 0; i < products.length; i++) {
-    const productWords = productWordLists[i];
-    const productVector = calcTfIdfVectorForDoc(
-      productWords,
-      [titleWords, ...productWordLists.filter((_, j) => j !== i)],
-      allWordsUnique
+  for (const product of products) {
+    // Get most recent price for this product
+    const recentPrice = product.listings[0]?.price;
+    
+    // Calculate ensemble similarity
+    const breakdown = calculateEnsembleSimilarity(
+      cleanedTitle, 
+      product.title, 
+      price, 
+      recentPrice
     );
 
-    const rating = cosineSimilarity(titleVector, productVector);
-
-    if (rating > 0.5 && (!bestMatch || rating > bestMatch.rating)) {
-      bestMatch = { id: products[i].id, rating };
+    // Track best match
+    if (breakdown.final > SIMILARITY_THRESHOLD && 
+        (!bestMatch || breakdown.final > bestMatch.similarity)) {
+      bestMatch = { 
+        id: product.id, 
+        similarity: breakdown.final, 
+        breakdown 
+      };
     }
   }
 
   if (bestMatch) {
-    return bestMatch.id;
+    console.log(`\n✅ MATCH FOUND!`);
+    console.log(`🎯 Product ID: ${bestMatch.id}`);
+    console.log(`📊 Similarity: ${bestMatch.similarity.toFixed(3)}`);
+    console.log(`📝 Algorithm Breakdown:`);
+    bestMatch.breakdown.explanation.forEach(line => console.log(`   ${line}`));
+    
+    return { 
+      productId: bestMatch.id, 
+      matchDetails: bestMatch.breakdown 
+    };
   }
 
+  console.log(`\n❌ No suitable match found (best similarity below ${SIMILARITY_THRESHOLD})`);
+  console.log(`✨ Creating new product: "${cleanedTitle}"`);
+  
   const newProduct = await prisma.product.create({
     data: { title: cleanedTitle },
   });
 
-  return newProduct.id;
+  return { productId: newProduct.id };
+}
+
+/**
+ * Utility function for backward compatibility
+ * Returns just the product ID like the old function
+ */
+export async function findOrCreateProductSimple(title: string): Promise<number> {
+  const result = await findOrCreateProduct(title);
+  return result.productId;
 }
