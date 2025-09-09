@@ -3,7 +3,24 @@ import { findOrCreateProduct } from "./matching.js";
 
 export async function saveListing(scraped) {
   try {
-    const productId = await findOrCreateProduct(scraped.title);
+    // Use the new ensemble matching with price information
+    const matchResult = await findOrCreateProduct(scraped.title, scraped.price);
+    const productId = matchResult.productId;
+
+    // Log matching details if available
+    if (matchResult.matchDetails) {
+      console.log(`🎯 Product matching for "${scraped.title}":`);
+      console.log(
+        `   Final similarity: ${matchResult.matchDetails.final.toFixed(3)}`
+      );
+      console.log(
+        `   TF-IDF: ${matchResult.matchDetails.tfidf.toFixed(
+          3
+        )}, Jaccard: ${matchResult.matchDetails.jaccard.toFixed(3)}, Price: ${
+          matchResult.matchDetails.price?.toFixed(3) || "N/A"
+        }`
+      );
+    }
 
     await prisma.listing.upsert({
       where: {
