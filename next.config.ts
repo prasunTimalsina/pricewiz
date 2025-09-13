@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
       "admin.itti.com.np",
       "img.drz.lazcdn.com",
       "cdn.hukut.com",
+      "filebroker-cdn.lazada.sg",
     ],
   },
 };

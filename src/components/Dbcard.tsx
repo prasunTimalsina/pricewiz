@@ -38,7 +38,7 @@ export default function DbCard({ product }: { product: Product }) {
   const currentListing = listings[currentIndex];
 
   return (
-    <Link href={`/product/detail/${product.id}`}>
+    <Link href={`/product/detail/${product?.id}`}>
       <div
         rel="noopener noreferrer"
         className="group relative overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105
@@ -50,9 +50,9 @@ export default function DbCard({ product }: { product: Product }) {
         <div className="absolute inset-0 flex items-center justify-center p-4">
           <div className="relative w-full h-full">
             <Image
-              key={currentListing.id}
-              src={currentListing.imageUrl}
-              alt={currentListing.title}
+              key={currentListing?.id}
+              src={currentListing?.imageUrl}
+              alt={currentListing?.title}
               fill
               className="object-contain transition-opacity duration-500 ease-in-out opacity-100"
             />
@@ -65,7 +65,7 @@ export default function DbCard({ product }: { product: Product }) {
           <h3 className="text-lg font-bold leading-tight mb-1 line-clamp-2">
             {product.title}
           </h3>
-          <div className="text-sm italic mb-2">{currentListing.title}</div>
+          {/* <div className="text-sm italic mb-2">{currentListing.title}</div> */}
           <div className="text-xl font-extrabold mb-1">
             Rs {currentListing.price.toLocaleString()}
           </div>

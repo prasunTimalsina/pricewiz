@@ -27,8 +27,6 @@ export async function UpdateListing() {
 
         const toemail = await TrackAndUpdate()
 
-        //@NOTE: now need to go over this toeamil array and email the users 
-
         return toemail
 
     } catch (err) {
@@ -105,9 +103,6 @@ export async function ScrapeAndCompare(qid, query) {
 
         const scrapeEnd = Date.now()
         const scrapeDuration = ((scrapeEnd - scrapeStart) / 1000).toFixed(2)
-
-        //logToFile(`Scrape time for query "${query}" (qid=${qid}): ${scrapeDuration}s`)
-        //logToFile(`Scraped Data:\n${JSON.stringify(scrapedListing, null, 2)}`)
 
         const matchedListings = Compare(listings, scrapedListing)
         logToFile(`✅ Matched Listings:\n${JSON.stringify(matchedListings, null, 2)}`)

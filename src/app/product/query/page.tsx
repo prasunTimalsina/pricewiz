@@ -10,7 +10,7 @@ export default function Page() {
       <AuroraBackground className="w-screen z-0 p-2 pb-4 rounded-b-2xl mb-6">
         <Header />
         <Dbqueryresult />
-        {/* <Queryresult /> */}
+        <Queryresult />
         <Footer />
       </AuroraBackground>
     </div>

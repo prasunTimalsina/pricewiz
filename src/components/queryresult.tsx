@@ -72,21 +72,32 @@ export default function Queryresult() {
       </>
     );
 
+  if (!loading && products.length === 0) {
+    return (
+      <p className="text-center mt-10 text-gray-700 dark:text-gray-300">
+        No product found in Daraz, Hukut and Itti for your query{" "}
+        <span className="font-bold text-gray-900 dark:text-white">
+          "{query}"
+        </span>
+        .
+      </p>
+    );
+  }
+
   return (
     <>
       <h2 className="text-4xl md:text-6xl font-bold text-left mb-6 ml-[5%] text-gray-900 dark:text-white">
         Freshly Scraped Products
       </h2>
       <div className="flex flex-wrap justify-center gap-y-6 px-4">
-        {Array.isArray(products) &&
-          products.map((product, index) => (
-            <div
-              key={index}
-              className="m-4 sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
-            >
-              <Card product={product} />
-            </div>
-          ))}
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className="m-4 sm:w-[48%] md:w-[30%] lg:w-[22%] xl:w-[18%] flex justify-center"
+          >
+            <Card product={product} />
+          </div>
+        ))}
       </div>
     </>
   );

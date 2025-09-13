@@ -10,107 +10,92 @@ export async function ScrapeHukut(HUurl) {
   const page = await browser.newPage();
   await page.setViewport({ width: 1920, height: 1080 });
 
-  await page.goto(HUurl, {
-    waitUntil: "networkidle2",
-    timeout: 100000,
-  });
+  try {
+    await page.goto(HUurl, {
+      waitUntil: "networkidle2",
+      timeout: 100000,
+    });
 
-  await page.waitForSelector(
-    "body > section > div > div > div.w-full.md\\:10\\/12.px-16.md\\:px-6.lg\\:w-3\\/4.py-\\[15px\\].filteredproducts > div > section > div.flex.relative > div.flex.flex-wrap.w-full",
-    { timeout: 30000 }
-  );
+    const emptyResults = await page.$(
+      "body > section > div.w-full.exlg\\:w-\\[80\\%\\] > div.flex.flex-col.items-center.justify-center.w-full.py-\\[36px\\] > img[alt='Empty Search Results']"
+    );
+    if (emptyResults) {
+      await browser.close();
+      return [];
+    }
 
-  await autoScroll(page);
+    await page.waitForSelector(
+      "body > section > div.w-full.exlg\\:w-\\[80\\%\\] > div.grid.grid-cols-2.md\\:grid-cols-4.lg\\:grid-cols-5.gap-\\[16px\\].my-\\[16px\\]",
+      { timeout: 30000 }
+    );
 
-  const products = await parse(page);
+    const products = await parse(page);
 
-  await browser.close();
-  return products.slice(0, 5);
+    await browser.close();
+    return products.slice(0, 5);
+  } catch (err) {
+    console.error("Scraping failed:", err.message);
+    await browser.close();
+    return [];
+  }
 }
 
 async function parse(page) {
-  const products = await page.evaluate(() => {
-    const container = document.querySelector(
-      "body > section > div > div > div.w-full.md\\:10\\/12.px-16.md\\:px-6.lg\\:w-3\\/4.py-\\[15px\\].filteredproducts > div > section > div.flex.relative > div.flex.flex-wrap.w-full"
-    );
-    if (!container) return [];
+  try {
+    const products = await page.evaluate(() => {
+      const container = document.querySelector(
+        "body > section > div.w-full.exlg\\:w-\\[80\\%\\] > div.grid.grid-cols-2.md\\:grid-cols-4.lg\\:grid-cols-5.gap-\\[16px\\].my-\\[16px\\]"
+      );
+      if (!container) return [];
 
-    const items = container.querySelectorAll(
-      "div > div > div.flex-1.flex.flex-col.h-full"
-    );
-    const data = [];
+      const items = container.querySelectorAll("div");
+      const data = [];
 
-    items.forEach((item) => {
-      try {
-        const imgTag = item.querySelector(
-          "div.relative.flex.justify-center.pt-6.mb-6.relative.w-full.h-\\[150px\\].md\\:h-\\[210px\\] img"
-        );
-        let img = imgTag?.getAttribute("src") || null;
+      items.forEach((item) => {
+        try {
+          const anchor = item.querySelector("a");
+          if (!anchor) return;
 
-        if (img && img.startsWith("/_next/image?url=")) {
-          const urlPart = img.split("url=")[1]?.split("&")[0] || "";
-          img = decodeURIComponent(urlPart);
-        }
+          const href = anchor.getAttribute("href")
+            ? "https://hukut.com" + anchor.getAttribute("href")
+            : null;
 
-        const hrefTag = item.querySelector(
-          "div.relative.flex.justify-center.pt-6.mb-6.relative.w-full.h-\\[150px\\].md\\:h-\\[210px\\] a"
-        );
-        const href = hrefTag?.getAttribute("href")
-          ? "https://hukut.com" + hrefTag.getAttribute("href")
-          : null;
+          const titleTag = anchor.querySelector("p");
+          const title = titleTag?.innerText?.trim() || null;
 
-        const titleTag = item.querySelector(
-          "div.flex-1.flex.flex-col > h4 > a > p"
-        );
-        const title = titleTag?.innerText || null;
+          const priceTag = anchor.querySelector(
+            "div.flex.flex-col.flex-1.w-full.min-w-0 > p"
+          );
+          let price = priceTag?.innerText || null;
+          if (price && price.startsWith("Rs.")) {
+            price = price.replace("Rs.", "").replace(/,/g, "").trim();
+          }
 
-        const priceTag = item.querySelector(
-          "div.flex-1.flex.flex-col > div.flex.flex-wrap.font-semibold.text-tiny.xs\\:text-base.md\\:text-\\[22px\\].my-12.dark\\:text-white.listview\\:d-none"
-        );
-        let price = priceTag?.innerText || null;
-        if (price) {
-          price = price.replace(/रु|,/g, "").trim().split("\n")[0].trim();
-        }
+          const imgTag = anchor.querySelector(
+            "div.relative.h-\\[152px\\].md\\:h-\\[176px\\].w-full.mb-\\[8px\\].rounded-md.bg-\\[\\#F7F7F7\\] > img"
+          );
+          const img = imgTag?.getAttribute("src") || null;
 
-        if (href && img && title && price) {
-          data.push({
-            site: "Hukut",
-            href,
-            img,
-            title,
-            price,
-          });
-        }
-      } catch (_) {
-        // Skip item if any parsing issue occurs
-      }
+          if (href && img && title && price) {
+            data.push({
+              site: "Hukut",
+              href,
+              img,
+              title,
+              price,
+            });
+          }
+        } catch (_) {}
+      });
+
+      return data;
     });
 
-    return data;
-  });
-
-  //fs.writeFileSync('hukut.json', JSON.stringify(products, null, 2), 'utf-8')
-
-  return products;
-}
-
-async function autoScroll(page) {
-  await page.evaluate(async () => {
-    await new Promise((resolve) => {
-      let totalHeight = 0;
-      const distance = 400;
-      const timer = setInterval(() => {
-        const scrollHeight = document.body.scrollHeight;
-        window.scrollBy(0, distance);
-        totalHeight += distance;
-
-        if (totalHeight >= scrollHeight) {
-          clearInterval(timer);
-          resolve();
-        }
-      }, 200);
-    });
-  });
+    return products;
+  } catch (err) {
+    console.error("Parse failed:", err.message);
+    return [];
+  }
 }
 
 export default ScrapeHukut;

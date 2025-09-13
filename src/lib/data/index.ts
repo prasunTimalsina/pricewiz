@@ -1,7 +1,6 @@
 import { scrapeDaraz } from "@/lib/scrapper/daraz";
 import { scrapeIiti } from "@/lib/scrapper/itti";
-// import { ScrapeHukut } from "@/lib/scrapper/hukut"; // Currently disabled
-import SelectTop10 from "../scrapper/top10Selection";
+import { ScrapeHukut } from "@/lib/scrapper/hukut";
 import { saveListing, recordQueryRun } from "./database";
 import prisma from "./prisma";
 
@@ -11,9 +10,8 @@ export async function scrapeAll(productName: string) {
   try {
     const Durl = `https://www.daraz.com.np/catalog/?spm=a2a0e.tm80335409.search.d_go&q=${productName}`;
     const Iurl = `https://itti.com.np/search/result?q=${productName}&category_type=search`;
-    // const HUurl = `https://hukut.com/search/${productName}`; // Currently disabled
+    const HUurl = `https://hukut.com/search?q=${productName}&marketStatus=0&onSale=true`;
 
-    // Enhanced error handling for individual scrapers
     const darazPromise = (async () => {
       try {
         console.log(`🔍 Starting Daraz scraping...`);
@@ -55,12 +53,16 @@ export async function scrapeAll(productName: string) {
     const hukutPromise = (async () => {
       try {
         console.log(`🔍 Starting Hukut scraping...`);
-        // Currently disabled
-        //const Huproducts = await ScrapeHukut(HUurl);
-        //console.log(`✅ Hukut scraping successful: ${Huproducts.length} products found`);
-        //return { scraper: 'Hukut', products: Huproducts, success: true, error: null };
-        console.log(`⚠️ Hukut scraping disabled`);
-        return { scraper: "Hukut", products: [], success: true, error: null };
+        const Huproducts = await ScrapeHukut(HUurl);
+        console.log(
+          `✅ Hukut scraping successful: ${Huproducts.length} products found`
+        );
+        return {
+          scraper: "Hukut",
+          products: Huproducts,
+          success: true,
+          error: null,
+        };
       } catch (error) {
         console.error(`❌ Hukut scraping failed:`, error);
         return { scraper: "Hukut", products: [], success: false, error: error };
@@ -118,10 +120,8 @@ export async function scrapeAll(productName: string) {
       (a, b) => parsePrice(b.price) - parsePrice(a.price)
     );
 
-    const uniqueProducts = SelectTop10(decproducts);
-    console.log(`🎯 Selected top products: ${uniqueProducts.length}`);
 
-    const finalProducts = uniqueProducts.map((product) => ({
+    const finalProducts = decproducts.map((product) => ({
       title: product.title,
       price: parseInt(product.price),
       url: product.href,
