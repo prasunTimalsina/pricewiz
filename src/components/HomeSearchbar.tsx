@@ -18,9 +18,7 @@ function HomeSearchbar() {
         <div className="flex justify-center w-full z-10 px-3">
           <div className="w-[500px] text-white">
             <div className="text-3xl font-bold mb-10">
-              <p>Css shall be fixed by my other friends</p>
-              <p>and for time i have less</p>
-              <p>as for font you shall use krona one</p>
+              <p>Compare prices, find the best deals, and shop smarter.</p>
             </div>
             <SearchBar />
           </div>
