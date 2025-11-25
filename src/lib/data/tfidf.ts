@@ -1,5 +1,4 @@
 // lib/tfidf.ts
-
 export function omitPunctuations(word: string): string {
   return word.replace(/[^\w\d]/g, "");
 }
@@ -43,7 +42,6 @@ export function cosineSimilarity(vec1: number[], vec2: number[]): number {
   if (vec1Size === 0 || vec2Size === 0) return 0;
   return dotProduct / (vec1Size * vec2Size);
 }
-
 /// logic to get similar products
 export function getSimilarProducts(
   baseProduct: { id: number; title: string },

@@ -25,34 +25,37 @@ interface Product {
   listings: Listing[];
 }
 
-async function fetchDbProducts(query: string): Promise<Product[]> {
-  const res = await fetch(`/api/products?query=${query}`, {
-    cache: "no-store",
-  });
+// async function fetchDbProducts(query: string): Promise<Product[]> {
+//   const res = await fetch(`/api/products?query=${query}`, {
+//     cache: "no-store",
+//   });
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch DB products");
-  }
+//   if (!res.ok) {
+//     throw new Error("Failed to fetch DB products");
+//   }
 
-  return await res.json();
-}
+//   return await res.json();
+// }
 
-export default function Dbqueryresult() {
+export default function Dbqueryresult({
+  products,
+  loading,
+}: {
+  products: Product[];
+  loading: boolean;
+}) {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
 
-  const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(false);
+  // useEffect(() => {
+  //   if (!query) return;
 
-  useEffect(() => {
-    if (!query) return;
-
-    setLoading(true);
-    fetchDbProducts(query)
-      .then(setProducts)
-      .catch((err) => console.error(err))
-      .finally(() => setLoading(false));
-  }, [query]);
+  //   setLoading(true);
+  //   fetchDbProducts(query)
+  //     .then(setProducts)
+  //     .catch((err) => console.error(err))
+  //     .finally(() => setLoading(false));
+  // }, [query]);
 
   if (!query)
     return (
