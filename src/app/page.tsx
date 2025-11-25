@@ -12,9 +12,9 @@ export default function Page() {
       <div className="flex-row justify-center items-center mt-10">
         <HomeSearchbar />
         <FeaturedProductsCarousel />
-        <Catagory />
         <Popular />
         <Seasonal />
+        <Catagory />
         <Footer />
       </div>
     </>

@@ -1,7 +1,8 @@
 import cron from "node-cron";
 import { rehydrateDatabase } from "./lib/scrapingUtility.js";
 const task = cron.schedule(
-  "0 */1 * * * *",
+  "0 */4 * * * *",
+  // 0 0 */4 * * *,
   async () => {
     try {
       try {

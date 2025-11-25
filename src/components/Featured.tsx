@@ -146,7 +146,9 @@ export function FeaturedProductsCarousel() {
         const res = await fetch("api/feature-product", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ productIds: [1, 6, 11, 20, 26, 12, 25] }),
+          body: JSON.stringify({
+            productIds: [158, 159, 163, 173, 182, 171, 167, 170, 184],
+          }),
         });
 
         const data = await res.json();
@@ -230,10 +232,11 @@ export function FeaturedProductsCarousel() {
           <button
             key={index}
             onClick={() => scrollToCard(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-200 ${index === activeIndex
-              ? "bg-blue-600 w-8"
-              : "bg-gray-300 hover:bg-gray-400"
-              }`}
+            className={`w-3 h-3 rounded-full transition-all duration-200 ${
+              index === activeIndex
+                ? "bg-blue-600 w-8"
+                : "bg-gray-300 hover:bg-gray-400"
+            }`}
           />
         ))}
       </div>
@@ -249,4 +252,3 @@ export function FeaturedProductsCarousel() {
     </div>
   );
 }
-
